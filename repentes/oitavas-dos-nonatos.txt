@@ -1,0 +1,54 @@
+# Oitavas dos Nonatos
+
+**Estilo:** Oitava
+**Artista:** Os Nonatos
+**Local:** São Lourenço da Mata
+**Contexto:** Competição/Festival
+
+## Transcrição
+
+00:00:00,460 --> 00:00:59,340 [Speaker 0]
+[acorde de viola] [cantando] São Lourenço da Mata nos escuta e pelo povo que aplaude, agora exalto. Mesmo estando em primeiro na disputa, com respeito aos outros eu não falto. Obrigado a vocês desta cidade pela grande receptividade. Quem não calça as sandálias da humildade torce o pé se correr desalta. [música se intensifica] Aos colegas que ficam aqui, ressalto que é comum ter pequeno, grande e médio. Os que vão do Recife pra o Planalto vão atrás de troféu, fama e assédio. Na fornalha não diminui a frágua, não pretendo levar nem deixar mágoa. Chega a hora da onça beber água e quem sofrer da pressão tome remál. 
+
+00:00:59,340 --> 00:03:31,700 [Speaker 0]
+[música se intensifica] Encarar público, grande palco e prédio, anotei como meta em minha lida. As piadas injustas só dão tédio a quem é revoltado com a vida. O triunfo Deus dá a quem merece pelo sonho do título a pressão cresce e é no fim da ladeira que aparece o maior obstáculo da corrida. [música se intensifica] Qualidade é um item que invalida a ação do processo de derrota com a fonte da mente abastecida uma seca de rimas não esgota. A cobrança do povo e da imprensa, três jurados julgando na presença e meio ponto faz muita diferença quando a gente precisa de uma nota. [música se intensifica] Quando é posto o cenário, a praça lota parecendo a Marquês do Carnaval. Tem poeta nervoso que desbota quando ouve falar na parcial. São cobrados talento, estilo e sorte, tema fraco não causa emoção forte e como a guerra do verso não tem morte, todo mundo se salva no final. [música se intensifica] Tem a fama e a falta de know how, mas ninguém se sai mal se canta bem. Na sentença do nosso tribunal, o veredicto imprevisto às vezes vem. Neste ringue quem cai não se levanta, quem tem pano pras mangas sobe e canta. E quem é peso pesado não se espanta com quem diz que tem peso, mas não tem. [música se intensifica] É inútil para Deus dizer amém quando não se tem fé nas orações. A cabeça dos sábios vive em sintonia que muitos corações. Pelo tudo que eu sei vejo e escuto pela honra do nome eu canto e luto. E é com nervos de aço que eu disputo o troféu que consagra os campeões. [música se intensifica] A verdade é o teto das razões a mentira sem base se desmonta. Vira-lata que brinca com leões quando é posto na jaula, se amedronta. Quem tem hora a cumprir não se atrasa. Quem se assusta com fogo não faz brasa. Quem tem medo de chuva fica em casa e quem não tem com que pague não faz conta. [música se encerra]
+
+## Análise Estrutural
+
+**Estrofe típica (Oitava):**
+- 8 versos por estrofe
+- Métrica: 7 sílabas (setissílabos)
+- Esquema de rima: ABBAACCA ou variações
+
+**Exemplo de estrofe:**
+```
+São Lourenço da Mata nos escuta              (A)
+e pelo povo que aplaude, agora exalto        (B)
+Mesmo estando em primeiro na disputa         (A)
+com respeito aos outros eu não falto         (B)
+Obrigado a vocês desta cidade                (C)
+pela grande receptividade                    (C)
+Quem não calça as sandálias da humildade     (C)
+torce o pé se correr desalta                 (B)
+```
+
+## Temas Abordados
+- Humildade e respeito aos competidores
+- Pressão de competições e festivais
+- Qualidade técnica versus nervosismo
+- Sabedoria e experiência
+- Metáforas sobre vida e repente
+
+## Figuras de Linguagem
+- "Quem não calça as sandálias da humildade torce o pé se correr desalta"
+- "Chega a hora da onça beber água"
+- "Na fornalha não diminui a frágua"
+- "Vira-lata que brinca com leões quando é posto na jaula, se amedronta"
+- "Quem tem medo de chuva fica em casa"
+
+## Metadados
+- **Data de adição:** 2025-01-05
+- **Fonte:** Transcrição manual
+- **Status:** A catalogar no banco de dados
+- **Cantador:** Os Nonatos
+- **Local:** São Lourenço da Mata, PE

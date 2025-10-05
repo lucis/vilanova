@@ -1,0 +1,231 @@
+# Regras Específicas do Vilanova
+
+## 🎯 Contexto do Projeto
+
+Vilanova é um projeto **aberto e nunca finalizado** de catalogação, digitalização e organização da história da cantoria nordestina usando IA. Nasceu em Campina Grande, PB, mas é feito para todo o Nordeste.
+
+## 🔑 Regras Críticas
+
+### 1. Respeito às Adaptações Fonéticas
+
+**NUNCA CORRIGIR** o que parecem ser "erros" nas transcrições. Os poetas adaptam palavras intencionalmente para manter a métrica.
+
+**Exemplos corretos:**
+- "dez de" pode ser pronunciado "dérbi" para métrica
+- "para" vira "pra"
+- Elisões são intencionais
+
+**Como lidar:**
+- Transcrever o que foi dito (foneticamente)
+- Anotar a palavra "correta" em metadados
+- IA deve entender ambas as formas
+- Validação deve aceitar adaptações
+
+### 2. Motes Corretos dos Estilos
+
+- **Galope à Beira Mar**: "Nos dez **de** galope na/da beira do mar"
+- **Martelo Alagoano**: "Nos dez **pés** de martelo alagoano"
+
+Não confundir com variações fonéticas na performance.
+
+### 3. Sempre Use getDb(env)
+
+**✅ CORRETO:**
+```typescript
+const db = await getDb(env);
+const result = await db.select().from(table);
+```
+
+**❌ ERRADO:**
+```typescript
+const db = drizzle(env); // Pula migrations!
+```
+
+### 4. Conversão SQLite Boolean
+
+**✅ CORRETO:**
+```typescript
+// Inserir
+await db.insert(table).values({
+  isActive: 1,  // ou 0
+});
+
+// Ler
+const record = await db.select().from(table);
+const isActive = record.isActive === 1; // Converter para boolean
+```
+
+## 📐 Estrutura de Dados
+
+### Estilo de Repente
+
+```typescript
+interface PoetryStyle {
+  id: string;
+  name: string; // "Galope à Beira Mar"
+  slug: string;
+  versesPerStanza: number;
+  syllablesPerVerse: number;
+  rhymePattern: string; // "AAAAABBCCM"
+  hasMote: boolean;
+  motePosition?: number[];
+  structure: VerseStructure; // JSON completo
+}
+```
+
+### Adaptação Fonética
+
+```typescript
+interface VerseAdaptation {
+  originalWord: string;      // "dez de"
+  pronouncedAs: string;       // "dérbi"
+  reason: string;             // "métrica"
+  syllableCount: number;      // 2 sílabas
+  isIntentional: boolean;     // true
+}
+```
+
+## 🛠️ Tools Privadas
+
+### Padrão para createPrivateTool
+
+```typescript
+const createMyPrivateTool = (env: Env) =>
+  createPrivateTool({
+    id: "MY_TOOL",
+    description: "Only accessible to admins",
+    inputSchema: z.object({
+      // ...
+    }),
+    outputSchema: z.object({
+      // ...
+    }),
+    execute: async ({ context, runtimeContext }) => {
+      // Pegar request se necessário
+      const req = runtimeContext.get("req") as Request | undefined;
+      
+      // Sempre use getDb
+      const db = await getDb(env);
+      
+      // Lógica aqui
+      
+      return { /* result */ };
+    },
+  });
+```
+
+## 🎨 Schemas de IA
+
+### Análise de Verso
+
+```typescript
+const verseAnalysisSchema = {
+  type: 'object',
+  properties: {
+    syllables: {
+      type: 'array',
+      items: {
+        type: 'object',
+        properties: {
+          text: { type: 'string' },
+          isStressed: { type: 'boolean' },
+        },
+      },
+    },
+    syllableCount: { type: 'number' },
+    rhymeSound: { type: 'string' },
+    adaptations: {
+      type: 'array',
+      items: {
+        type: 'object',
+        properties: {
+          word: { type: 'string' },
+          adaptation: { type: 'string' },
+          reason: { type: 'string' },
+        },
+      },
+    },
+  },
+};
+```
+
+### Prompt para Respeitar Adaptações
+
+```typescript
+const analysisPrompt = `
+IMPORTANTE - Adaptações Fonéticas:
+Os poetas frequentemente adaptam a pronúncia de palavras para manter a métrica:
+- "dez de" pode ser pronunciado "dérbi" 
+- "para" pode virar "pra"
+- Elisões e contrações são comuns
+
+RESPEITE a intenção original do autor. Se uma palavra parece estar "errada", 
+é provável que seja uma adaptação intencional para a métrica.
+
+Analise o seguinte verso: ${verse}
+`;
+```
+
+## 📅 Eventos Recorrentes
+
+### Exemplo: Clube do Repente
+
+```typescript
+{
+  title: "Clube do Repente",
+  city: "Campina Grande",
+  state: "PB",
+  venue: "Casa da Cultura",
+  startTime: "19:00",
+  isRecurring: true,
+  recurrenceRule: {
+    frequency: "monthly",
+    ordinal: "first",      // primeira
+    weekday: 4             // quinta-feira (0=domingo)
+  },
+  recurrenceText: "Toda primeira quinta-feira do mês"
+}
+```
+
+## 🔄 Workflow de Upload → Catalogação
+
+```typescript
+// 1. Upload de áudio
+UPLOAD_AUDIO → { audioFileId }
+
+// 2. Transcrição com Whisper
+TRANSCRIBE_AUDIO → { transcriptionId, fullText, segments }
+
+// 3. Criar repente
+CREATE_REPENTE_FROM_TRANSCRIPTION → { repenteId, cantadorIds }
+
+// 4. Extrair poesias individuais
+EXTRACT_POETRIES_FROM_TRANSCRIPTION → { poetryIds, styles }
+```
+
+## 🌍 Representação Regional
+
+Sempre considerar todos os estados do Nordeste:
+- Pernambuco (Caruaru, Recife, Serra Talhada)
+- Paraíba (Campina Grande, João Pessoa, Patos)
+- Ceará (Fortaleza, Juazeiro do Norte, Sobral)
+- Rio Grande do Norte (Natal, Mossoró, Caicó)
+- Alagoas, Sergipe, Bahia, Maranhão
+
+## 🎯 Princípios de Desenvolvimento
+
+1. **Respeito à Tradição**: Adaptações são intencionais
+2. **Qualidade dos Dados**: Verificar antes de adicionar
+3. **Inclusão**: Representar todo o Nordeste
+4. **Acessibilidade**: Para todos os níveis
+5. **Documentação**: Sempre documentar decisões
+
+## 📚 Recursos
+
+- Deploy: vilanova.deco.page
+- Websérie: [Entre Cordas e Poesia](https://www.youtube.com/watch?v=ULbBggbGpB8&list=PLngiJpynwciFIwyrG_EiOW-sKm1tRXSGU)
+- Plans: `/plans/` para toda documentação
+
+---
+
+**Vilanova** - De Campina Grande para todo o Nordeste 🎵

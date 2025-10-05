@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "title": "Acervo de Cantorias",
+  "description": "Catálogo de cantorias disponíveis no YouTube e Spotify para divulgação",
+  "cantorias": [
+    {
+      "id": "galope-os-nonatos-serra-talhada",
+      "titulo": "Galope à Beira Mar",
+      "cantadores": [
+        {
+          "nome": "Os Nonatos",
+          "perfil": null
+        }
+      ],
+      "estilo": "Galope à Beira Mar",
+      "local": "Serra Talhada, Pernambuco",
+      "ano": 2023,
+      "duracao": "3:45",
+      "links": {
+        "youtube": "",
+        "spotify": null
+      },
+      "tags": ["autoestima", "desafio", "galope"],
+      "descricao": "Exemplo clássico de Galope à Beira Mar por Os Nonatos, demonstrando maestria na métrica e rimas perfeitas.",
+      "destaque": true,
+      "transcricao_disponivel": true,
+      "transcricao_path": "/repentes/galope-beira-mar-os-nonatos.txt"
+    },
+    {
+      "id": "galope-sebastiao-ivanildo-caruaru",
+      "titulo": "Galope à Beira Mar - Sebastião da Silva e Ivanildo Vilanova",
+      "cantadores": [
+        {
+          "nome": "Sebastião da Silva",
+          "apelido": "O Matemático dos Versos",
+          "perfil": null
+        },
+        {
+          "nome": "Ivanildo Vilanova",
+          "apelido": "O Poeta do Improviso",
+          "perfil": null
+        }
+      ],
+      "estilo": "Galope à Beira Mar",
+      "local": "Caruaru, Pernambuco",
+      "ano": null,
+      "duracao": null,
+      "links": {
+        "youtube": "",
+        "spotify": null
+      },
+      "tags": ["galope", "dupla-histórica"],
+      "descricao": "Cantoria entre dois dos maiores mestres do repente nordestino. Sebastião da Silva, conhecido por sua precisão matemática, e Ivanildo Vilanova, que dá nome a este projeto.",
+      "destaque": true,
+      "transcricao_disponivel": true,
+      "transcricao_path": "/repentes/galope-beira-mar-sebastiao-ivanildo.txt"
+    },
+    {
+      "id": "oitavas-os-nonatos-sao-lourenco",
+      "titulo": "Oitavas - Os Nonatos",
+      "cantadores": [
+        {
+          "nome": "Os Nonatos",
+          "perfil": null
+        }
+      ],
+      "estilo": "Oitava",
+      "local": "São Lourenço da Mata, Pernambuco",
+      "ano": null,
+      "duracao": null,
+      "links": {
+        "youtube": "",
+        "spotify": null
+      },
+      "tags": ["oitava", "sabedoria"],
+      "descricao": "Oitavas memoráveis de Os Nonatos, incluindo o verso clássico 'Quem não calça as sandálias da humildade / torce o pé se correr desalta'",
+      "destaque": true,
+      "transcricao_disponivel": true,
+      "transcricao_path": "/repentes/oitavas-dos-nonatos.txt"
+    },
+    {
+      "id": "martelo-alagoano",
+      "titulo": "Martelo Alagoano",
+      "cantadores": [
+        {
+          "nome": "A identificar",
+          "perfil": null
+        }
+      ],
+      "estilo": "Martelo Alagoano",
+      "local": null,
+      "ano": null,
+      "duracao": null,
+      "links": {
+        "youtube": "",
+        "spotify": null
+      },
+      "tags": ["martelo"],
+      "descricao": "Exemplo de Martelo Alagoano com o característico mote triplo 'Nos dez pés de martelo alagoano'",
+      "destaque": false,
+      "transcricao_disponivel": true,
+      "transcricao_path": "/repentes/martelo-alagoano.txt"
+    }
+  ],
+  "metadata": {
+    "ultima_atualizacao": "2025-01-XX",
+    "total_cantorias": 4,
+    "com_transcricao": 4,
+    "com_youtube": 0,
+    "com_spotify": 0,
+    "observacoes": [
+      "Links do YouTube serão adicionados posteriormente",
+      "Alguns metadados (ano, duração, local) estão incompletos e serão preenchidos conforme pesquisa",
+      "Transcrições já disponíveis na pasta /repentes/"
+    ]
+  }
+}

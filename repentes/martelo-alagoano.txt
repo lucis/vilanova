@@ -1,0 +1,84 @@
+# Martelo Alagoano
+
+**Estilo:** Martelo Alagoano
+**Artista:** [A identificar]
+**Contexto:** Performance solo
+
+## Transcrição
+
+00:00:00,360 --> 00:00:12,220 [Speaker 0]
+[acústica] 
+
+00:00:12,220 --> 00:04:35,420 [Speaker 1]
+Vá na África do Sul fazer safari, passe em Cuba em lembrança a Fidel D. Vá no Louvre ver obra de Monet. Delacroix, Scannóva e Portinari. Vá até Maranello, onde a Ferrari mantém sede no solo italiano. Roube um jato em espaço americano e com Kattaf cometa um desacato, mas não mexa comigo que eu lhe mato, nos dez pés de martelo alagoano. Nos dez pés de martelo alagoano. Nos dez pés de martelo alagoano [acústica]. Compre voto e se eleja pra o mandato. Em Brasília, desfrute das parlendas. Cobre trinta por cento das emendas dos projetos de creche e sindicato. Peça apoio econômico ao patronato. Fique rico em seis meses ou num ano. Passe cheque sem fundo, dê um cano, depois pose de santo em seu estado. Mas não banque o esperto pro meu lado. Nos dez pés de martelo alagoano. Nos dez pés de martelo alagoano. Nos dez pés de martelo alagoano [acústica] Sem temer tubarão esfomeado, desça ao fundo do mar pra pescar polvo. Passe pela Suécia e compre a Volvo e abasteça de Scania o mercado. Vá até Bagdá pra ser soldado. Venda urânio ao governo iraniano. Prenda Osama bin Laden, o desumano, que de mortes diversas é suspeito e não entorte comigo que eu lhe ajeito, nos dez pés de martelo alagoano. Nos dez pés de martelo alagoano. Nos dez pés de martelo alagoano [acústica] No governo de Plebonha, defeito, sem aval da rainha Elizabeth, seja hacker de micro de internet e faça tudo que a vida der direito. Contra os súditos espalhe o preconceito, mas defenda seu deus palaciano. De helicóptero ou então de aeroplano, pule sem paraquedas rumo ao chão, mas não pegue em meu pé que eu meto a mão. Nos dez pés de martelo alagoano. Nos dez pés de martelo alagoano. Nos dez pés de martelo alagoano [acústica] Dance o rock de Erasmo Tremendão. No Bolshoi de Moscou, seja um aluno. A Delúbio, dê aulas de gatuno e vá soltar aliaka da prisão. Compre ilha em país que tem tufão pra ser mais um refém do oceano. Pra brigar com Mandela, o africano, tome o título de bispo de Montuto. Só não venha mentir que eu nem escuto. Nos dez pés de martelo alagoano. Nos dez pés de martelo alagoano. Nos dez pés de martelo alagoano [acústica] Como foi Gonzagão, seja matuto. Fique mais paciente do que Jó. Suba os ringues do jeito de Popó. O pugilista do soco, rápido e bruto. Da Bolívia, destrua o gasoduto. Que Morales parece estar insano. Prenda Chaves, o ditador tirano, e jogue farpas, do jeito de Romário, mas só fale comigo o necessário. Nos dez pés de martelo alagoano. Nos dez pés de martelo alagoano. Nos dez pés de martelo alagoano [acústica] 
+
+00:04:35,420 --> 00:05:16,580 [Speaker 1]
+Toque fogo no pano do sudário. Vá até Calcutá zumbar da madre. Na Basílica de Roma, diga a um padre que o Papa é um reacionário. Do Smart, desfalque o crediário. Com seus pais, seja um filho leviano. Diga o diabo a João Paraibano e a Antônio Lisboa, um desaforo, mas não encha meu saco, que eu lhe estouro, nos dez pés de martelo alagoano. Nos dez pés de martelo alagoano. Nos dez pés de martelo alagoano 
+
+00:05:16,580 --> 00:06:01,420 [Speaker 1]
+[acústica] Na Europa, polua o Rio Douro. Rasgue o título de rei dadá Pelé. Dos Ronaldos jogando de olé, vá chamar Mick Jagger de calouro. Mande o MST pegar o ouro que a igreja possui no Vaticano. Extravie a fortuna de Bozano e finance casa própria como a caixa, mas só passe por mim de vista baixa dos dez pés de martelo alagoano. Nos dez pés de martelo alagoano. Nos dez pés de martelo alagoano [acústica]
+
+## Análise Estrutural
+
+**Estrofe típica (Martelo Alagoano):**
+- 10 versos por estrofe
+- Métrica: 10 sílabas (decassílabos)
+- Esquema de rima: AAAAAAAAAB + MOTE
+- Mote fixo: "Nos dez pés de martelo alagoano" (repetido 3x como refrão após cada estrofe)
+
+**Exemplo de estrofe:**
+```
+Vá na África do Sul fazer safari         (A)
+passe em Cuba em lembrança a Fidel D     (A)
+Vá no Louvre ver obra de Monet           (A)
+Delacroix, Scannóva e Portinari          (A)
+Vá até Maranello, onde a Ferrari         (A)
+mantém sede no solo italiano             (B)
+Roube um jato em espaço americano        (B)
+e com Kattaf cometa um desacato          (C)
+mas não mexa comigo que eu lhe mato      (C)
+nos dez pés de martelo alagoano          (MOTE - sempre igual)
+```
+
+## Características do Estilo
+
+**Martelo Alagoano:**
+- Estilo de desafio e bravata
+- Tom humorístico e satírico
+- Lista de ações impossíveis ou absurdas
+- Culmina em ameaça/aviso ao adversário
+- Estrutura repetitiva (mote fixo)
+- Uso de referências contemporâneas (política, cultura pop, esporte)
+
+## Temas Abordados
+- Sátira política (corrupção, parlamentarismo)
+- Referências culturais internacionais (Ferrari, Louvre, Volvo, Bolshoi)
+- Futebol (Pelé, Ronaldos, Romário)
+- Música (Gonzagão, Erasmo Carlos, Mick Jagger)
+- Religião (Papa, Vaticano, Madre Teresa de Calcutá)
+- Figuras políticas controversas (Fidel Castro, Bin Laden, Chávez, Morales)
+
+## Figuras de Linguagem
+- Hipérbole: "pule sem paraquedas rumo ao chão"
+- Ironia: "depois pose de santo em seu estado"
+- Desafio: "mas não mexa comigo que eu lhe mato"
+- Metáfora: "só passe por mim de vista baixa"
+
+## Referências a Cantadores
+- João Paraibano
+- Antônio Lisboa
+- Gonzagão (Luiz Gonzaga)
+
+## Metadados
+- **Data de adição:** 2025-01-05
+- **Fonte:** Transcrição manual
+- **Status:** A catalogar no banco de dados
+- **Cantador:** [A identificar - possivelmente Os Nonatos ou outro artista]
+- **Estrutura:** Martelo Alagoano clássico com mote fixo
+- **Dificuldade:** Avançada (decassílabos + rimas complexas + velocidade)
+
+## Notas Técnicas
+- O refrão "Nos dez pés de martelo alagoano" é repetido 3x após cada estrofe
+- Alguns versos têm 11 ou 9 sílabas (licença poética na performance)
+- Velocidade de execução alta, característica do estilo
+- Riqueza de vocabulário e referências culturais demonstra erudição do cantador

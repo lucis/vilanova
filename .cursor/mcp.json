@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "vilanova": {
+      "type": "http",
+      "url": "https://localhost-aa14baa7.deco.host/mcp"
+    }
+  }
+}
