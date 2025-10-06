@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "@tanstack/react-router";
 import HomePage from "./routes/home.tsx";
+import CantoriaRoute from "./routes/cantoria.tsx";
 import { Toaster } from "sonner";
 
 import "./styles.css";
@@ -18,6 +19,7 @@ const rootRoute = createRootRoute({
 
 const routeTree = rootRoute.addChildren([
   HomePage(rootRoute),
+  CantoriaRoute(rootRoute),
 ]);
 
 const queryClient = new QueryClient();

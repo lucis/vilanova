@@ -6,6 +6,8 @@
 
 O nome é uma **homenagem em vida** ao poeta **Ivanildo Vilanova**, mestre da cantoria que participa da websérie documental ["Entre Cordas e Poesia"](https://www.youtube.com/watch?v=ULbBggbGpB8&list=PLngiJpynwciFIwyrG_EiOW-sKm1tRXSGU).
 
+🌐 **[Ver o site ao vivo](https://localhost-aa14baa7.deco.host)** | 💻 **[Repositório](http://github.com/lucis/vilanova)**
+
 ---
 
 ## 🎯 O Que Fazemos
@@ -18,12 +20,40 @@ O nome é uma **homenagem em vida** ao poeta **Ivanildo Vilanova**, mestre da ca
 
 ---
 
-## 🚀 Como Começar a Contribuir
+## 🚀 Sobre a Tecnologia
+
+### Construído com Deco
+
+Este projeto é uma **aplicação Deco** ([decocms.com](https://decocms.com)) — uma plataforma moderna para desenvolvimento full-stack que facilita muito a criação de aplicações web.
+
+**Por que Deco?**
+- ⚡ **Deploy instantâneo**: Suba para produção com um comando
+- 🔧 **Tools e Workflows**: Sistema MCP para criar ferramentas reutilizáveis
+- 🤖 **Integração com IA**: OpenAI, Claude e outros modelos prontos para usar
+- 🗄️ **Database built-in**: SQLite com Drizzle ORM
+- 🎨 **React + TailwindCSS**: Frontend moderno e responsivo
+- ☁️ **Cloudflare Workers**: Infraestrutura global e performática
+
+**Template Completo:**
+Este projeto usa o template React + Tailwind do Deco, que já vem com:
+- Sistema de autenticação
+- Tools para criar funcionalidades
+- Workflows para processos complexos
+- Database configurado
+- Frontend com TanStack Router
+
+Toda a lógica de transcrição, análise de estrutura e catalogação é feita através de **Deco Tools** que podem ser reutilizados e compostos.
+
+📚 **[Ver documentação do Deco](https://docs.deco.page)**
+
+---
+
+## 🤝 Como Começar a Contribuir
 
 ### 1. Clone o Repositório
 
 ```bash
-git clone https://github.com/lucis/vilanova.git
+git clone http://github.com/lucis/vilanova.git
 cd vilanova
 ```
 
@@ -54,16 +84,31 @@ npm run dev
 
 Acesse: `http://localhost:8787`
 
-### 4. Explore as Issues
+### 4. **Explore as Issues — Sua Contribuição Começa Aqui!**
 
 Temos várias issues abertas esperando contribuição:
 
-👉 **[Ver Issues no GitHub](https://github.com/lucis/vilanova/issues)**
+👉 **[Ver Issues no GitHub](http://github.com/lucis/vilanova/issues)**
 
-**Boas issues para começar:**
-- Issues com label `good first issue`
-- Issues com label `documentation`
-- Issues com label `content` (adicionar cantorias, biografias)
+**Tipos de Issues:**
+
+**🎨 Design & UX:**
+- `design` — Melhorias visuais, identidade cultural
+- `ux` — Experiência do usuário, acessibilidade
+- **PRECISAMOS DE AJUDA!** Adoraríamos ter alguém pensando no design cultural do projeto
+
+**💻 Desenvolvimento:**
+- `good first issue` — Perfeitas para começar
+- `backend` — Tools, workflows, database
+- `frontend` — React, TailwindCSS, componentes
+
+**📝 Conteúdo:**
+- `content` — Adicionar cantorias, biografias, transcrições
+- `documentation` — Melhorar docs, tutoriais
+
+**🧠 IA & Análise:**
+- `ai` — Melhorar prompts, análise de estrutura
+- `transcription` — Transcrição e revisão
 
 ### 5. Faça Seu Primeiro Commit
 
@@ -72,6 +117,30 @@ Temos várias issues abertas esperando contribuição:
 3. Commit: `git commit -m "feat: descrição clara do que foi feito"`
 4. Push: `git push origin feat/sua-feature`
 5. Abra um Pull Request
+
+---
+
+## 🎨 Contribua com Design!
+
+**Estamos precisando de ajuda com design!**
+
+Se você tem experiência com:
+- Design de interfaces culturais e memoráveis
+- Ilustrações que fogem de clichês
+- Tipografia e hierarquia visual
+- Design system e paletas de cores
+- UX para portais educativos
+
+**Por favor, abra uma issue propondo melhorias!**
+
+Ideias que adoraríamos ver:
+- Ilustrações/SVGs minimalistas de violas e cantadores
+- Padrões decorativos (azulejos, renda, xilogravura)
+- Visualizações de dados (estrutura de versos, esquemas de rima)
+- Melhoria da identidade visual
+- Sistema de ícones customizado
+
+👉 **[Abrir issue de design](http://github.com/lucis/vilanova/issues/new?labels=design)**
 
 ---
 
@@ -122,66 +191,76 @@ vilanova/
 
 ## 💡 Formas de Contribuir
 
-### 🎙️ Contribuindo com Conteúdo
+### 🎨 Design (PRECISAMOS DE AJUDA!)
+
+**Estamos buscando pessoas para pensar o design cultural do Vilanova.**
+
+Se você tem experiência com design, **por favor abra uma issue** propondo:
+- Ilustrações/SVGs de violas, cantadores, elementos nordestinos
+- Sistema de ícones customizado
+- Padrões decorativos (azulejos, renda, xilogravura)
+- Visualizações de estrutura poética
+- Melhoria da identidade visual
+
+**Nosso desafio:** Criar um design que seja culturalmente rico, respeitoso 
+com a tradição, mas moderno e acessível. Fugir de clichês.
+
+👉 **[Propor melhorias de design](http://github.com/lucis/vilanova/issues/new?labels=design)**
+
+### 🎙️ Conteúdo
 
 **Adicionar Cantorias:**
 1. Edite [`/repentes/cantorias.json`](./repentes/cantorias.json)
-2. Adicione metadados (cantadores, estilo, local, links)
+2. Adicione metadados (cantadores, estilo, local, links YouTube/Spotify)
 3. Se tiver transcrição, adicione arquivo `.txt` em `/repentes/`
-4. Abra um PR com descrição detalhada
+4. Abra um PR
 
 **Documentar Cantadores:**
-1. Pesquise biografia, trajetória, estilos favoritos
-2. Adicione informações estruturadas
-3. Inclua fontes e referências
+- Biografias, trajetórias, estilos favoritos
+- Fontes e referências bibliográficas
+- Fotos (com permissão)
 
 **Transcrever Repentes:**
-1. Use a ferramenta de backoffice (em breve)
-2. Ou faça upload de MP3 e deixe a IA transcrever
-3. Revise e corrija adaptações fonéticas importantes
+- Use a ferramenta de backoffice (em desenvolvimento)
+- Revise adaptações fonéticas importantes
 
-### 💻 Contribuindo com Código
+### 💻 Código
 
 **Áreas que precisam de ajuda:**
-- Frontend (React + TailwindCSS + TanStack)
-- Backend tools e workflows (Mastra + Deco)
-- Database schema (Drizzle ORM + SQLite)
-- Análise de IA (prompts, validação)
+- Frontend (React + TailwindCSS + TanStack Router)
+- Backend (Deco Tools e Workflows)
+- Database (Drizzle ORM + SQLite)
+- Análise de IA (prompts, validação de estrutura)
 
 **Leia antes:**
-- [Regras de Desenvolvimento](.cursorrules-vilanova) (IA guidelines)
-- [Planos de Páginas](./plans/) (specs completas)
+- [Regras de Desenvolvimento](.cursorrules-vilanova)
+- [Planos de Páginas](./plans/)
+- [Documentação Deco](https://docs.deco.page)
 
-### 🎨 Contribuindo com Design
-
-**Precisamos de:**
-- Ilustrações culturais (evitar clichês de IA)
-- Ícones para estilos de repente
-- Melhorias de UX/UI
-- Visualizações de dados (métrica, rimas)
-
-### 📖 Contribuindo com Documentação
+### 📖 Documentação
 
 - Melhorar READMEs
-- Escrever tutoriais
-- Documentar processos
-- Traduzir conteúdo
+- Escrever tutoriais sobre estilos
+- Documentar o processo de catalogação
+- Criar guias de contribuição
 
 ---
 
 ## 🧠 Usando IA para Contribuir
 
-Este projeto é **IA-friendly**! Recomendamos usar editores com IA:
+Este projeto é **IA-friendly**! O template Deco funciona muito bem com editores de IA.
 
-**Cursor / Windsurf / VS Code + Copilot:**
-- Leia os arquivos em `/.cursorrules-vilanova` e `/plans/`
-- Use o contexto do projeto para gerar código consistente
-- A IA entende nossa arquitetura (Deco + Mastra + TanStack)
+**Recomendamos:**
+- Cursor
+- Windsurf
+- VS Code + GitHub Copilot
 
-**Dicas:**
-- Antes de codificar, leia os plans relevantes
-- Use os exemplos existentes como referência
-- Peça à IA para seguir os padrões do projeto
+**Como usar:**
+1. Abra o projeto no seu editor com IA
+2. Leia os arquivos em `/.cursorrules-vilanova` e `/plans/`
+3. A IA entenderá nossa arquitetura (Deco + Mastra + TanStack)
+4. Peça à IA para seguir os padrões do projeto
+5. Use exemplos existentes como referência
 
 ---
 
@@ -266,10 +345,21 @@ Você é livre para:
 
 ## 🔗 Links Úteis
 
-- 🌐 **Site:** [vilanova.deco.page](https://vilanova.deco.page) (em breve)
-- 💻 **GitHub:** [github.com/lucis/vilanova](https://github.com/lucis/vilanova)
+### Projeto:
+- 🌐 **Site:** [localhost-aa14baa7.deco.host](https://localhost-aa14baa7.deco.host) (em desenvolvimento)
+- 💻 **GitHub:** [github.com/lucis/vilanova](http://github.com/lucis/vilanova)
+- 📋 **Issues:** [Veja como ajudar](http://github.com/lucis/vilanova/issues)
+- 💬 **Discussões:** [GitHub Discussions](http://github.com/lucis/vilanova/discussions)
+
+### Conteúdo:
 - 📺 **Websérie:** [Entre Cordas e Poesia](https://www.youtube.com/watch?v=ULbBggbGpB8&list=PLngiJpynwciFIwyrG_EiOW-sKm1tRXSGU)
-- 📖 **Issues:** [Veja como ajudar](https://github.com/lucis/vilanova/issues)
+- 🎵 **Ivanildo Vilanova:** [Dicionário MPB](https://dicionariompb.com.br/artista/ivanildo-vilanova/)
+- 📚 **Transcrições:** [/entre-cordas-e-poesia](./entre-cordas-e-poesia/)
+
+### Tecnologia:
+- 🔧 **Deco Platform:** [decocms.com](https://decocms.com)
+- 📖 **Documentação:** [docs.deco.page](https://docs.deco.page)
+- 🚀 **Deploy:** Baseado em Cloudflare Workers
 
 ---
 

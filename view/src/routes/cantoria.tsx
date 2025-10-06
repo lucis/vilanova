@@ -1,0 +1,322 @@
+import { createRoute, Link, type RootRoute } from "@tanstack/react-router";
+import { ArrowLeft, Music, MapPin, Calendar } from "lucide-react";
+import acervoData from "../../../repentes/acervo-estruturado.json";
+
+interface Cantoria {
+  id: string;
+  slug: string;
+  titulo: string;
+  estilo: {
+    nome: string;
+    versos_por_estrofe: number;
+    metrica: string;
+    esquema_rima: string;
+    mote_fixo?: string;
+  };
+  cantadores: Array<{
+    nome: string;
+    slug: string | null;
+    apelido?: string;
+    dupla?: string;
+  }>;
+  local: string | null;
+  ano: number | null;
+  contexto: string;
+  estrofes: Array<{
+    numero: number;
+    cantador: string;
+    versos: string[];
+    tema: string;
+  }>;
+  links: {
+    youtube: string;
+    spotify: string | null;
+  };
+  transcricao_path: string;
+}
+
+function CantoriaDetail() {
+  const { slug } = CantoriaDetailRoute.useParams();
+  
+  const cantoria = acervoData.repentes.find(
+    (r: any) => r.slug === slug
+  ) as Cantoria | undefined;
+
+  if (!cantoria) {
+    return (
+      <div className="min-h-screen bg-[#F5EBE0] flex items-center justify-center p-6">
+        <div className="text-center">
+          <h1 className="font-serif text-3xl font-bold text-[#2E5266] mb-4">
+            Cantoria não encontrada
+          </h1>
+          <Link to="/" className="text-[#C84B31] hover:underline">
+            ← Voltar para o início
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-[#F5EBE0]">
+      {/* Header */}
+      <header className="bg-white border-b-2 border-[#8B6F47] py-4 px-5 md:px-12">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <Link to="/" className="inline-flex items-center gap-2 text-[#2E5266] hover:text-[#C84B31] transition-colors">
+            <ArrowLeft className="w-5 h-5" />
+            <span className="font-semibold">Voltar</span>
+          </Link>
+          
+          <h1 className="font-serif text-2xl font-bold text-[#C84B31]">
+            Vilanova
+          </h1>
+        </div>
+      </header>
+
+      {/* Hero da Cantoria */}
+      <section className="py-12 md:py-16 px-5 md:px-12 bg-gradient-to-b from-white to-[#F5EBE0]">
+        <div className="max-w-5xl mx-auto">
+          {/* Breadcrumb */}
+          <div className="text-sm text-[#2E5266]/60 mb-6">
+            <Link to="/" className="hover:text-[#C84B31]">Início</Link>
+            <span className="mx-2">→</span>
+            <span>Cantorias</span>
+            <span className="mx-2">→</span>
+            <span className="text-[#2E5266]">{cantoria.titulo}</span>
+          </div>
+          
+          {/* Título */}
+          <h1 className="font-serif text-4xl md:text-5xl font-bold text-[#2E5266] mb-4">
+            {cantoria.titulo}
+          </h1>
+          
+          {/* Badge do Estilo */}
+          <div className="inline-block bg-[#C84B31] text-white px-4 py-2 rounded-full font-semibold mb-6">
+            {cantoria.estilo.nome}
+          </div>
+          
+          {/* Metadados */}
+          <div className="grid md:grid-cols-3 gap-4 mb-8">
+            {cantoria.local && (
+              <div className="flex items-center gap-2 text-[#2E5266]/80">
+                <MapPin className="w-5 h-5 text-[#C84B31]" />
+                <span>{cantoria.local}</span>
+              </div>
+            )}
+            
+            {cantoria.ano && (
+              <div className="flex items-center gap-2 text-[#2E5266]/80">
+                <Calendar className="w-5 h-5 text-[#C84B31]" />
+                <span>{cantoria.ano}</span>
+              </div>
+            )}
+            
+            <div className="flex items-center gap-2 text-[#2E5266]/80">
+              <Music className="w-5 h-5 text-[#C84B31]" />
+              <span>{cantoria.estilo.metrica}</span>
+            </div>
+          </div>
+          
+          {/* Cantadores */}
+          <div className="bg-white border-2 border-[#8B6F47] rounded-lg p-6 mb-8">
+            <h3 className="font-semibold text-lg text-[#2E5266] mb-4">Cantadores:</h3>
+            <div className="flex flex-wrap gap-4">
+              {cantoria.cantadores.map((cantador, idx) => (
+                <div key={idx} className="flex items-center gap-2">
+                  <div className="w-12 h-12 bg-[#C84B31]/10 rounded-full flex items-center justify-center">
+                    <span className="text-xl">🎵</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-[#2E5266]">{cantador.nome}</p>
+                    {cantador.apelido && (
+                      <p className="text-xs text-[#2E5266]/60 italic">{cantador.apelido}</p>
+                    )}
+                    {cantador.dupla && (
+                      <p className="text-xs text-[#2E5266]/60">{cantador.dupla}</p>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          {/* Informações do Estilo */}
+          <div className="bg-[#E8D4B0] border-l-4 border-[#4A7C59] p-6 rounded-r-lg mb-8">
+            <h3 className="font-semibold text-lg text-[#2E5266] mb-3">
+              Sobre o estilo {cantoria.estilo.nome}:
+            </h3>
+            <ul className="space-y-2 text-[#2E5266]/80">
+              <li>• <strong>Versos por estrofe:</strong> {cantoria.estilo.versos_por_estrofe}</li>
+              <li>• <strong>Métrica:</strong> {cantoria.estilo.metrica}</li>
+              <li>• <strong>Esquema de rima:</strong> {cantoria.estilo.esquema_rima}</li>
+              {cantoria.estilo.mote_fixo && (
+                <li>• <strong>Mote fixo:</strong> "{cantoria.estilo.mote_fixo}"</li>
+              )}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Estrofes */}
+      <section className="py-12 md:py-16 px-5 md:px-12">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#2E5266] mb-8 text-center">
+            Estrofes
+          </h2>
+          
+          {cantoria.estrofes.length > 0 ? (
+            <div className="space-y-8">
+              {cantoria.estrofes.map((estrofe, idx) => (
+                <div
+                  key={idx}
+                  className="border-2 border-[#8B6F47] bg-white rounded-lg overflow-hidden"
+                >
+                  {/* Header */}
+                  <div className="p-4 bg-[#C84B31]/5 border-b-2 border-[#8B6F47]">
+                    <div className="flex items-center justify-between flex-wrap gap-3">
+                      <div>
+                        <span className="text-sm font-bold text-[#2E5266]">
+                          Estrofe {estrofe.numero}
+                        </span>
+                        <span className="text-[#2E5266]/50 mx-2">·</span>
+                        <span className="text-sm text-[#2E5266]/70">
+                          {estrofe.cantador}
+                        </span>
+                      </div>
+                      {estrofe.tema && (
+                        <span className="text-xs text-[#2E5266]/60 italic">
+                          {estrofe.tema}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  
+                  {/* Versos */}
+                  <div className="p-6 md:p-8 bg-[#E8D4B0]">
+                    <div className="space-y-2">
+                      {estrofe.versos.map((verso, vIdx) => (
+                        <p
+                          key={vIdx}
+                          className="text-base md:text-lg text-[#2E5266] leading-relaxed italic"
+                        >
+                          {verso}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="bg-white border-2 border-[#8B6F47] rounded-lg p-8 text-center">
+              <p className="text-[#2E5266]/70 mb-4">
+                As estrofes desta cantoria ainda estão sendo extraídas e estruturadas.
+              </p>
+              <a
+                href={`https://github.com/lucis/vilanova/blob/main${cantoria.transcricao_path}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[#C84B31] font-semibold hover:underline"
+              >
+                Ver transcrição completa no GitHub →
+              </a>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Contexto */}
+      {cantoria.contexto && (
+        <section className="py-12 px-5 md:px-12 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-[#E8D4B0] border-l-4 border-[#C84B31] p-6 rounded-r-lg">
+              <h3 className="font-semibold text-lg text-[#2E5266] mb-2">Contexto:</h3>
+              <p className="text-[#2E5266]/80">{cantoria.contexto}</p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Links Externos */}
+      {(cantoria.links.youtube || cantoria.links.spotify) && (
+        <section className="py-12 px-5 md:px-12">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-serif text-2xl font-bold text-[#2E5266] mb-6 text-center">
+              Ouça Esta Cantoria
+            </h2>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              {cantoria.links.youtube && (
+                <a
+                  href={cantoria.links.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#FF0000] text-white font-semibold rounded-lg hover:bg-[#CC0000] transition-all duration-300"
+                >
+                  ▶ YouTube
+                </a>
+              )}
+              
+              {cantoria.links.spotify && (
+                <a
+                  href={cantoria.links.spotify}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#1DB954] text-white font-semibold rounded-lg hover:bg-[#1aa34a] transition-all duration-300"
+                >
+                  ♫ Spotify
+                </a>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* CTA Contribuir */}
+      <section className="py-16 px-5 md:px-12 bg-gradient-to-b from-[#2E5266] to-[#4A7C59]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="font-serif text-3xl font-bold text-white mb-4">
+            Ajude a Preservar Mais Cantorias
+          </h2>
+          <p className="text-lg text-white/90 mb-6 leading-relaxed">
+            Tem gravações de repentes? Conhece cantadores? 
+            Contribua com o acervo do Vilanova.
+          </p>
+          <a
+            href="http://github.com/lucis/vilanova/issues"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#2E5266] font-bold rounded-lg hover:bg-white/90 transition-all duration-300"
+          >
+            Contribuir no GitHub
+          </a>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-[#2E5266] py-8 px-5 md:px-12">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-sm text-[#F5EBE0]/60">
+            © 2025 Vilanova · Open Source (MIT) · vilanova.deco.page
+          </p>
+          <p className="text-sm text-[#F5EBE0]/60 mt-2">
+            Feito com ❤️ para o Nordeste brasileiro
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export const CantoriaDetailRoute = createRoute({
+  path: "/cantorias/$slug",
+  component: CantoriaDetail,
+  getParentRoute: () => undefined as any,
+});
+
+export default (parentRoute: RootRoute) =>
+  createRoute({
+    path: "/cantorias/$slug",
+    component: CantoriaDetail,
+    getParentRoute: () => parentRoute,
+  });

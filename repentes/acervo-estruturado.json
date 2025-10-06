@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "title": "Acervo Estruturado de Repentes - Vilanova",
+  "description": "Catálogo detalhado com estrofes completas para exibição nas páginas",
+  "repentes": [
+    {
+      "id": "oitavas-os-nonatos-sao-lourenco",
+      "slug": "oitavas-os-nonatos-sao-lourenco-mata",
+      "titulo": "Oitavas em São Lourenço da Mata",
+      "estilo": {
+        "nome": "Oitava",
+        "slug": "oitava",
+        "versos_por_estrofe": 8,
+        "metrica": "setissílabos (7 sílabas)",
+        "esquema_rima": "ABBAACCA"
+      },
+      "cantadores": [
+        {
+          "nome": "Nonato Costa",
+          "slug": "nonato-costa",
+          "dupla": "Os Nonatos"
+        },
+        {
+          "nome": "Nonato Neto",
+          "slug": "nonato-neto",
+          "dupla": "Os Nonatos"
+        }
+      ],
+      "local": "São Lourenço da Mata, Pernambuco",
+      "ano": null,
+      "contexto": "Festival/Competição",
+      "estrofes": [
+        {
+          "numero": 1,
+          "cantador": "Nonato Costa",
+          "versos": [
+            "São Lourenço da Mata nos escuta",
+            "e pelo povo que aplaude, agora exalto",
+            "Mesmo estando em primeiro na disputa,",
+            "com respeito aos outros eu não falto",
+            "Obrigado a vocês desta cidade",
+            "pela grande receptividade",
+            "Quem não calça as sandálias da humildade",
+            "torce o pé se correr desalta"
+          ],
+          "tema": "Humildade na competição, respeito aos adversários"
+        },
+        {
+          "numero": 2,
+          "cantador": "Nonato Costa",
+          "versos": [
+            "Aos colegas que ficam aqui, ressalto",
+            "que é comum ter pequeno, grande e médio",
+            "Os que vão do Recife pra o Planalto",
+            "vão atrás de troféu, fama e assédio",
+            "Na fornalha não diminui a frágua,",
+            "não pretendo levar nem deixar mágoa",
+            "Chega a hora da onça beber água",
+            "e quem sofrer da pressão tome remédio"
+          ],
+          "tema": "Pressão da competição, sabedoria sobre rivalidade"
+        },
+        {
+          "numero": 3,
+          "cantador": "Nonato Neto",
+          "versos": [
+            "Encarar público, grande palco e prédio,",
+            "anotei como meta em minha lida",
+            "As piadas injustas só dão tédio",
+            "a quem é revoltado com a vida",
+            "O triunfo Deus dá a quem merece",
+            "pelo sonho do título a pressão cresce",
+            "e é no fim da ladeira que aparece",
+            "o maior obstáculo da corrida"
+          ],
+          "tema": "Desafios da carreira, superação"
+        },
+        {
+          "numero": 4,
+          "cantador": "Nonato Neto",
+          "versos": [
+            "Qualidade é um item que invalida",
+            "a ação do processo de derrota",
+            "com a fonte da mente abastecida",
+            "uma seca de rimas não esgota",
+            "A cobrança do povo e da imprensa,",
+            "três jurados julgando na presença",
+            "e meio ponto faz muita diferença",
+            "quando a gente precisa de uma nota"
+          ],
+          "tema": "Preparação mental, julgamento"
+        }
+      ],
+      "links": {
+        "youtube": "",
+        "spotify": null
+      },
+      "transcricao_path": "/repentes/oitavas-dos-nonatos.txt",
+      "audio_path": null,
+      "destaque": true
+    },
+    {
+      "id": "galope-os-nonatos-serra-talhada",
+      "slug": "galope-beira-mar-os-nonatos-serra-talhada",
+      "titulo": "Galope à Beira Mar em Serra Talhada",
+      "estilo": {
+        "nome": "Galope à Beira Mar",
+        "slug": "galope-beira-mar",
+        "versos_por_estrofe": 10,
+        "metrica": "decassílabos (10 sílabas)",
+        "esquema_rima": "AAAAABBCCM",
+        "mote_fixo": "Nos dez de galope na beira do mar"
+      },
+      "cantadores": [
+        {
+          "nome": "Nonato Costa",
+          "slug": "nonato-costa",
+          "dupla": "Os Nonatos"
+        },
+        {
+          "nome": "Nonato Neto",
+          "slug": "nonato-neto",
+          "dupla": "Os Nonatos"
+        }
+      ],
+      "local": "Serra Talhada, Pernambuco",
+      "ano": 2023,
+      "duracao": "3:45",
+      "contexto": "Performance",
+      "estrofes": [],
+      "links": {
+        "youtube": "",
+        "spotify": null
+      },
+      "transcricao_path": "/repentes/galope-beira-mar-os-nonatos.txt",
+      "audio_path": null,
+      "destaque": true
+    },
+    {
+      "id": "galope-sebastiao-ivanildo",
+      "slug": "galope-beira-mar-sebastiao-ivanildo-caruaru",
+      "titulo": "Galope à Beira Mar - Sebastião da Silva e Ivanildo Vilanova",
+      "estilo": {
+        "nome": "Galope à Beira Mar",
+        "slug": "galope-beira-mar",
+        "versos_por_estrofe": 10,
+        "metrica": "decassílabos (10 sílabas)",
+        "esquema_rima": "AAAAABBCCM",
+        "mote_fixo": "Nos dez de galope na beira do mar"
+      },
+      "cantadores": [
+        {
+          "nome": "Sebastião da Silva",
+          "slug": "sebastiao-da-silva",
+          "apelido": "O Matemático dos Versos"
+        },
+        {
+          "nome": "Ivanildo Vilanova",
+          "slug": "ivanildo-vilanova",
+          "apelido": "O Poeta do Improviso"
+        }
+      ],
+      "local": "Caruaru, Pernambuco",
+      "ano": null,
+      "contexto": "Duelo histórico entre mestres",
+      "estrofes": [],
+      "links": {
+        "youtube": "",
+        "spotify": null
+      },
+      "transcricao_path": "/repentes/galope-beira-mar-sebastiao-ivanildo.txt",
+      "audio_path": null,
+      "destaque": true
+    },
+    {
+      "id": "martelo-alagoano",
+      "slug": "martelo-alagoano",
+      "titulo": "Martelo Alagoano",
+      "estilo": {
+        "nome": "Martelo Alagoano",
+        "slug": "martelo-alagoano",
+        "versos_por_estrofe": 10,
+        "metrica": "decassílabos (10 sílabas)",
+        "esquema_rima": "AAAAAAAAAB",
+        "mote_fixo": "Nos dez pés de martelo alagoano (repetido 3x)"
+      },
+      "cantadores": [
+        {
+          "nome": "A identificar",
+          "slug": null
+        }
+      ],
+      "local": null,
+      "ano": null,
+      "contexto": "A documentar",
+      "estrofes": [],
+      "links": {
+        "youtube": "",
+        "spotify": null
+      },
+      "transcricao_path": "/repentes/martelo-alagoano.txt",
+      "audio_path": null,
+      "destaque": false
+    }
+  ],
+  "metadata": {
+    "ultima_atualizacao": "2025-10-05",
+    "total_repentes": 4,
+    "total_estrofes_catalogadas": 4,
+    "observacoes": [
+      "Estrofes completas precisam ser extraídas das transcrições",
+      "Identificação de cantadores individuais em duplas (estimativa inicial)",
+      "Links do YouTube serão adicionados posteriormente"
+    ]
+  }
+}

@@ -43,28 +43,28 @@ function HomePage() {
                 </a>
               </div>
               
-              <div className="prose prose-lg max-w-none">
-                <p className="text-lg md:text-xl text-[#2E5266]/80 leading-relaxed">
-                  Há gerações, cantadores de viola improvisam versos que guardam 
-                  a memória e a sabedoria do Nordeste. São os "repórteres do sertão", 
+              <div className="prose prose-lg max-w-none space-y-6">
+                <p className="text-xl md:text-2xl text-[#2E5266]/80 leading-relaxed">
+                  Há gerações, <strong>cantadores de viola</strong> improvisam versos que guardam 
+                  a memória e a sabedoria do Nordeste. São os <strong>"repórteres do sertão"</strong>, 
                   professores que levaram conhecimento onde livro não chegava.
                 </p>
                 
-                <p className="text-lg md:text-xl text-[#2E5266]/80 leading-relaxed">
-                  Mas esse acervo imenso está espalhado: em gravações de rádio antigas, 
-                  fitas cassete esquecidas, vídeos perdidos no YouTube, na memória 
-                  de mestres que não estarão aqui para sempre.
+                <p className="text-xl md:text-2xl text-[#2E5266]/80 leading-relaxed">
+                  Mas esse <strong>acervo imenso está espalhado</strong>: em gravações de rádio antigas, 
+                  fitas cassete esquecidas, vídeos perdidos no YouTube, na <strong>memória 
+                  de mestres</strong> que não estarão aqui para sempre.
                 </p>
                 
-                <p className="text-lg md:text-xl text-[#2E5266]/80 leading-relaxed font-medium">
-                  O Vilanova usa Inteligência Artificial para catalogar, transcrever 
+                <p className="text-xl md:text-2xl text-[#2E5266]/80 leading-relaxed font-semibold">
+                  O Vilanova usa <strong>Inteligência Artificial</strong> para catalogar, transcrever 
                   e organizar esse patrimônio cultural disperso. <strong>Somos open source 
                   e precisamos de contribuidores.</strong>
                 </p>
               </div>
               
-              {/* CTAs Desktop */}
-              <div className="hidden md:flex gap-4 pt-4">
+              {/* CTA Desktop */}
+              <div className="hidden md:block pt-4">
                 <a 
                   href="http://github.com/lucis/vilanova" 
                   target="_blank" 
@@ -74,17 +74,6 @@ function HomePage() {
                   <Github className="w-5 h-5" />
                   Contribuir no GitHub
                 </a>
-                
-                <button className="px-8 py-4 border-2 border-[#2E5266] text-[#2E5266] font-semibold rounded-lg hover:bg-[#2E5266]/5 transition-all duration-300">
-                  Ver Acervo
-                </button>
-              </div>
-              
-              {/* CTA Ver Acervo - mobile only (GitHub já aparece acima) */}
-              <div className="block md:hidden">
-                <button className="w-full px-8 py-4 border-2 border-[#2E5266] text-[#2E5266] font-semibold rounded-lg hover:bg-[#2E5266]/5 transition-all duration-300">
-                  Ver Acervo
-                </button>
               </div>
             </div>
             
@@ -96,13 +85,6 @@ function HomePage() {
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
-          </div>
-        </div>
-        
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-[#8B6F47] rounded-full flex items-start justify-center p-2">
-            <div className="w-1.5 h-3 bg-[#8B6F47] rounded-full"></div>
           </div>
         </div>
       </section>
@@ -124,130 +106,144 @@ function HomePage() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-3">
                 <div className="text-3xl mb-2">🎸</div>
-                <h3 className="font-semibold text-lg text-[#2E5266]">
+                <h3 className="font-semibold text-xl text-[#2E5266]">
                   Dois Cantadores Alternados
                 </h3>
-                <p className="text-[#2E5266]/80 text-sm leading-relaxed">
-                  O repente se dá sempre em dupla, cada poeta aguarda sua vez de improvisar a resposta.
+                <p className="text-[#2E5266]/80 text-lg leading-relaxed">
+                  O repente se dá sempre em <strong>dupla</strong>, cada poeta aguarda sua vez de <strong>improvisar a resposta</strong>.
                 </p>
               </div>
               
               <div className="space-y-3">
                 <div className="text-3xl mb-2">🎵</div>
-                <h3 className="font-semibold text-lg text-[#2E5266]">
+                <h3 className="font-semibold text-xl text-[#2E5266]">
                   Viola de 10 Cordas
                 </h3>
-                <p className="text-[#2E5266]/80 text-sm leading-relaxed">
-                  Instrumento característico na afinação nordestina. Quando é pandeiro, chama-se coco de embolada.
+                <p className="text-[#2E5266]/80 text-lg leading-relaxed">
+                  Instrumento característico na <strong>afinação nordestina</strong>. Quando é pandeiro, chama-se <strong>coco de embolada</strong>.
                 </p>
               </div>
               
               <div className="space-y-3">
                 <div className="text-3xl mb-2">📏</div>
-                <h3 className="font-semibold text-lg text-[#2E5266]">
+                <h3 className="font-semibold text-xl text-[#2E5266]">
                   Métrica Rigorosa
                 </h3>
-                <p className="text-[#2E5266]/80 text-sm leading-relaxed">
-                  Predominam versos heptassílabos (7 sílabas) e decassílabos (10 sílabas). Contagem precisa obrigatória.
+                <p className="text-[#2E5266]/80 text-lg leading-relaxed">
+                  Predominam versos <strong>heptassílabos (7 sílabas)</strong> e <strong>decassílabos (10 sílabas)</strong>. Contagem precisa obrigatória.
                 </p>
               </div>
               
               <div className="space-y-3">
                 <div className="text-3xl mb-2">🔗</div>
-                <h3 className="font-semibold text-lg text-[#2E5266]">
+                <h3 className="font-semibold text-xl text-[#2E5266]">
                   Rima Perfeita
                 </h3>
-                <p className="text-[#2E5266]/80 text-sm leading-relaxed">
-                  Não se aceita rima toante ou aproximada. O extremo rigor na rima é marca da cantoria.
+                <p className="text-[#2E5266]/80 text-lg leading-relaxed">
+                  <strong>Não se aceita rima toante ou aproximada.</strong> O extremo rigor na rima é marca da cantoria.
                 </p>
               </div>
               
               <div className="space-y-3">
                 <div className="text-3xl mb-2">⚡</div>
-                <h3 className="font-semibold text-lg text-[#2E5266]">
+                <h3 className="font-semibold text-xl text-[#2E5266]">
                   Improviso Imediato
                 </h3>
-                <p className="text-[#2E5266]/80 text-sm leading-relaxed">
-                  Versos criados na hora, sem decorar. É isso que caracteriza o "repente".
+                <p className="text-[#2E5266]/80 text-lg leading-relaxed">
+                  Versos criados <strong>na hora, sem decorar</strong>. É isso que caracteriza o <strong>"repente"</strong>.
                 </p>
               </div>
               
               <div className="space-y-3">
                 <div className="text-3xl mb-2">🗺️</div>
-                <h3 className="font-semibold text-lg text-[#2E5266]">
+                <h3 className="font-semibold text-xl text-[#2E5266]">
                   Forte no Nordeste
                 </h3>
-                <p className="text-[#2E5266]/80 text-sm leading-relaxed">
-                  Origem na divisa Paraíba-Pernambuco (Teixeira/Rio Pajeú) no século XIX. Presente em todo o Nordeste brasileiro.
+                <p className="text-[#2E5266]/80 text-lg leading-relaxed">
+                  Origem na divisa <strong>Paraíba-Pernambuco</strong> (Teixeira/Rio Pajeú) no <strong>século XIX</strong>. Presente em todo o Nordeste brasileiro.
                 </p>
               </div>
             </div>
           </div>
           
-          {/* Citação em Destaque */}
-          <div className="border-l-4 border-[#C84B31] bg-[#E8D4B0] p-6 md:p-8 rounded-r-lg mb-12">
-            <p className="italic text-lg md:text-xl text-[#2E5266] leading-relaxed mb-2">
-              "Quem não calça as sandálias da humildade<br />
-              torce o pé se correr desalta"
-            </p>
-            <p className="text-sm text-[#2E5266]/60 font-medium">
-              — Os Nonatos, em Oitava (São Lourenço da Mata, PE)
-            </p>
-            <p className="text-xs text-[#2E5266]/50 mt-2 not-italic">
-              Verso sobre humildade na competição poética
-            </p>
+          {/* Exemplo de Estrofe Completa */}
+          <div className="border-2 border-[#8B6F47] bg-white rounded-lg overflow-hidden mb-12">
+            <div className="bg-[#E8D4B0] p-6 md:p-8">
+              <p className="italic text-base md:text-lg text-[#2E5266] leading-relaxed space-y-2">
+                <span className="block">São Lourenço da Mata nos escuta</span>
+                <span className="block">e pelo povo que aplaude, agora exalto</span>
+                <span className="block">Mesmo estando em primeiro na disputa,</span>
+                <span className="block">com respeito aos outros eu não falto</span>
+                <span className="block">Obrigado a vocês desta cidade</span>
+                <span className="block">pela grande receptividade</span>
+                <span className="block font-semibold">Quem não calça as sandálias da humildade</span>
+                <span className="block font-semibold">torce o pé se correr desalta</span>
+              </p>
+            </div>
+            <div className="bg-white p-4 border-t-2 border-[#8B6F47]">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <span className="text-sm font-semibold text-[#2E5266]">Nonato Costa</span>
+                  <span className="text-xs text-[#2E5266]/50">·</span>
+                  <span className="text-sm text-[#2E5266]/70">Oitava</span>
+                </div>
+                <Link to="/cantorias/$slug" params={{ slug: "oitavas-os-nonatos-sao-lourenco-mata" }} className="text-sm text-[#C84B31] font-semibold hover:underline">
+                  Ver cantoria completa →
+                </Link>
+              </div>
+          </div>
           </div>
           
           {/* Contexto Histórico */}
-          <div className="prose prose-lg max-w-none space-y-4">
-            <p className="text-base text-[#2E5266]/85 leading-relaxed">
-              A cantoria de viola tem raízes nos trovadores de Provença (França, 
+          <div className="prose prose-lg max-w-none space-y-6">
+            <p className="text-xl text-[#2E5266]/85 leading-relaxed">
+              A cantoria de viola tem raízes nos <strong>trovadores de Provença</strong> (França, 
               século XI) e na trova medieval portuguesa. No Brasil, encontrou 
               terreno fértil no sertão nordestino. Historicamente, situa-se a 
-              origem do repentista brasileiro na divisa entre Paraíba e Pernambuco, 
-              região de Teixeira e Rio Pajeú, no século XIX.
+              origem do repentista brasileiro na divisa entre <strong>Paraíba e Pernambuco</strong>, 
+              região de <strong>Teixeira e Rio Pajeú</strong>, no século XIX.
             </p>
             
-            <p className="text-base text-[#2E5266]/85 leading-relaxed">
-              Por volta de 1830, surgem os primeiros cantadores de que se tem 
+            <p className="text-xl text-[#2E5266]/85 leading-relaxed">
+              Por volta de <strong>1830</strong>, surgem os primeiros cantadores de que se tem 
               registro: <strong>Urgulino do Sabugi</strong> (considerado o primeiro), seu irmão 
-              Nicandro, ambos filhos de Agostinho da Costa, "o Pai da Poesia 
+              Nicandro, ambos filhos de <strong>Agostinho da Costa</strong>, "o Pai da Poesia 
               Popular". Seguiram-se Germano da Lagoa, Romano da Mãe D'Água, 
-              Silvino Pirauá Lima (criador da Sextilha).
+              <strong>Silvino Pirauá Lima</strong> (criador da Sextilha).
             </p>
             
-            <p className="text-base text-[#2E5266]/85 leading-relaxed">
-              O termo "repente" vem do improviso — criar versos "de repente", 
-              na hora. Como observa Câmara Cascudo, os cantadores são 
-              "representantes legítimos de todos os bardos menestréis".
+            <p className="text-xl text-[#2E5266]/85 leading-relaxed">
+              O termo <strong>"repente"</strong> vem do improviso — criar versos "de repente", 
+              na hora. Como observa <strong>Câmara Cascudo</strong>, os cantadores são 
+              <strong>"representantes legítimos de todos os bardos menestréis"</strong>.
             </p>
             
             <div className="bg-[#E8D4B0] p-6 rounded-lg border-l-4 border-[#4A7C59] my-6">
-              <h4 className="font-semibold text-[#2E5266] mb-3">Distinções Importantes:</h4>
-              <ul className="space-y-2 text-sm text-[#2E5266]/85">
+              <h4 className="font-semibold text-xl text-[#2E5266] mb-3">Distinções Importantes:</h4>
+              <ul className="space-y-3 text-lg text-[#2E5266]/85">
                 <li><strong>Repente ≠ Cordel:</strong> Cordel é poesia publicada em folhetos. Repente é poesia oral improvisada.</li>
                 <li><strong>Repente ≠ Embolada:</strong> Quando o instrumento é pandeiro (não viola), o gênero se chama coco de embolada, com ritmo mais rápido.</li>
                 <li><strong>Cantoria de viola:</strong> Dois cantadores com viola de 10 cordas na afinação nordestina, alternando versos improvisados.</li>
               </ul>
             </div>
             
-            <p className="text-base text-[#2E5266]/85 leading-relaxed italic">
-              "No Nordeste, os jesuítas catequizavam por meio da poesia por 
+            <p className="text-xl text-[#2E5266]/85 leading-relaxed italic">
+              "No Nordeste, os <strong>jesuítas catequizavam por meio da poesia</strong> por 
               ficar mais fácil de conservar a mensagem na memória, seguindo 
               assim o estilo da Grécia Antiga."
             </p>
             
-            <p className="text-base text-[#2E5266]/85 leading-relaxed">
-              A função social do cantador foi ampla: "repórter do sertão, 
-              professor itinerante, guardião da memória oral", como relata 
-              Leonardo Mota. Gerações aprenderam valores, ética, política 
+            <p className="text-xl text-[#2E5266]/85 leading-relaxed">
+              A função social do cantador foi ampla: <strong>"repórter do sertão, 
+              professor itinerante, guardião da memória oral"</strong>, como relata 
+              <strong>Leonardo Mota</strong>. Gerações aprenderam valores, ética, política 
               através da cantoria — em tempos onde livro não chegava ao interior.
             </p>
             
-            <p className="text-base text-[#2E5266]/85 leading-relaxed">
-              Hoje, conforme relatam os próprios cantadores em "Entre Cordas e 
-              Poesia", a tradição enfrenta: preconceito social persistente, 
-              falta de apoio público, diminuição das cantorias de pé de parede, 
+            <p className="text-xl text-[#2E5266]/85 leading-relaxed">
+              Hoje, conforme relatam os próprios cantadores em <strong>"Entre Cordas e 
+              Poesia"</strong>, a tradição enfrenta: preconceito social persistente, 
+              falta de apoio público, <strong>diminuição das cantorias de pé de parede</strong>, 
               e um acervo histórico disperso em risco de se perder.
             </p>
           </div>
@@ -276,32 +272,32 @@ function HomePage() {
             Os Cantadores: Transmissão Oral de Geração em Geração
           </h2>
           
-          <div className="prose prose-lg max-w-4xl mx-auto text-center mb-12 space-y-4">
-            <p className="text-base md:text-lg text-[#2E5266]/80 leading-relaxed">
-              O aprendizado da cantoria se dá tradicionalmente em família. 
+          <div className="prose prose-lg max-w-4xl mx-auto text-center mb-12 space-y-6">
+            <p className="text-xl md:text-2xl text-[#2E5266]/80 leading-relaxed">
+              O aprendizado da cantoria se dá <strong>tradicionalmente em família</strong>. 
               Pai ensina filho, tio ensina sobrinho, avô passa para neto. 
               É comum cantadores relatarem: "aprendi com meu pai", "meu avô 
               era cantador", "herdei do meu tio".
             </p>
             
-            <p className="text-base md:text-lg text-[#2E5266]/80 leading-relaxed">
-              A profissão historicamente enfrentou preconceito social. 
-              No início do século XX, cantador era descrito como "beberrão, 
-              valentão, conquistador, jogador, parasita". Famílias empatavam 
+            <p className="text-xl md:text-2xl text-[#2E5266]/80 leading-relaxed">
+              A profissão historicamente <strong>enfrentou preconceito social</strong>. 
+              No início do século XX, cantador era descrito como <strong>"beberrão, 
+              valentão, conquistador, jogador, parasita"</strong>. Famílias empatavam 
               namoros com cantadores. Esse estigma persiste em algumas regiões.
             </p>
             
-            <p className="text-base md:text-lg text-[#2E5266]/80 leading-relaxed">
-              Mulheres enfrentam obstáculos adicionais. Há registros de 
-              violeiras desde o século XIX (Vovó Pangula, Maria Tebana, 
-              Chica Barrosa), mas o meio sempre foi majoritariamente masculino. 
-              Cantadoras contemporâneas como Fabiane Ribeiro e Rafaela Pereira 
+            <p className="text-xl md:text-2xl text-[#2E5266]/80 leading-relaxed">
+              <strong>Mulheres enfrentam obstáculos adicionais.</strong> Há registros de 
+              violeiras desde o século XIX (<strong>Vovó Pangula, Maria Tebana, 
+              Chica Barrosa</strong>), mas o meio sempre foi majoritariamente masculino. 
+              Cantadoras contemporâneas como <strong>Fabiane Ribeiro</strong> e <strong>Rafaela Pereira</strong> 
               ainda relatam dificuldades específicas por serem mulheres.
             </p>
             
-            <p className="text-base md:text-lg text-[#2E5266]/80 leading-relaxed">
-              Jovens que seguem a cantoria hoje são frequentemente chamados 
-              de "velhos" pelos pares, por escolherem uma arte associada a 
+            <p className="text-xl md:text-2xl text-[#2E5266]/80 leading-relaxed">
+              Jovens que seguem a cantoria hoje são frequentemente <strong>chamados 
+              de "velhos"</strong> pelos pares, por escolherem uma arte associada a 
               gerações anteriores. Mesmo assim, novos cantadores surgem.
             </p>
           </div>
@@ -378,8 +374,8 @@ function HomePage() {
                 "Fui chamado de velho várias vezes por seguir 
                 na cantoria. Mas continuo."
               </p>
-            </div>
-          </div>
+      </div>
+    </div>
           
           {/* CTA */}
           <div className="text-center bg-[#F5EBE0] p-8 rounded-lg">
@@ -391,7 +387,7 @@ function HomePage() {
               Ver Galeria de Cantadores
               <span className="text-xs bg-[#D49B54] text-white px-2 py-1 rounded">EM CONSTRUÇÃO</span>
             </button>
-          </div>
+    </div>
           
           {/* Foto Histórica */}
           <div className="mt-12">
@@ -418,33 +414,33 @@ function HomePage() {
             {/* Card 1 */}
             <div className="border-2 border-[#8B6F47] bg-[#F5EBE0] rounded-lg p-6 md:p-8">
               <div className="text-4xl mb-4">📼</div>
-              <h3 className="font-bold text-xl text-[#2E5266] mb-3">
+              <h3 className="font-bold text-2xl text-[#2E5266] mb-4">
                 Acervo Disperso
               </h3>
-              <p className="text-[#2E5266]/80 leading-relaxed">
-                Repentes históricos estão espalhados: em canais 
-                de YouTube sem views, gravações de rádio antiga, 
-                fitas cassete nas casas dos cantadores.
+              <p className="text-lg text-[#2E5266]/80 leading-relaxed">
+                Repentes históricos estão espalhados: em <strong>canais 
+                de YouTube sem views</strong>, gravações de rádio antiga, 
+                <strong>fitas cassete</strong> nas casas dos cantadores.
               </p>
-              <p className="text-[#2E5266]/80 leading-relaxed mt-3 font-medium">
+              <p className="text-lg text-[#2E5266]/80 leading-relaxed mt-4 font-semibold">
                 Está tudo lá, mas ninguém consegue achar. 
-                Precisamos catalogar antes que se perca.
+                <strong>Precisamos catalogar antes que se perca.</strong>
               </p>
             </div>
             
             {/* Card 2 */}
             <div className="border-2 border-[#8B6F47] bg-[#F5EBE0] rounded-lg p-6 md:p-8">
               <div className="text-4xl mb-4">👴</div>
-              <h3 className="font-bold text-xl text-[#2E5266] mb-3">
+              <h3 className="font-bold text-2xl text-[#2E5266] mb-4">
                 Memória Oral em Risco
               </h3>
-              <p className="text-[#2E5266]/80 leading-relaxed">
-                Ivanildo Vilanova tem 79 anos e continua cantando. 
-                Mas Minervina Ferreira, que acolhia jovens 
+              <p className="text-lg text-[#2E5266]/80 leading-relaxed">
+                <strong>Ivanildo Vilanova tem 79 anos</strong> e continua cantando. 
+                Mas <strong>Minervina Ferreira</strong>, que acolhia jovens 
                 cantadoras, já partiu.
               </p>
-              <p className="text-[#2E5266]/80 leading-relaxed mt-3 font-medium">
-                Cada mestre que se vai leva histórias, técnicas, 
+              <p className="text-lg text-[#2E5266]/80 leading-relaxed mt-4 font-semibold">
+                <strong>Cada mestre que se vai</strong> leva histórias, técnicas, 
                 repentes que nunca foram gravados.
               </p>
             </div>
@@ -452,23 +448,23 @@ function HomePage() {
             {/* Card 3 */}
             <div className="border-2 border-[#8B6F47] bg-[#F5EBE0] rounded-lg p-6 md:p-8">
               <div className="text-4xl mb-4">📉</div>
-              <h3 className="font-bold text-xl text-[#2E5266] mb-3">
+              <h3 className="font-bold text-2xl text-[#2E5266] mb-4">
                 Falta de Valorização
               </h3>
-              <p className="text-[#2E5266]/80 leading-relaxed">
-                "Se tiver que cortar tempo de um evento, cortam 
-                do cordel e da viola" — Anita Alves
+              <p className="text-lg text-[#2E5266]/80 leading-relaxed italic">
+                "Se tiver que cortar tempo de um evento, <strong>cortam 
+                do cordel e da viola</strong>" — Anita Alves
               </p>
-              <p className="text-[#2E5266]/80 leading-relaxed mt-3 font-medium">
-                Falta apoio público, falta inserir nas escolas. 
-                Jovens enfrentam preconceito. Cantorias de pé 
-                de parede estão diminuindo.
+              <p className="text-lg text-[#2E5266]/80 leading-relaxed mt-4 font-semibold">
+                Falta apoio público, <strong>falta inserir nas escolas</strong>. 
+                Jovens enfrentam preconceito. <strong>Cantorias de pé 
+                de parede estão diminuindo.</strong>
               </p>
             </div>
           </div>
-          
-          {/* Citações de Mestres */}
-          <div className="space-y-6 max-w-3xl mx-auto">
+
+          {/* Citação de Mestre */}
+          <div className="max-w-3xl mx-auto">
             <div className="bg-white border-l-4 border-[#C84B31] p-8 rounded-r-lg">
               <p className="text-xl md:text-2xl text-[#2E5266] italic leading-relaxed mb-3">
                 "O repente é puro, é santo, é divino. É uma janela para a alma, 
@@ -476,16 +472,6 @@ function HomePage() {
               </p>
               <p className="text-sm text-[#2E5266]/60 font-medium">
                 — Raimundo Lira, cantador
-              </p>
-            </div>
-            
-            <div className="bg-white border-l-4 border-[#4A7C59] p-6 rounded-r-lg">
-              <p className="text-base text-[#2E5266] italic leading-relaxed mb-2">
-                "Chega a hora da onça beber água<br />
-                e quem sofrer da pressão tome remédio"
-              </p>
-              <p className="text-xs text-[#2E5266]/60 font-medium">
-                — Os Nonatos, em Oitava
               </p>
             </div>
           </div>
@@ -499,12 +485,17 @@ function HomePage() {
             Como o Vilanova Organiza Esse Acervo
           </h2>
           
-          <p className="text-lg text-[#2E5266]/70 text-center max-w-3xl mx-auto mb-12">
-            Usamos Inteligência Artificial para encontrar, catalogar e organizar 
-            o repente nordestino espalhado na internet e na memória oral.
-            <br /><br />
-            <strong>Não estamos criando nada novo. Estamos organizando o que já existe.</strong>
-          </p>
+          <div className="text-xl md:text-2xl text-[#2E5266]/70 text-center max-w-3xl mx-auto mb-12 leading-relaxed space-y-4">
+            <p>
+              Usamos <strong>Inteligência Artificial</strong> para encontrar, catalogar e organizar 
+              o repente nordestino espalhado na internet e na memória oral.
+            </p>
+            
+            <p className="text-2xl font-bold text-[#2E5266]">
+              Não estamos criando nada novo.<br />
+              Estamos organizando o que já existe.
+            </p>
+          </div>
           
           {/* Timeline */}
           <div className="space-y-8 max-w-3xl mx-auto">
@@ -514,13 +505,13 @@ function HomePage() {
                 🔍
               </div>
               <div className="flex-1">
-                <h3 className="font-bold text-xl text-[#2E5266] mb-2">
+                <h3 className="font-bold text-2xl text-[#2E5266] mb-3">
                   Encontramos Repentes na Internet
                 </h3>
-                <p className="text-[#2E5266]/80 leading-relaxed mb-2">
-                  Vasculhamos YouTube, Spotify, SoundCloud, arquivos 
-                  públicos. Identificamos cantorias perdidas em canais 
-                  com 50 views.
+                <p className="text-lg text-[#2E5266]/80 leading-relaxed mb-2">
+                  Vasculhamos <strong>YouTube, Spotify, SoundCloud</strong>, arquivos 
+                  públicos. Identificamos <strong>cantorias perdidas em canais 
+                  com 50 views</strong>.
                 </p>
                 <span className="inline-block text-xs bg-[#D49B54] text-white px-3 py-1 rounded-full">
                   🚧 EM CONSTRUÇÃO
@@ -534,36 +525,37 @@ function HomePage() {
                 🎙️
               </div>
               <div className="flex-1">
-                <h3 className="font-bold text-xl text-[#2E5266] mb-2">
+                <h3 className="font-bold text-2xl text-[#2E5266] mb-3">
                   Transcrevemos Automaticamente
                 </h3>
-                <p className="text-[#2E5266]/80 leading-relaxed mb-2">
-                  MP3/WAV → OpenAI Whisper → Texto estruturado
+                <p className="text-lg text-[#2E5266]/80 leading-relaxed mb-2">
+                  <strong>MP3/WAV → OpenAI Whisper → Texto estruturado</strong>
                   <br /><br />
-                  Respeitamos que "o certo é o que o poeta pronuncia". 
-                  Se canta "história" (e não "história"), mantemos.
+                  Mapeamos cada <strong>estrofe</strong>, identificamos versos, contamos <strong>sílabas 
+                  poéticas</strong>, analisamos <strong>esquemas de rima</strong> e transformamos tudo 
+                  em dados estruturados.
                 </p>
                 <span className="inline-block text-xs bg-[#4A7C59] text-white px-3 py-1 rounded-full">
                   ✅ JÁ FUNCIONA (4 repentes transcritos)
                 </span>
               </div>
-            </div>
-            
+        </div>
+
             {/* Item 3 */}
             <div className="flex gap-6 items-start">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#4A7C59]/20 flex items-center justify-center text-2xl">
                 📊
               </div>
               <div className="flex-1">
-                <h3 className="font-bold text-xl text-[#2E5266] mb-2">
+                <h3 className="font-bold text-2xl text-[#2E5266] mb-3">
                   Analisamos a Estrutura
                 </h3>
                 <div className="text-[#2E5266]/80 leading-relaxed mb-2">
-                  <p className="mb-2">IA identifica automaticamente:</p>
-                  <ul className="list-disc list-inside space-y-1 text-sm">
-                    <li>Qual estilo (Galope, Martelo, Sextilha...)</li>
-                    <li>Métrica de cada verso (contagem de sílabas)</li>
-                    <li>Esquema de rimas</li>
+                  <p className="text-lg mb-3"><strong>IA identifica automaticamente:</strong></p>
+                  <ul className="list-disc list-inside space-y-2 text-lg">
+                    <li>Qual <strong>estilo</strong> (Galope, Martelo, Sextilha...)</li>
+                    <li><strong>Métrica</strong> de cada verso (contagem de sílabas)</li>
+                    <li><strong>Esquema de rimas</strong></li>
                     <li>Adaptações fonéticas intencionais</li>
                   </ul>
                 </div>
@@ -663,78 +655,140 @@ function HomePage() {
             </div>
           </div>
           
-          {/* Exemplos Reais */}
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="border-3 border-[#8B6F47] bg-white rounded-lg p-6">
-              <div className="text-3xl mb-3">🌊</div>
-              <h3 className="font-bold text-lg text-[#2E5266] mb-2">Galope à Beira Mar</h3>
-              <p className="text-sm text-[#2E5266]/70 mb-3">
-                Os Nonatos em Serra Talhada<br />
-                10 versos decassílabos, rimas AAAAABBCCM
-              </p>
-              <div className="bg-[#E8D4B0] p-4 rounded mb-4">
-                <p className="italic text-sm text-[#2E5266] leading-relaxed">
-                  "Quem não calça as sandálias da humildade<br />
-                  torce o pé se correr desalta"
-                </p>
+          {/* Exemplos Reais do Acervo */}
+          <div className="space-y-6">
+            {/* Card 1: Oitava */}
+            <div className="border-2 border-[#8B6F47] bg-white rounded-lg overflow-hidden">
+              <div className="p-4 bg-[#C84B31]/5">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="text-2xl">📖</div>
+                <div>
+                    <h3 className="font-bold text-lg text-[#2E5266]">Oitava</h3>
+                    <p className="text-xs text-[#2E5266]/60">8 versos setissílabos · ABBAACCA</p>
+                  </div>
+                </div>
               </div>
-              <p className="text-xs text-[#2E5266]/60 mb-4">
-                Verso sobre humildade na disputa. Mesmo estando em primeiro lugar, 
-                o poeta ressalta o respeito aos adversários.
-              </p>
-              <button className="text-sm text-[#C84B31] font-semibold hover:underline">
-                Ver Transcrição Completa
-              </button>
-            </div>
-            
-            <div className="border-3 border-[#8B6F47] bg-white rounded-lg p-6">
-              <div className="text-3xl mb-3">🔨</div>
-              <h3 className="font-bold text-lg text-[#2E5266] mb-2">Martelo Alagoano</h3>
-              <p className="text-sm text-[#2E5266]/70 mb-3">
-                Artista a identificar<br />
-                10 versos decassílabos + mote triplo
-              </p>
-              <div className="bg-[#E8D4B0] p-4 rounded mb-4">
-                <p className="italic text-sm text-[#2E5266] leading-relaxed">
-                  "Nos dez pés de martelo alagoano<br />
-                  Nos dez pés de martelo alagoano<br />
-                  Nos dez pés de martelo alagoano"
-                </p>
-              </div>
-              <p className="text-xs text-[#2E5266]/60 mb-4">
-                Característica do Martelo Alagoano: repetição tripla do mote 
-                ao final da estrofe.
-              </p>
-              <button className="text-sm text-[#C84B31] font-semibold hover:underline">
-                Ver Transcrição Completa
-              </button>
-            </div>
-          </div>
-          
-          {/* Mais Exemplos */}
-          <div className="bg-white border-2 border-[#8B6F47] rounded-lg p-6 md:p-8">
-            <h3 className="font-bold text-xl text-[#2E5266] mb-6 text-center">
-              Outros Versos Memoráveis do Acervo
-            </h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="border-l-3 border-[#C84B31] pl-4">
-                <p className="italic text-[#2E5266] leading-relaxed mb-2">
-                  "Chega a hora da onça beber água<br />
-                  e quem sofrer da pressão tome remédio"
-                </p>
-                <p className="text-xs text-[#2E5266]/60">
-                  — Os Nonatos · Oitava
+              
+              <div className="p-6 bg-[#E8D4B0]">
+                <p className="italic text-sm md:text-base text-[#2E5266] leading-relaxed space-y-1">
+                  <span className="block">São Lourenço da Mata nos escuta</span>
+                  <span className="block">e pelo povo que aplaude, agora exalto</span>
+                  <span className="block">Mesmo estando em primeiro na disputa,</span>
+                  <span className="block">com respeito aos outros eu não falto</span>
+                  <span className="block">Obrigado a vocês desta cidade</span>
+                  <span className="block">pela grande receptividade</span>
+                  <span className="block font-semibold">Quem não calça as sandálias da humildade</span>
+                  <span className="block font-semibold">torce o pé se correr desalta</span>
                 </p>
               </div>
               
-              <div className="border-l-3 border-[#C84B31] pl-4">
-                <p className="italic text-[#2E5266] leading-relaxed mb-2">
-                  "Na fornalha não diminui a frágua,<br />
-                  não pretendo levar nem deixar mágoa"
+              <div className="p-4 bg-white border-t-2 border-[#8B6F47]">
+                <div className="flex items-center justify-between flex-wrap gap-3">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-bold text-[#2E5266]">Nonato Costa</span>
+                    <span className="text-[#2E5266]/50">·</span>
+                    <span className="text-sm text-[#2E5266]/70">São Lourenço da Mata, PE</span>
+                  </div>
+                  <a href="/cantorias/oitavas-os-nonatos-sao-lourenco-mata" className="text-sm text-[#C84B31] font-semibold hover:underline">
+                    Ver cantoria completa →
+                  </a>
+                </div>
+              </div>
+                </div>
+
+            {/* Card 2: Martelo */}
+            <div className="border-2 border-[#8B6F47] bg-white rounded-lg overflow-hidden">
+              <div className="p-4 bg-[#D49B54]/5">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="text-2xl">🔨</div>
+                <div>
+                    <h3 className="font-bold text-lg text-[#2E5266]">Martelo Alagoano</h3>
+                    <p className="text-xs text-[#2E5266]/60">10 versos decassílabos + mote triplo</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="p-6 bg-[#E8D4B0]">
+                <p className="text-sm text-[#2E5266]/80 mb-3">
+                  Estrofe completa a ser extraída da transcrição
                 </p>
-                <p className="text-xs text-[#2E5266]/60">
-                  — Os Nonatos · Oitava
+                <p className="italic text-sm md:text-base text-[#2E5266] leading-relaxed space-y-1">
+                  <span className="block font-semibold">[...final da estrofe...]</span>
+                  <span className="block font-semibold">Nos dez pés de martelo alagoano</span>
+                  <span className="block font-semibold">Nos dez pés de martelo alagoano</span>
+                  <span className="block font-semibold">Nos dez pés de martelo alagoano</span>
                 </p>
+                <p className="text-xs text-[#2E5266]/60 mt-3">
+                  * Característica do Martelo: repetição tripla do mote
+                </p>
+              </div>
+              
+              <div className="p-4 bg-white border-t-2 border-[#8B6F47]">
+                <div className="flex items-center justify-between flex-wrap gap-3">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-bold text-[#2E5266]">Cantador a identificar</span>
+                  </div>
+                  <a href="/cantorias/martelo-alagoano" className="text-sm text-[#C84B31] font-semibold hover:underline">
+                    Ver cantoria completa →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Mais Exemplos de Estrofes */}
+          <div className="bg-white border-2 border-[#8B6F47] rounded-lg p-6 md:p-8">
+            <h3 className="font-bold text-xl text-[#2E5266] mb-6 text-center">
+              Outras Estrofes Memoráveis do Acervo
+            </h3>
+            
+            <div className="space-y-6">
+              {/* Estrofe 2 - Nonato Costa */}
+              <div className="border-l-4 border-[#C84B31] bg-[#E8D4B0] p-4 rounded-r-lg">
+                <p className="italic text-sm text-[#2E5266] leading-relaxed space-y-1">
+                  <span className="block">Aos colegas que ficam aqui, ressalto</span>
+                  <span className="block">que é comum ter pequeno, grande e médio</span>
+                  <span className="block">Os que vão do Recife pra o Planalto</span>
+                  <span className="block">vão atrás de troféu, fama e assédio</span>
+                  <span className="block font-semibold">Na fornalha não diminui a frágua,</span>
+                  <span className="block font-semibold">não pretendo levar nem deixar mágoa</span>
+                  <span className="block font-semibold">Chega a hora da onça beber água</span>
+                  <span className="block font-semibold">e quem sofrer da pressão tome remédio</span>
+                </p>
+                <div className="mt-3 pt-3 border-t border-[#8B6F47]/30 flex items-center justify-between flex-wrap gap-2">
+                  <div className="flex items-center gap-2 text-xs">
+                    <span className="font-semibold text-[#2E5266]">Nonato Costa</span>
+                    <span className="text-[#2E5266]/50">·</span>
+                    <span className="text-[#2E5266]/70">Oitava</span>
+                  </div>
+                  <a href="/cantorias/oitavas-os-nonatos-sao-lourenco-mata" className="text-xs text-[#C84B31] font-semibold hover:underline">
+                    Ver cantoria →
+                  </a>
+                </div>
+              </div>
+              
+              {/* Estrofe 3 - Nonato Neto */}
+              <div className="border-l-4 border-[#4A7C59] bg-[#E8D4B0] p-4 rounded-r-lg">
+                <p className="italic text-sm text-[#2E5266] leading-relaxed space-y-1">
+                  <span className="block">Qualidade é um item que invalida</span>
+                  <span className="block">a ação do processo de derrota</span>
+                  <span className="block">com a fonte da mente abastecida</span>
+                  <span className="block">uma seca de rimas não esgota</span>
+                  <span className="block font-semibold">A cobrança do povo e da imprensa,</span>
+                  <span className="block font-semibold">três jurados julgando na presença</span>
+                  <span className="block font-semibold">e meio ponto faz muita diferença</span>
+                  <span className="block font-semibold">quando a gente precisa de uma nota</span>
+                </p>
+                <div className="mt-3 pt-3 border-t border-[#8B6F47]/30 flex items-center justify-between flex-wrap gap-2">
+                  <div className="flex items-center gap-2 text-xs">
+                    <span className="font-semibold text-[#2E5266]">Nonato Neto</span>
+                    <span className="text-[#2E5266]/50">·</span>
+                    <span className="text-[#2E5266]/70">Oitava</span>
+                  </div>
+                  <a href="/cantorias/oitavas-os-nonatos-sao-lourenco-mata" className="text-xs text-[#C84B31] font-semibold hover:underline">
+                    Ver cantoria →
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -758,14 +812,14 @@ function HomePage() {
                 Por Que Vilanova?
               </h2>
               
-              <p className="text-lg text-[#2E5266]/85 leading-relaxed">
-                Este projeto é uma homenagem em vida ao poeta <strong>Ivanildo Vilanova</strong>, 
-                cantador de Caruaru (Pernambuco) que dedicou sua vida ao repente.
+              <p className="text-xl text-[#2E5266]/85 leading-relaxed">
+                Este projeto é uma <strong>homenagem em vida</strong> ao poeta <strong>Ivanildo Vilanova</strong>, 
+                cantador de Caruaru (Pernambuco).
               </p>
               
               {/* Citação */}
               <div className="border-l-4 border-[#C84B31] bg-white p-6 rounded-r-lg">
-                <p className="italic text-lg text-[#2E5266] leading-relaxed mb-2">
+                <p className="italic text-xl text-[#2E5266] leading-relaxed mb-2">
                   "O cantador deve estar apto a cantar o sertão, a praia, a universidade, 
                   a linguagem do caboclo. A cantoria ela tem que viajar em todos os 
                   aspectos."
@@ -775,16 +829,9 @@ function HomePage() {
                 </p>
               </div>
               
-              <p className="text-base text-[#2E5266]/80 leading-relaxed">
-                Ivanildo representa a essência do que queremos preservar: um cantador 
-                que domina múltiplos estilos (Sextilha, Mourão Voltado), que se adaptou 
-                aos tempos modernos sem perder a tradição, e que sempre apoiou novas 
-                gerações.
-              </p>
-              
-              <p className="text-base text-[#2E5266]/80 leading-relaxed">
-                Ele participa da websérie "Entre Cordas e Poesia", que inspirou a 
-                criação deste projeto. Além disso, Ivanildo criou o estilo 
+              <p className="text-lg text-[#2E5266]/80 leading-relaxed">
+                Ivanildo participa da websérie <strong>"Entre Cordas e Poesia"</strong>, que 
+                inspirou a criação deste projeto. Ele também criou o estilo 
                 <strong> Remo da Canoa</strong>, uma adaptação recente do coco de embolada 
                 para a cantoria de viola.
               </p>
@@ -798,8 +845,8 @@ function HomePage() {
                 Saiba mais sobre Ivanildo Vilanova
                 <ExternalLink className="w-4 h-4" />
               </a>
-            </div>
-            
+                </div>
+
             {/* Right: Photo */}
             <div className="order-1 md:order-2">
               <img 
@@ -845,13 +892,13 @@ function HomePage() {
                 A Websérie Documental que Conta a História Completa
               </h3>
               
-              <div className="prose prose-invert max-w-none">
-                <p className="text-base text-white/90 leading-relaxed">
-                  11 episódios documentando a cantoria de viola através da voz 
-                  dos próprios mestres.
+              <div className="prose prose-invert max-w-none space-y-6">
+                <p className="text-lg text-white/90 leading-relaxed">
+                  Esta websérie, produzida no Rio Grande do Norte, explora diversos 
+                  temas do repente e foi feita com bastante zelo.
                 </p>
                 
-                <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg my-4">
+                <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
                   <p className="text-sm text-white/90 mb-2"><strong>Participantes:</strong></p>
                   <ul className="text-sm text-white/80 space-y-1">
                     <li>→ Ivanildo Vilanova (que dá nome a este projeto)</li>
@@ -859,22 +906,34 @@ function HomePage() {
                     <li>→ Fabiane Ribeiro, Rafaela Pereira, Minervina Ferreira</li>
                     <li>→ José Jonas, Fátima Dantas, e mais</li>
                   </ul>
+                  
+                  <p className="text-xs text-white/70 mt-3">
+                    <strong>Direção:</strong> Fabrício Vale e Joalisson Diniz ·
+                    <strong> Financiamento:</strong> Lei Paulo Gustavo
+                  </p>
                 </div>
                 
-                <p className="text-sm text-white/80 leading-relaxed">
-                  <strong>Direção:</strong> Fabrício Vale e Joalisson Diniz<br />
-                  <strong>Financiamento:</strong> Lei Paulo Gustavo
-                </p>
-                
-                <p className="text-base text-white/90 leading-relaxed mt-4">
-                  Esta websérie foi o combustível que inspirou o Vilanova. 
-                  Ela mostra o problema da preservação — e nós criamos a solução.
-                </p>
-                
                 <p className="text-base text-white/90 leading-relaxed">
-                  Transcrevemos todos os 11 episódios usando IA para tornar 
-                  o conteúdo pesquisável e acessível.
+                  No repositório desse projeto, temos as transcrições dos 11 episódios 
+                  (recuperadas pelo YouTube), que foram usadas como base teórica para 
+                  o conteúdo dessa página.
                 </p>
+                
+                <div className="bg-[#4A7C59]/20 backdrop-blur-sm p-4 rounded-lg border-l-4 border-[#4A7C59]">
+                  <p className="text-base text-white/95 font-medium mb-2">
+                    🎮 Precisamos de ajuda!
+                  </p>
+                  <p className="text-sm text-white/85 leading-relaxed mb-3">
+                    Queremos criar páginas específicas para cada episódio, enriquecendo 
+                    o alcance desse conteúdo de forma acessível e didática.
+                  </p>
+                  <p className="text-xs text-white/80">
+                    <span className="bg-[#4A7C59] text-white px-2 py-1 rounded text-xs font-semibold mr-2">
+                      FÁCIL
+                    </span>
+                    Essa é uma atividade de nível Fácil de contribuição.
+                  </p>
+                </div>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-3 pt-4">
@@ -887,9 +946,14 @@ function HomePage() {
                   ▶ Assistir Playlist Completa
                 </a>
                 
-                <button className="px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300">
-                  📄 Ver Transcrições dos 11 Episódios
-                </button>
+                <a 
+                  href="http://github.com/lucis/vilanova/issues/2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
+                >
+                  🎮 Ver detalhes da issue
+                </a>
               </div>
             </div>
           </div>
@@ -971,7 +1035,7 @@ function HomePage() {
             <div className="flex justify-center gap-3 mt-4 flex-wrap">
               <span className="text-xs bg-[#4A7C59] text-white px-3 py-1 rounded-full">Open Source</span>
               <a 
-                href="https://docs.deco.cx" 
+                href="https://docs.deco.page" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-xs bg-[#2E5266]/50 text-white px-3 py-1 rounded-full border border-[#F5EBE0]/30 hover:bg-[#2E5266]/70 transition-colors"
@@ -979,8 +1043,8 @@ function HomePage() {
                 Feito com Deco
               </a>
             </div>
-          </div>
         </div>
+      </div>
       </footer>
     </div>
   );
