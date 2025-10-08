@@ -201,12 +201,149 @@
       "transcricao_path": "/repentes/martelo-alagoano.txt",
       "audio_path": null,
       "destaque": false
+    },
+    {
+      "id": "galope-hipolito-rogerio-tv",
+      "slug": "galope-hipolito-rogerio-tv-diario",
+      "titulo": "Galope à Beira Mar - Desafio na TV Diário",
+      "estilo": {
+        "nome": "Galope à Beira Mar",
+        "slug": "galope-beira-mar",
+        "versos_por_estrofe": 10,
+        "metrica": "decassílabos (10 sílabas)",
+        "esquema_rima": "AAAAABBCCM",
+        "mote_fixo": "Nos dez de galope (d)a/na beira do mar"
+      },
+      "cantadores": [
+        {
+          "nome": "Hipólito Moura",
+          "slug": "hipolito-moura"
+        },
+        {
+          "nome": "Rogério Menezes",
+          "slug": "rogerio-menezes"
+        }
+      ],
+      "local": "TV Diário, Fortaleza, Ceará",
+      "ano": null,
+      "contexto": "Peleja televisiva / Desafio intenso",
+      "estrofes": [
+        {
+          "numero": 1,
+          "cantador": "Hipólito Moura",
+          "versos": [
+            "Rogério, faz tempo que eu vivo tentando",
+            "lhe colocar perto dos pesos pesados",
+            "Nós somos bastante diferenciados",
+            "Eu cantando muito e você enganando",
+            "Eu sou muito sério quando estou cantando",
+            "E você tem mania de se rebolar",
+            "Gesticula e tenta me intimidar",
+            "Levante a cabeça e abaixe esse dedo",
+            "que as suas caretas não me metem medo",
+            "nos dez de galope da beira do mar"
+          ],
+          "tema": "Provocação inicial, diferenças de estilo"
+        },
+        {
+          "numero": 2,
+          "cantador": "Rogério Menezes",
+          "versos": [
+            "Você diz que é duro, igual Figueiredo,",
+            "que é torturador mais do que Fleury,",
+            "que é igual Bin Laden pra o FBI,",
+            "que igual a Bush, é pernoste azedo,",
+            "que tem sangre, filho de Lino Oviedo,",
+            "que supera Hitler quando quer matar,",
+            "e eu aproveito pra lhe avisar",
+            "que pra cantador, fabuloso e chato,",
+            "mas que as tsunamis, eu pegando mato,",
+            "cantando galope na beira do mar"
+          ],
+          "tema": "Resposta com ironia, comparações exageradas"
+        },
+        {
+          "numero": 3,
+          "cantador": "Hipólito Moura",
+          "versos": [
+            "Além de covarde, você é ingrato,",
+            "e esse seu orgulho só lhe desmorona,",
+            "quando estou distante, você me detona,",
+            "mas nas cantorias você paga o pato",
+            "Lhe arrastei um dia do anonimato,",
+            "tentei como gente lhe apresentar",
+            "Somos diferentes até no olhar",
+            "Eu não canto pouco nem sou cafajeste,",
+            "você não é gente nem canta que preste,",
+            "nos dez de galope da beira do mar"
+          ],
+          "tema": "Acusação de ingratidão, crítica pessoal forte"
+        },
+        {
+          "numero": 4,
+          "cantador": "Rogério Menezes",
+          "versos": [
+            "Hipólito falou por todo o Nordeste",
+            "que nos livros e forica que no verso mata",
+            "sem passar de um tolo e dum autodidata",
+            "que leu a cartilha e não passou no teste",
+            "Pequeno em cultura porque não investe",
+            "e alto nas rasteiras que adora passar",
+            "Ruim de aparência, ruim de linguajar,",
+            "grande no orgulho, na lábia e na farda",
+            "e o QI menor que um grão de mostarda",
+            "nos dez de galope da beira do mar"
+          ],
+          "tema": "Contra-ataque, crítica à inteligência e cultura"
+        },
+        {
+          "numero": 5,
+          "cantador": "Hipólito Moura",
+          "versos": [
+            "Meu verso lhe faz medo que só sarda,",
+            "seu talento é pouco, seu estado é crítico,",
+            "vai amansar burro, bajular político,",
+            "passar pano em casa e caçar de espingarda",
+            "Quando a coisa aperta, você se acovarda,",
+            "se curva aos meus pés e começa a chorar",
+            "Eu procuro um besta pra me acompanhar,",
+            "ser meu puxa-saco e servir de palhaço,",
+            "você tá mais besta que o besta que eu caço",
+            "nos dez de galope da beira do mar"
+          ],
+          "tema": "Escalada da agressão, dominação"
+        },
+        {
+          "numero": 6,
+          "cantador": "Rogério Menezes",
+          "versos": [
+            "Dizer que cantando eu sou um fracasso,",
+            "seus olhos são cegos, seus ouvidos surdos,",
+            "sua boca fala esses absurdos,",
+            "quem finda pagando é seu espinhaço",
+            "Que até Zé Viola gemeu no meu laço,",
+            "já fiz louro branco cantar devagar,",
+            "obriguei Dinis deixar de cantar",
+            "e a soltei Geraldo que tem mais veneno",
+            "e você não dá nem um café pequeno",
+            "nos dez de galope da beira do mar"
+          ],
+          "tema": "Afirmação de superioridade, referências a cantadores famosos"
+        }
+      ],
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=3CXPD0IkYQE",
+        "spotify": null
+      },
+      "transcricao_path": "/repentes/galope-hipolito-rogerio-tv.txt",
+      "audio_path": null,
+      "destaque": true
     }
   ],
   "metadata": {
-    "ultima_atualizacao": "2025-10-05",
-    "total_repentes": 4,
-    "total_estrofes_catalogadas": 4,
+    "ultima_atualizacao": "2025-10-08",
+    "total_repentes": 5,
+    "total_estrofes_catalogadas": 10,
     "observacoes": [
       "Estrofes completas precisam ser extraídas das transcrições",
       "Identificação de cantadores individuais em duplas (estimativa inicial)",

@@ -188,3 +188,4 @@ Suporte a eventos recorrentes:
 **Vilanova** - Um projeto aberto de estudo e exaltação da cultura do Repente 🎵
 
 *De Campina Grande para todo o Nordeste, construído com a comunidade.*
+

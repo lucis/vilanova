@@ -638,12 +638,12 @@ function HomePage() {
           {/* Estatísticas */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
             <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">4+</div>
-              <div className="text-sm md:text-base text-[#2E5266]/70">Repentes Transcritos</div>
+              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">5</div>
+              <div className="text-sm md:text-base text-[#2E5266]/70">Repentes Catalogados</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">3</div>
-              <div className="text-sm md:text-base text-[#2E5266]/70">Estilos Catalogados</div>
+              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">10</div>
+              <div className="text-sm md:text-base text-[#2E5266]/70">Estrofes Estruturadas</div>
             </div>
             <div className="text-center">
               <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">11</div>
