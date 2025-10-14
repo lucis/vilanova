@@ -4,6 +4,7 @@ import acervoData from "../../../public/data/acervo.json";
 import { useMemo } from "react";
 import type { Estilo } from "../lib/types";
 import { SiteHeader } from "../components/site-header";
+import { SiteFooter } from "../components/site-footer";
 
 const DIFICULDADE_COLORS = {
   "Iniciante": "bg-green-100 text-green-800 border-green-300",
@@ -167,17 +168,7 @@ function EstilosPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-[#2E5266] py-8 px-5 md:px-12">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-sm text-[#F5EBE0]/60">
-            © 2025 Vilanova · Open Source (MIT) · vilanova.deco.page
-          </p>
-          <p className="text-sm text-[#F5EBE0]/60 mt-2">
-            Feito com ❤️ para o Nordeste brasileiro
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

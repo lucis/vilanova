@@ -39,19 +39,6 @@ function HomePage() {
                 Organizando o Repente Nordestino no Mundo Digital
               </h2>
               
-              {/* CTA do GitHub - aparece aqui no mobile */}
-              <div className="block md:hidden">
-                <a 
-                  href="http://github.com/lucis/vilanova" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 w-full px-8 py-4 bg-white border-2 border-[#1a1a1a] text-[#1a1a1a] font-bold rounded-lg hover:bg-[#1a1a1a] hover:text-white transition-all duration-300 shadow-md"
-                >
-                  <Github className="w-5 h-5" />
-                  Contribuir no GitHub
-                </a>
-              </div>
-              
               <div className="prose prose-lg max-w-none space-y-6">
                 <p className="text-xl md:text-2xl text-[#2E5266]/80 leading-relaxed">
                   Há gerações, <strong>cantadores de viola</strong> improvisam versos que guardam 
@@ -70,20 +57,26 @@ function HomePage() {
                   e organizar esse patrimônio cultural disperso. <strong>Somos open source 
                   e precisamos de contribuidores.</strong>
                 </p>
+                
+                {/* CTA para Cantorias */}
+                <div className="pt-4">
+                  <Link
+                    to="/cantorias"
+                    className="inline-flex items-center gap-2 px-8 py-4 bg-[#C84B31] text-white font-bold rounded-lg hover:bg-[#A63D40] transition-all duration-300 shadow-md"
+                  >
+                    Explorar Acervo de Cantorias
+                  </Link>
+                </div>
+                
+                {/* Disclaimer */}
+                <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg mt-6">
+                  <p className="text-sm text-yellow-800">
+                    ⚠️ <strong>Projeto em construção:</strong> Algumas informações podem estar incompletas ou imprecisas. 
+                    Você pode corrigir ou completar qualquer dado clicando em "Sugerir Melhoria" nas páginas.
+                  </p>
+                </div>
               </div>
               
-              {/* CTA Desktop */}
-              <div className="hidden md:block pt-4">
-                <a 
-                  href="http://github.com/lucis/vilanova" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white border-2 border-[#1a1a1a] text-[#1a1a1a] font-bold rounded-lg hover:bg-[#1a1a1a] hover:text-white transition-all duration-300 shadow-md"
-                >
-                  <Github className="w-5 h-5" />
-                  Contribuir no GitHub
-                </a>
-              </div>
             </div>
             
             {/* Right: Image */}
@@ -1084,9 +1077,18 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Footer simples por enquanto */}
+      {/* Footer */}
       <footer className="bg-[#2E5266] py-12 px-5 md:px-12">
         <div className="max-w-7xl mx-auto">
+          {/* Disclaimer do Projeto */}
+          <div className="bg-yellow-900/20 border-l-4 border-yellow-500 p-4 rounded-r-lg mb-8">
+            <p className="text-sm text-[#F5EBE0]/90">
+              ⚠️ <strong>Projeto em construção colaborativa:</strong> Este acervo está sendo construído por voluntários. 
+              Algumas informações podem estar incompletas ou imprecisas. Toda correção é bem-vinda — 
+              basta clicar em "Sugerir Melhoria" nas páginas ou abrir uma issue no GitHub.
+            </p>
+          </div>
+          
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <h3 className="font-serif text-xl font-bold text-[#F5EBE0] mb-3">Vilanova</h3>

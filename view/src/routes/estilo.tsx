@@ -6,6 +6,7 @@ import { useMemo } from "react";
 import type { Estilo, Cantoria } from "../lib/types";
 import { SiteHeader } from "../components/site-header";
 import { EditButton } from "../components/edit-button";
+import { SiteFooter } from "../components/site-footer";
 
 function extractYouTubeId(url: string): string {
   if (!url) return '';
@@ -338,17 +339,7 @@ function EstiloDetail() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-[#2E5266] py-8 px-5 md:px-12">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-sm text-[#F5EBE0]/60">
-            © 2025 Vilanova · Open Source (MIT) · vilanova.deco.page
-          </p>
-          <p className="text-sm text-[#F5EBE0]/60 mt-2">
-            Feito com ❤️ para o Nordeste brasileiro
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }
