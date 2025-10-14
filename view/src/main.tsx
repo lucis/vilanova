@@ -7,7 +7,12 @@ import {
   RouterProvider,
 } from "@tanstack/react-router";
 import HomePage from "./routes/home.tsx";
+import CantoriasRoute from "./routes/cantorias.tsx";
 import CantoriaRoute from "./routes/cantoria.tsx";
+import EstilosRoute from "./routes/estilos.tsx";
+import EstiloRoute from "./routes/estilo.tsx";
+import CantadoresRoute from "./routes/cantadores.tsx";
+import CantadorRoute from "./routes/cantador.tsx";
 import { Toaster } from "sonner";
 
 import "./styles.css";
@@ -19,7 +24,12 @@ const rootRoute = createRootRoute({
 
 const routeTree = rootRoute.addChildren([
   HomePage(rootRoute),
+  CantoriasRoute(rootRoute),
   CantoriaRoute(rootRoute),
+  EstilosRoute(rootRoute),
+  EstiloRoute(rootRoute),
+  CantadoresRoute(rootRoute),
+  CantadorRoute(rootRoute),
 ]);
 
 const queryClient = new QueryClient();

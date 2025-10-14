@@ -1,8 +1,17 @@
 import { createRoute, Link, type RootRoute } from "@tanstack/react-router";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import acervoData from "../../../public/data/acervo.json";
+import { useMemo } from "react";
+import { agregarCantadores } from "../lib/cantadores";
+import type { Cantoria } from "../lib/types";
 
 function HomePage() {
+  const totalCantadores = useMemo(() => {
+    const cantadores = agregarCantadores(acervoData.repentes as Cantoria[]);
+    return cantadores.length;
+  }, []);
+  
   return (
     <div className="min-h-screen bg-[#F5EBE0]">
       {/* Hero Section */}
@@ -637,21 +646,21 @@ function HomePage() {
           
           {/* Estatísticas */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-            <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">5</div>
-              <div className="text-sm md:text-base text-[#2E5266]/70">Repentes Catalogados</div>
-            </div>
-            <div className="text-center">
+            <Link to="/cantorias" className="text-center hover:scale-105 transition-transform">
               <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">10</div>
-              <div className="text-sm md:text-base text-[#2E5266]/70">Estrofes Estruturadas</div>
-            </div>
+              <div className="text-sm md:text-base text-[#2E5266]/70">Cantorias</div>
+            </Link>
+            <Link to="/estilos" className="text-center hover:scale-105 transition-transform">
+              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">5</div>
+              <div className="text-sm md:text-base text-[#2E5266]/70">Estilos</div>
+            </Link>
+            <Link to="/cantadores" className="text-center hover:scale-105 transition-transform">
+              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">{totalCantadores}</div>
+              <div className="text-sm md:text-base text-[#2E5266]/70">Cantadores</div>
+            </Link>
             <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">11</div>
-              <div className="text-sm md:text-base text-[#2E5266]/70">Episódios de Websérie</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">100%</div>
-              <div className="text-sm md:text-base text-[#2E5266]/70">Open Source</div>
+              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">49</div>
+              <div className="text-sm md:text-base text-[#2E5266]/70">Estrofes</div>
             </div>
           </div>
           
@@ -793,11 +802,25 @@ function HomePage() {
             </div>
           </div>
           
-          <div className="text-center mt-8">
-            <button className="text-[#C84B31] font-semibold hover:underline inline-flex items-center gap-2">
-              Ver Todo o Acervo
-              <span className="text-xs bg-[#D49B54] text-white px-2 py-1 rounded">EM BREVE</span>
-            </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <Link 
+              to="/cantorias"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#C84B31] text-white font-bold rounded-lg hover:bg-[#A63D40] transition-all duration-300"
+            >
+              Ver Cantorias
+            </Link>
+            <Link 
+              to="/estilos"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#4A7C59] text-white font-bold rounded-lg hover:bg-[#3a6349] transition-all duration-300"
+            >
+              Guia de Estilos
+            </Link>
+            <Link 
+              to="/cantadores"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#2E5266] text-white font-bold rounded-lg hover:bg-[#1e3a46] transition-all duration-300"
+            >
+              Ver Cantadores
+            </Link>
           </div>
         </div>
       </section>
@@ -999,9 +1022,21 @@ function HomePage() {
             <div>
               <h4 className="font-semibold text-[#F5EBE0] mb-3">Conteúdo</h4>
               <ul className="space-y-2 text-sm text-[#F5EBE0]/80">
-                <li>→ Acervo <span className="text-xs">(em breve)</span></li>
-                <li>→ Estilos</li>
-                <li>→ Cantadores <span className="text-xs">(em breve)</span></li>
+                <li>
+                  <Link to="/cantorias" className="hover:text-[#D49B54] transition-colors">
+                    → Cantorias
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/estilos" className="hover:text-[#D49B54] transition-colors">
+                    → Estilos
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/cantadores" className="hover:text-[#D49B54] transition-colors">
+                    → Cantadores
+                  </Link>
+                </li>
                 <li>→ Entre Cordas e Poesia</li>
               </ul>
             </div>

@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "title": "Estilos de Repente - Vilanova",
+  "description": "Catálogo de estilos (modalidades) de repente nordestino",
+  "estilos": [
+    {
+      "slug": "galope-beira-mar",
+      "nome": "Galope à Beira-Mar",
+      "resumo": "Criado por Zé Pretinho, inspirado pelo som das ondas do mar",
+      "definicao": "O Galope à Beira-Mar é um poema de forma fixa criado pelo repentista cearense José Pretinho (Zé Pretinho).",
+      "historia": "Conta-se que Zé Pretinho, após perder um duelo em martelo agalopado, retirou-se à beira-mar. Ali, vendo e ouvindo o marulho das ondas, imaginou o som de um galope. Inspirado por esse ritmo natural, criou um novo estilo poético.",
+      "estrutura": {
+        "metrica": "hendecassílabos (11 sílabas poéticas)",
+        "versos_por_estrofe": 10,
+        "esquema_rima": "ABBAACCDDC",
+        "tonicas": "Tônicas nas posições 2, 5, 8 e 11 (um iambo e 3 anapestos)",
+        "obrigatoriedade": "O último verso DEVE terminar com a palavra 'mar', preferencialmente 'galope na/da beira do mar'"
+      },
+      "dificuldade": "Avançado",
+      "nivel_numero": 3,
+      "exemplo": "Cantor das coivaras queimando o horizonte,\ndas brancas raízes expostas à lua,\nda pedra alvejada, da laje tão nua\nguardando o silêncio da noite no monte.\nCantor do lamento da água da fonte\nque desce ao açude e lá fica a teimar\ncom o sol e com o vento, até se finar\nno último adejo da asa sedenta,\nque busca salvar-se da morte e inventa\ncantigas de adeuses na beira do mar.",
+      "exemplo_autor": "Luciano Maia",
+      "temas_comuns": [
+        "Desafios e autoestima",
+        "Natureza (sertão e litoral)",
+        "Amor e saudade",
+        "Filosofia e reflexão",
+        "Narrativas"
+      ],
+      "curiosidade": "O nome evoca simultaneamente o ritmo do galope de um cavalo (pelos acentos rítmicos) e o som das ondas do mar (marulho que inspirou Zé Pretinho).",
+      "cantorias_count": 4
+    },
+    {
+      "slug": "oitava",
+      "nome": "Oitava",
+      "resumo": "Estilo tradicional de 8 versos, acessível e versátil",
+      "definicao": "A Oitava é um dos estilos mais tradicionais e populares do repente nordestino. É uma forma fixa de 8 versos setissílabos (redondilha maior), com esquema de rima específico.",
+      "historia": "A Oitava tem raízes na tradição trovadoresca medieval portuguesa, sendo adaptada e popularizada pelos cantadores nordestinos. É um dos estilos mais antigos praticados na cantoria de viola.",
+      "estrutura": {
+        "metrica": "setissílabos (7 sílabas poéticas) - Redondilha Maior",
+        "versos_por_estrofe": 8,
+        "esquema_rima": "ABBAACCA",
+        "tonicas": "Ritmo mais livre que o Galope, mas mantendo musicalidade",
+        "obrigatoriedade": "O oitavo verso deve rimar com o primeiro, quarto e quinto (rima A)"
+      },
+      "dificuldade": "Intermediário",
+      "nivel_numero": 2,
+      "exemplo": "São Lourenço da Mata nos escuta\ne pelo povo que aplaude, agora exalto\nMesmo estando em primeiro na disputa,\ncom respeito aos outros eu não falto\nObrigado a vocês desta cidade\npela grande receptividade\nQuem não calça as sandálias da humildade\ntorce o pé se correr desalta",
+      "exemplo_autor": "Nonato Costa",
+      "temas_comuns": [
+        "Sabedoria e humildade",
+        "Competição e respeito",
+        "Reflexões filosóficas",
+        "Metáforas do cotidiano"
+      ],
+      "curiosidade": "A Oitava é considerada a 'porta de entrada' para cantadores iniciantes aprenderem a estrutura de rimas complexas, pois a métrica setissílaba é natural na fala portuguesa.",
+      "cantorias_count": 1
+    },
+    {
+      "slug": "martelo-alagoano",
+      "nome": "Martelo Alagoano",
+      "resumo": "10 versos decassílabos com mote repetido 3 vezes",
+      "definicao": "O Martelo Alagoano é um estilo de forma fixa caracterizado por 10 versos decassílabos seguidos de um mote triplo (repetido três vezes). É uma das modalidades mais desafiadoras do repente nordestino.",
+      "historia": "O Martelo Alagoano tem suas raízes em Alagoas, daí seu nome. É uma variação do Martelo tradicional, com a característica marcante de exigir que o cantador repita três vezes o mote nos versos finais.",
+      "estrutura": {
+        "metrica": "decassílabos (10 sílabas poéticas)",
+        "versos_por_estrofe": 10,
+        "esquema_rima": "AAAAAAAAAB + mote triplo",
+        "tonicas": "Ritmo cadenciado, quase militar",
+        "obrigatoriedade": "9 versos com mesma rima A, verso 10 rima B, seguido do mote repetido 3 vezes"
+      },
+      "dificuldade": "Mestre",
+      "nivel_numero": 4,
+      "exemplo": "No cenário de cada profissão,\ncada um se espelha no que faz.\nO vaqueiro é pastor dos animais,\nresponsável por toda a criação.\nDá duzentos reais pelo gibão,\nmas não gasta real comprando pano.\nNa batalha do pão cotidiano,\no cavalo de campo é seu transporte.\nDesafia o perigo, enfrenta a morte.\nNos dez pés de martelo alagoano.\nNos dez pés de martelo alagoano.\nNos dez pés de martelo alagoano.",
+      "exemplo_autor": "Valdir Teles ou Zé Cardoso",
+      "temas_comuns": [
+        "Autoafirmação técnica",
+        "Narrativas complexas",
+        "Desafios diretos",
+        "Homenagens e reflexões sociais"
+      ],
+      "curiosidade": "O nome 'Martelo' vem do ritmo cadenciado que lembra pancadas de martelo. A repetição tripla do mote reforça essa imagem sonora (tum-tum-tum - três marteladas).",
+      "cantorias_count": 2
+    },
+    {
+      "slug": "desafio-mote-decassilabos",
+      "nome": "Desafio (Mote em Decassílabos)",
+      "resumo": "10 versos com mote fixo de 2 versos, usado em pelejas",
+      "definicao": "O Desafio com Mote em Decassílabos é um estilo de cantoria caracterizado por estrofes de 10 versos decassílabos que terminam com um mote fixo de 2 versos. É uma das modalidades mais usadas em pelejas e confrontos diretos entre cantadores.",
+      "historia": "O Desafio é uma das formas mais antigas e populares do repente nordestino. A estrutura com mote fixo permite que cada cantador use o mesmo refrão, criando um duelo onde ambos compartilham a mesma 'arma' poética.",
+      "estrutura": {
+        "metrica": "decassílabos (10 sílabas poéticas)",
+        "versos_por_estrofe": 10,
+        "esquema_rima": "AAAAAAAABC (8 versos com rima A + mote BC)",
+        "tonicas": "Ritmo assertivo e cadenciado",
+        "obrigatoriedade": "8 primeiros versos com mesma rima, versos 9-10 são o mote fixo compartilhado"
+      },
+      "dificuldade": "Avançado",
+      "nivel_numero": 3,
+      "exemplo": "Um casal de modernos marcianos\nPor inveja na luz dos meus valores\nInventou de gerar três cantadores\nPra acabar com meu nome em poucos anos\nDo projeto surgiram três enganos\nO primeiro não pode acontecer\nO segundo gerou-se sem nascer\nE o terceiro nasceu, mas foi doente\nCantador pra cantar na minha frente\nDeus não faz, nunca fez, nem vai fazer",
+      "exemplo_autor": "Zé Cardoso",
+      "temas_comuns": [
+        "Autoestima exagerada (hipérbole)",
+        "Superioridade técnica",
+        "Lista de vitórias",
+        "Provocação ao adversário",
+        "Comparações com grandes nomes"
+      ],
+      "curiosidade": "O Desafio é tanto teste técnico quanto psicológico. Mestres sabem que 'quem perde a calma, perde o desafio'. Há regras não-escritas: ataca-se a técnica, não a pessoa ou família.",
+      "cantorias_count": 2
+    },
+    {
+      "slug": "decima-mote-fixo",
+      "nome": "Décima (Mote Fixo)",
+      "resumo": "10 versos decassílabos com mote repetido, ideal para narrativas e homenagens",
+      "definicao": "A Décima com Mote Fixo é uma forma clássica do repente nordestino, caracterizada por 10 versos decassílabos com um mote de 2 versos que se repete ao final de cada estrofe. Diferente do Desafio, a Décima é usada para narrativas históricas, homenagens e temas não-competitivos.",
+      "historia": "A Décima tem origem na tradição poética ibérica medieval, sendo uma das formas mais antigas da poesia popular. No repente nordestino, quando usada com mote fixo, torna-se uma ferramenta poderosa para contar histórias extensas mantendo coesão através da repetição do refrão.",
+      "estrutura": {
+        "metrica": "decassílabos (10 sílabas poéticas)",
+        "versos_por_estrofe": 10,
+        "esquema_rima": "ABBAACCDDC",
+        "tonicas": "Ritmo narrativo, mais livre que o Galope",
+        "obrigatoriedade": "Os 2 últimos versos (DC) são o mote fixo que se repete em todas as estrofes"
+      },
+      "dificuldade": "Avançado",
+      "nivel_numero": 3,
+      "exemplo": "Quando Almiro Gouveia, a nossa história\nteve um lindo prefácio industrial.\nCom visão de alcance mundial\ne a luz de futuro na memória.\nComeçando na sua trajetória\nno Recife, viveu como barão.\nRei das peles, fazendo exportação\ndo Nordeste direto ao estrangeiro\nfoi Delmiro Gouveia, o pioneiro,\nimplantando o progresso no sertão.",
+      "exemplo_autor": "Valdir Teles ou Zé Cardoso",
+      "temas_comuns": [
+        "Narrativas históricas",
+        "Homenagens a personalidades",
+        "Contos e lendas",
+        "Biografias",
+        "Eventos importantes"
+      ],
+      "curiosidade": "A Décima com Mote Fixo permite que cantadores narrem histórias longas e complexas, usando o mote como refrão que reforça a mensagem central. É especialmente eficaz em homenagens, pois cada estrofe desenvolve um aspecto diferente da pessoa ou evento, sempre retornando ao tema principal através do mote.",
+      "cantorias_count": 1
+    }
+  ],
+  "metadata": {
+    "ultima_atualizacao": "2025-10-10",
+    "total_estilos": 5,
+    "por_dificuldade": {
+      "intermediario": 1,
+      "avancado": 3,
+      "mestre": 1
+    },
+    "por_metrica": {
+      "setissilabos": 1,
+      "decassilabos": 3,
+      "hendecassilabos": 1
+    }
+  }
+}
+

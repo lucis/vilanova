@@ -1,38 +1,13 @@
 import { createRoute, Link, type RootRoute } from "@tanstack/react-router";
-import { ArrowLeft, Music, MapPin, Calendar } from "lucide-react";
-import acervoData from "../../../repentes/acervo-estruturado.json";
+import { Music, MapPin, Calendar } from "lucide-react";
+import acervoData from "../../../public/data/acervo.json";
+import type { Cantoria } from "../lib/types";
+import { SiteHeader } from "../components/site-header";
 
-interface Cantoria {
-  id: string;
-  slug: string;
-  titulo: string;
-  estilo: {
-    nome: string;
-    versos_por_estrofe: number;
-    metrica: string;
-    esquema_rima: string;
-    mote_fixo?: string;
-  };
-  cantadores: Array<{
-    nome: string;
-    slug: string | null;
-    apelido?: string;
-    dupla?: string;
-  }>;
-  local: string | null;
-  ano: number | null;
-  contexto: string;
-  estrofes: Array<{
-    numero: number;
-    cantador: string;
-    versos: string[];
-    tema: string;
-  }>;
-  links: {
-    youtube: string;
-    spotify: string | null;
-  };
-  transcricao_path: string;
+function extractYouTubeId(url: string): string {
+  if (!url) return '';
+  const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([^&?]+)/);
+  return match?.[1] || '';
 }
 
 function CantoriaDetail() {
@@ -59,19 +34,7 @@ function CantoriaDetail() {
 
   return (
     <div className="min-h-screen bg-[#F5EBE0]">
-      {/* Header */}
-      <header className="bg-white border-b-2 border-[#8B6F47] py-4 px-5 md:px-12">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <Link to="/" className="inline-flex items-center gap-2 text-[#2E5266] hover:text-[#C84B31] transition-colors">
-            <ArrowLeft className="w-5 h-5" />
-            <span className="font-semibold">Voltar</span>
-          </Link>
-          
-          <h1 className="font-serif text-2xl font-bold text-[#C84B31]">
-            Vilanova
-          </h1>
-        </div>
-      </header>
+      <SiteHeader showBackButton backTo="/cantorias" backLabel="Cantorias" />
 
       {/* Hero da Cantoria */}
       <section className="py-12 md:py-16 px-5 md:px-12 bg-gradient-to-b from-white to-[#F5EBE0]">
@@ -127,7 +90,17 @@ function CantoriaDetail() {
                     <span className="text-xl">🎵</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-[#2E5266]">{cantador.nome}</p>
+                    {cantador.slug ? (
+                      <Link 
+                        to="/cantadores/$slug" 
+                        params={{ slug: cantador.slug }}
+                        className="font-semibold text-[#C84B31] hover:underline"
+                      >
+                        {cantador.nome}
+                      </Link>
+                    ) : (
+                      <p className="font-semibold text-[#2E5266]">{cantador.nome}</p>
+                    )}
                     {cantador.apelido && (
                       <p className="text-xs text-[#2E5266]/60 italic">{cantador.apelido}</p>
                     )}
@@ -142,9 +115,20 @@ function CantoriaDetail() {
           
           {/* Informações do Estilo */}
           <div className="bg-[#E8D4B0] border-l-4 border-[#4A7C59] p-6 rounded-r-lg mb-8">
-            <h3 className="font-semibold text-lg text-[#2E5266] mb-3">
-              Sobre o estilo {cantoria.estilo.nome}:
-            </h3>
+            <div className="flex items-start justify-between mb-3">
+              <h3 className="font-semibold text-lg text-[#2E5266]">
+                Sobre o estilo {cantoria.estilo.nome}:
+              </h3>
+              {cantoria.estilo.slug && (
+                <Link
+                  to="/estilos/$slug"
+                  params={{ slug: cantoria.estilo.slug }}
+                  className="text-sm text-[#C84B31] hover:underline font-semibold whitespace-nowrap"
+                >
+                  Ver guia completo →
+                </Link>
+              )}
+            </div>
             <ul className="space-y-2 text-[#2E5266]/80">
               <li>• <strong>Versos por estrofe:</strong> {cantoria.estilo.versos_por_estrofe}</li>
               <li>• <strong>Métrica:</strong> {cantoria.estilo.metrica}</li>
@@ -156,6 +140,40 @@ function CantoriaDetail() {
           </div>
         </div>
       </section>
+
+      {/* YouTube Player */}
+      {cantoria.links.youtube && (
+        <section className="py-12 md:py-16 px-5 md:px-12 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#2E5266] mb-8 text-center">
+              Assista à Cantoria
+            </h2>
+            
+            <div className="relative rounded-lg overflow-hidden border-3 border-[#8B6F47] shadow-xl bg-black">
+              <div className="aspect-video">
+                <iframe 
+                  src={`https://www.youtube.com/embed/${extractYouTubeId(cantoria.links.youtube)}`}
+                  title={cantoria.titulo}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
+            
+            <div className="mt-4 text-center">
+              <a
+                href={cantoria.links.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[#C84B31] hover:underline"
+              >
+                Ver no YouTube →
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Estrofes */}
       <section className="py-12 md:py-16 px-5 md:px-12">
