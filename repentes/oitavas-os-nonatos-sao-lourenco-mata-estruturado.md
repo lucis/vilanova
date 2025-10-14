@@ -10,7 +10,7 @@
 ## Informações do Estilo
 
 - **Métrica:** setissílabos (7 sílabas)
-- **Esquema de rima:** ABBAACCA
+- **Esquema de rima:** ABBAACCB ⚠️ (corrigido em 2025-10-14)
 
 ---
 

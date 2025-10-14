@@ -12,7 +12,7 @@
         "slug": "oitava",
         "versos_por_estrofe": 8,
         "metrica": "setissílabos (7 sílabas)",
-        "esquema_rima": "ABBAACCA"
+        "esquema_rima": "ABBAACCB"
       },
       "cantadores": [
         {
@@ -1192,16 +1192,89 @@
       "transcricao_path": "/repentes/homenagem-delmiro-gouveia.txt",
       "audio_path": null,
       "destaque": true
+    },
+    {
+      "id": "sextilha-lampiao-gruta-angicos",
+      "slug": "sextilha-lampiao-gruta-angicos",
+      "titulo": "Lampião e a Gruta de Angicos",
+      "estilo": {
+        "nome": "Sextilha",
+        "slug": "sextilha",
+        "versos_por_estrofe": 6,
+        "metrica": "setissílabos (7 sílabas)",
+        "esquema_rima": "ABCBDB",
+        "mote_fixo": "aqui findou a jornada do grupo de Lampião (variações)"
+      },
+      "cantadores": [
+        {
+          "nome": "Valdir Teles",
+          "slug": "valdir-teles"
+        },
+        {
+          "nome": "Sebastião Dias",
+          "slug": "sebastiao-dias"
+        }
+      ],
+      "local": "Gruta de Angicos, Sergipe",
+      "ano": null,
+      "duracao": "10:02",
+      "contexto": "Cantoria histórica sobre o massacre de Lampião e seu bando em 1938. Reflexão profunda sobre cangaço, justiça social e desigualdade.",
+      "estrofes": [],
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=f1dN-dkSOuY",
+        "spotify": null
+      },
+      "transcricao_path": "/repentes/sextilha-lampiao-gruta-angicos.txt",
+      "audio_path": null,
+      "destaque": true
+    },
+    {
+      "id": "martelo-alagoano-valdir-teles-ze-cardoso-2",
+      "slug": "martelo-alagoano-profissoes",
+      "titulo": "Martelo Alagoano - Valdir Teles e Zé Cardoso (Profissões)",
+      "estilo": {
+        "nome": "Martelo Alagoano",
+        "slug": "martelo-alagoano",
+        "versos_por_estrofe": 10,
+        "metrica": "decassílabos (10 sílabas)",
+        "esquema_rima": "AAAAAAAAAB + mote triplo",
+        "mote_fixo": "Nos dez pés de martelo alagoano (repetido 3x)"
+      },
+      "cantadores": [
+        {
+          "nome": "Valdir Teles",
+          "slug": "valdir-teles"
+        },
+        {
+          "nome": "Zé Cardoso",
+          "slug": "ze-cardoso"
+        }
+      ],
+      "local": null,
+      "ano": null,
+      "duracao": "6:30",
+      "contexto": "Martelo Alagoano que homenageia oito profissões brasileiras com sensibilidade social: vaqueiro, soldado, agricultor, caminhoneiro, jangadeiro, padre, médico e profissional do sexo.",
+      "estrofes": [],
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=KjSqrG9a6z4",
+        "spotify": null
+      },
+      "transcricao_path": "/repentes/martelo-alagoano-valdir-teles-ze-cardoso-2.txt",
+      "audio_path": null,
+      "destaque": true
     }
   ],
   "metadata": {
-    "ultima_atualizacao": "2025-10-10",
-    "total_repentes": 10,
+    "ultima_atualizacao": "2025-10-14",
+    "total_repentes": 12,
     "total_estrofes_catalogadas": 49,
+    "com_estrofes_completas": 8,
     "observacoes": [
-      "Estrofes completas precisam ser extraídas das transcrições",
+      "Estrofes completas disponíveis para 8 cantorias",
+      "Sextilha Lampião e Martelo Profissões aguardam estruturação de estrofes",
+      "Esquemas de rima corrigidos conforme análise fonética (2025-10-14)",
       "Identificação de cantadores individuais em duplas (estimativa inicial)",
-      "Links do YouTube serão adicionados posteriormente"
+      "Alguns metadados (ano, duração, local) estão incompletos"
     ]
   }
 }

@@ -16,11 +16,55 @@ A Sextilha tem raízes na tradição poética portuguesa, especialmente nas **re
 
 1. **Métrica**: Versos setessilábicos (7 sílabas poéticas)
 2. **Estrofes**: 6 versos por estrofe
-3. **Esquema de rima**: **AABCCB** ou **ABCBDB**
+3. **Esquema de rima**: **ABCBDB** (mais comum) ou **AABCCB**
 4. **Ritmo**: Cadenciado, permitindo acompanhamento de viola
 5. **Improviso**: Frequentemente improvisada na hora da cantoria
+6. **⚠️ IMPORTANTE**: As rimas são **FONÉTICAS** (som), não ortográficas (letras)
 
-### Esquema de Rima Clássico (AABCCB)
+### Esquema de Rima Principal (ABCBDB)
+
+Este é o padrão mais usado no repente nordestino:
+
+```
+A - primeiro verso
+B - segundo verso
+C - terceiro verso
+B - quarto verso (rima SONORA com segundo)
+D - quinto verso
+B - sexto verso (rima SONORA com segundo e quarto)
+```
+
+### Exemplo Real - Lampião e a Gruta de Angicos (Valdir Teles)
+
+```
+Essa é a grota de Angico,      (A - /ãŋ.ˈgi.ko/)
+famosa por tradição,            (B - /di.ˈsãw̃/)
+onde se deu o massacre         (C - /ma.ˈsa.kɾi/)
+do bando de Lampião.           (B - /pi.ˈãw̃/) ← rima com tradição
+Foi o começo do fim            (D - /fĩ/)
+do cangaço no sertão.          (B - /sɛʁ.ˈtãw̃/) ← rima com tradição/Lampião
+```
+
+**Análise das rimas fonéticas:**
+- Versos 2, 4 e 6: **tradição** / **Lampião** / **sertão** → todos terminam com som nasal /ãw̃/
+- A rima é pelo SOM, não pelas letras (-ção, -ão, -tão)
+
+### Outro Exemplo - Estrofe 2
+
+```
+O famoso capitão,              (A - /pi.ˈtãw̃/)
+filho de Serra Talhada,        (B - /ta.ˈʎa.da/)
+por inveja, intriga e ódio,    (C - /ˈɔ.dʒu/)
+teve a história marcada.       (B - /maʁ.ˈka.da/) ← rima com Talhada
+Fez sua vida de sangue         (D - /ˈsãŋ.gi/)
+aqui terminou sem nada.        (B - /ˈna.da/) ← rima com Talhada/marcada
+```
+
+**Padrão confirmado**: Versos 2, 4 e 6 sempre rimam entre si.
+
+## Variação: Sextilha de Primeira (AABCCB)
+
+Padrão menos comum no improviso, mais usado em cordel escrito:
 
 ```
 A - primeiro verso
@@ -31,36 +75,48 @@ C - quinto verso (rima com o quarto)
 B - sexto verso (rima com o terceiro)
 ```
 
-### Exemplo Clássico
+**Observação**: Este padrão exige que os dois primeiros versos rimem, o que é mais difícil no improviso rápido.
 
-```
-Nordeste é minha paixão,                    (A)
-terra de grandes poetas,                    (A)
-onde o vaqueiro guerreiro                   (B)
-enfrenta sol e calor,                       (C)
-defende a vida e a cor                      (C)
-no lombo do seu cavalo                      (B - rima com "guerreiro")
-```
+## 🎵 Rimas Fonéticas vs. Ortográficas
 
-**Análise das rimas:**
-- Versos 1 e 2: "paixão" / "poetas" (terminação similar em sons nasais)
-- Versos 4 e 5: "calor" / "cor" (rima perfeita)
-- Versos 3 e 6: "guerreiro" / "cavalo" (rima toante, menos rigorosa)
+**REGRA DE OURO**: No repente, rimam palavras que **SOAM** igual, não que se **ESCREVEM** igual!
 
-## Variações do Esquema de Rima
+### Exemplos de Rimas Fonéticas
 
-### Sextilha de Primeira (AABCCB)
-O padrão clássico descrito acima, mais comum em cantorias.
+| Palavra 1 | Palavra 2 | Escrita | Som | Rimam? |
+|-----------|-----------|---------|-----|--------|
+| tradição | Lampião | -ção vs -ão | /ˈsãw̃/ = /ˈãw̃/ | ✅ SIM |
+| sertão | coração | -tão vs -ção | /ˈtãw̃/ = /ˈsãw̃/ | ✅ SIM |
+| Talhada | marcada | -ada vs -ada | /ˈa.da/ = /ˈa.da/ | ✅ SIM |
+| desavença | ofensa | -ença vs -ensa | /ˈẽ.sa/ = /ˈẽ.sa/ | ✅ SIM |
+| criminoso | perigoso | -oso vs -oso | /ˈo.zo/ = /ˈo.zo/ | ✅ SIM |
 
-### Sextilha Disparada (ABCBDB)
-```
-A - primeiro verso
-B - segundo verso
-C - terceiro verso
-B - quarto verso (rima com segundo)
-D - quinto verso
-B - sexto verso (rima com segundo e quarto)
-```
+### Tipos de Rima Aceitos
+
+**1. Rima Consoante (Perfeita)**
+- Vogais E consoantes idênticas
+- Exemplo: **marcada** / **Talhada** / **nada**
+
+**2. Rima Toante**
+- Vogais tônicas iguais, consoantes podem diferir
+- Exemplo: **tradição** /ˈsãw̃/ / **sertão** /ˈtãw̃/ / **Lampião** /ˈãw̃/
+
+**3. Rima Aliterativa**
+- Repetição de sons consonantais
+- Exemplo: **fonte** / **monte** (repetição de /n/ e /t/)
+
+### Como Identificar Rimas Corretamente
+
+1. ✅ **Pronuncie** as palavras em voz alta (não leia mentalmente)
+2. ✅ **Isole** a sílaba tônica e tudo que vem depois
+3. ✅ **Compare** os SONS, ignorando as letras
+4. ✅ **Aceite** variações regionais de pronúncia
+
+**Exemplo prático:**
+- "tradi**ÇÃO**" → som final: /ˈsãw̃/
+- "Lampi**ÃO**" → som final: /ˈãw̃/
+- "ser**TÃO**" → som final: /ˈtãw̃/
+- **Todos rimam!** (vogal nasal /ã/ + ditongo /w̃/)
 
 ## Dificuldade
 

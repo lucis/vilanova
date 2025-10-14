@@ -31,33 +31,42 @@ O mote no último verso pode aparecer de diversas formas:
 
 ### Esquema de Rima Explicado
 
+⚠️ **Importante**: As rimas são **FONÉTICAS** (som), não ortográficas (letras)!
+
 ```
 A - primeiro verso
 B - segundo verso
-B - terceiro verso (rima com o segundo)
-A - quarto verso (rima com o primeiro)
-A - quinto verso (rima com primeiro e quarto)
+B - terceiro verso (rima SONORA com o segundo)
+A - quarto verso (rima SONORA com o primeiro)
+A - quinto verso (rima SONORA com primeiro e quarto)
 C - sexto verso
-C - sétimo verso (rima com o sexto)
+C - sétimo verso (rima SONORA com o sexto)
 D - oitavo verso
-D - nono verso (rima com o oitavo)
-C - décimo verso (rima com sexto e sétimo) - termina em "MAR"
+D - nono verso (rima SONORA com o oitavo)
+C - décimo verso (rima SONORA com sexto e sétimo) - termina em "MAR"
 ```
 
-## Exemplo Clássico
+## Exemplo Clássico (com Análise Fonética)
 
 ```
-Cantor das coivaras queimando o horizonte,        (A)
-das brancas raízes expostas à lua,                (B)
-da pedra alvejada, da laje tão nua                (B)
-guardando o silêncio da noite no monte.           (A)
-Cantor do lamento da água da fonte                (A)
-que desce ao açude e lá fica a teimar             (C)
-com o sol e com o vento, até se finar             (C)
-no último adejo da asa sedenta,                   (D)
-que busca salvar-se da morte e inventa            (D)
-cantigas de adeuses na beira do mar.              (C - mote)
+Cantor das coivaras queimando o horizonte,    (A - /o.ɾi.ˈzõn.tʃi/)
+das brancas raízes expostas à lua,            (B - /ˈlu.a/)
+da pedra alvejada, da laje tão nua            (B - /ˈnu.a/) ← rima com lua
+guardando o silêncio da noite no monte.       (A - /ˈmõn.tʃi/) ← rima com horizonte
+Cantor do lamento da água da fonte            (A - /ˈfõn.tʃi/) ← rima com horizonte/monte
+que desce ao açude e lá fica a teimar         (C - /te.i.ˈmaʁ/)
+com o sol e com o vento, até se finar         (C - /fi.ˈnaʁ/) ← rima com teimar
+no último adejo da asa sedenta,               (D - /se.ˈdẽn.ta/)
+que busca salvar-se da morte e inventa        (D - /ĩ.ˈvẽn.ta/) ← rima com sedenta
+cantigas de adeuses na beira do mar.          (C - /maʁ/) ← rima com teimar/finar (MOTE)
 ```
+
+**Análise das rimas:**
+- **Grupo A** (versos 1, 4, 5): horizonte, monte, fonte → todos /ˈõn.tʃi/
+- **Grupo B** (versos 2, 3): lua, nua → ambos /ˈu.a/
+- **Grupo C** (versos 6, 7, 10): teimar, finar, mar → todos terminam em /aʁ/
+- **Grupo D** (versos 8, 9): sedenta, inventa → ambos /ˈẽn.ta/
+
 *("Galope à beira-mar" – Luciano Maia)*
 
 ## Diferenciação Importante

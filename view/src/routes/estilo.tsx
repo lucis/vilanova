@@ -5,6 +5,7 @@ import acervoData from "../../../public/data/acervo.json";
 import { useMemo } from "react";
 import type { Estilo, Cantoria } from "../lib/types";
 import { SiteHeader } from "../components/site-header";
+import { EditButton } from "../components/edit-button";
 
 function extractYouTubeId(url: string): string {
   if (!url) return '';
@@ -74,13 +75,20 @@ function EstiloDetail() {
       {/* Hero */}
       <section className="py-12 md:py-16 px-5 md:px-12 bg-gradient-to-b from-white to-[#F5EBE0]">
         <div className="max-w-5xl mx-auto">
-          {/* Breadcrumb */}
-          <div className="text-sm text-[#2E5266]/60 mb-6">
-            <Link to="/" className="hover:text-[#C84B31]">Início</Link>
-            <span className="mx-2">→</span>
-            <Link to="/estilos" className="hover:text-[#C84B31]">Estilos</Link>
-            <span className="mx-2">→</span>
-            <span className="text-[#2E5266]">{estilo.nome}</span>
+          {/* Breadcrumb e Edit Button */}
+          <div className="flex items-start justify-between gap-4 mb-6">
+            <div className="text-sm text-[#2E5266]/60">
+              <Link to="/" className="hover:text-[#C84B31]">Início</Link>
+              <span className="mx-2">→</span>
+              <Link to="/estilos" className="hover:text-[#C84B31]">Estilos</Link>
+              <span className="mx-2">→</span>
+              <span className="text-[#2E5266]">{estilo.nome}</span>
+            </div>
+            <EditButton 
+              filePath={`estilos/${estilo.slug}.md`}
+              label="Melhorar Guia"
+              size="sm"
+            />
           </div>
           
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-[#2E5266] mb-4">

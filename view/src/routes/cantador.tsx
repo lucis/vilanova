@@ -5,6 +5,7 @@ import { useMemo } from "react";
 import { agregarCantadores } from "../lib/cantadores";
 import type { Cantoria } from "../lib/types";
 import { SiteHeader } from "../components/site-header";
+import { EditButton } from "../components/edit-button";
 
 function extractYouTubeId(url: string): string {
   if (!url) return '';
@@ -42,13 +43,23 @@ function CantadorDetail() {
       {/* Hero */}
       <section className="py-12 md:py-16 px-5 md:px-12 bg-gradient-to-b from-white to-[#F5EBE0]">
         <div className="max-w-5xl mx-auto">
-          {/* Breadcrumb */}
-          <div className="text-sm text-[#2E5266]/60 mb-6">
-            <Link to="/" className="hover:text-[#C84B31]">Início</Link>
-            <span className="mx-2">→</span>
-            <Link to="/cantadores" className="hover:text-[#C84B31]">Cantadores</Link>
-            <span className="mx-2">→</span>
-            <span className="text-[#2E5266]">{cantador.nome}</span>
+          {/* Breadcrumb e Edit Button */}
+          <div className="flex items-start justify-between gap-4 mb-6">
+            <div className="text-sm text-[#2E5266]/60">
+              <Link to="/" className="hover:text-[#C84B31]">Início</Link>
+              <span className="mx-2">→</span>
+              <Link to="/cantadores" className="hover:text-[#C84B31]">Cantadores</Link>
+              <span className="mx-2">→</span>
+              <span className="text-[#2E5266]">{cantador.nome}</span>
+            </div>
+            <a
+              href={`https://github.com/lucis/vilanova/issues/new?title=Biografia: ${encodeURIComponent(cantador.nome)}&body=Gostaria de adicionar informações sobre ${encodeURIComponent(cantador.nome)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-3 py-1.5 text-xs border-2 border-[#8B6F47] text-[#2E5266] rounded-lg hover:bg-[#8B6F47] hover:text-white transition-colors font-semibold whitespace-nowrap"
+            >
+              💡 Sugerir Bio
+            </a>
           </div>
           
           {/* Avatar e Nome */}
@@ -83,6 +94,28 @@ function CantadorDetail() {
                   </span>
                 </div>
               </div>
+            </div>
+          </div>
+          
+          {/* Alert para biografia */}
+          <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg mb-8">
+            <div className="flex items-start justify-between gap-4">
+              <div className="flex-1">
+                <p className="text-sm font-semibold text-blue-800 mb-1">
+                  📖 Conhece a história deste cantador?
+                </p>
+                <p className="text-xs text-blue-700">
+                  Ajude a adicionar biografia, prêmios, datas importantes e links pessoais (Instagram, YouTube).
+                </p>
+              </div>
+              <a
+                href={`https://github.com/lucis/vilanova/issues/new?title=Biografia: ${encodeURIComponent(cantador.nome)}&labels=biografia&body=**Nome:** ${encodeURIComponent(cantador.nome)}%0A%0A**Informações a adicionar:**%0A- Biografia:%20%0A- Data de nascimento:%20%0A- Local:%20%0A- Prêmios:%20%0A- Links (Instagram, YouTube, etc):%20`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-blue-700 font-semibold hover:underline whitespace-nowrap"
+              >
+                Contribuir →
+              </a>
             </div>
           </div>
           

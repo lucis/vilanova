@@ -20,51 +20,111 @@ Por sua estrutura mais acessível (comparada aos martelos e galopes), a Oitava �
 
 1. **Métrica**: Versos setissílabos (7 sílabas poéticas) - Redondilha Maior
 2. **Estrofes**: Uma ou mais estrofes de **8 versos** cada
-3. **Esquema de rima**: **ABBAACCA**
+3. **Esquema de rima**: **ABBAACCB** ⚠️
 4. **Ritmo**: Mais livre que o Galope, mas mantendo musicalidade
+5. **⚠️ IMPORTANTE**: As rimas são **FONÉTICAS** (som), não ortográficas (letras)
 
-### Esquema de Rima Explicado
+### Esquema de Rima Correto (ABBAACCB)
 
 ```
 A - primeiro verso
 B - segundo verso
-B - terceiro verso (rima com o segundo)
-A - quarto verso (rima com o primeiro)
-A - quinto verso (rima com primeiro e quarto)
+B - terceiro verso (rima SONORA com o segundo)
+A - quarto verso (rima SONORA com o primeiro)
+A - quinto verso (rima SONORA com primeiro e quarto)
 C - sexto verso
-C - sétimo verso (rima com o sexto)
-A - oitavo verso (rima com primeiro, quarto e quinto)
+C - sétimo verso (rima SONORA com o sexto)
+B - oitavo verso (rima SONORA com segundo e terceiro) ← FECHA O CICLO B
 ```
+
+**⚠️ Correção importante**: O verso 8 rima com os versos 2 e 3 (grupo B), não com os versos A.
 
 ## Exemplo do Acervo Vilanova
 
-### Estrofe Clássica - Nonato Costa
+### Estrofe Clássica - Os Nonatos (Análise Fonética)
 
 ```
-São Lourenço da Mata nos escuta              (A - escuta)
-e pelo povo que aplaude, agora exalto        (B - exalto)
-Mesmo estando em primeiro na disputa,        (B - disputa, rima toante com exalto)
-com respeito aos outros eu não falto         (A - falto, rima com exalto)
-Obrigado a vocês desta cidade                (A - cidade)
-pela grande receptividade                    (C - dade)
-Quem não calça as sandálias da humildade     (C - dade)
-torce o pé se correr desalta                 (A - alta, rima com exalto/falto)
+São Lourenço da Mata nos escuta        (A - /es.ˈku.ta/)
+e pelo povo que aplaude, agora exalto  (B - /e.ˈzal.to/)
+Mesmo estando em primeiro na disputa,  (A - /dis.ˈpu.ta/) ← rima com escuta
+com respeito aos outros eu não falto   (B - /ˈfal.to/) ← rima com exalto
+Obrigado a vocês desta cidade          (A - /si.ˈda.dʒi/)
+pela grande receptividade              (C - /vi.ˈda.dʒi/)
+Quem não calça as sandálias da humildade (C - /mi.ˈda.dʒi/)
+torce o pé se correr desalta           (B - /de.ˈzal.ta/) ← RIMA COM exalto/falto!
 ```
 
-*Nota: Este exemplo mostra pequenas variações na pronúncia típicas da oralidade do repente.*
+**Análise das rimas fonéticas:**
 
-### Outra Estrofe - Nonato Neto
+**Grupo A** (versos 1, 3, 5):
+- **escuta** /ˈku.ta/ 
+- **disputa** /ˈpu.ta/ ← rima perfeita
+- **cidade** /ˈda.dʒi/ ← rima toante (variação regional)
+
+**Grupo B** (versos 2, 4, 8):
+- **exalto** /ˈzal.to/
+- **falto** /ˈfal.to/ ← rima perfeita
+- **desalta** /ˈzal.ta/ ← **RIMA FONÉTICA!** (som /al.t/ é igual)
+
+**Grupo C** (versos 6, 7):
+- **receptividade** /vi.ˈda.dʒi/
+- **humildade** /mi.ˈda.dʒi/ ← rima perfeita
+
+**🔑 Descoberta importante**: 
+- "exalto" (/al.to/) rima com "desalta" (/al.ta/)
+- O som base é /al.t/, a diferença -o/-a é mínima na pronúncia nordestina
+- Por isso o verso 8 FECHA o ciclo B!
+
+### Outra Estrofe - Os Nonatos
 
 ```
-Qualidade é um item que invalida             (A)
-a ação do processo de derrota                (B)
-com a fonte da mente abastecida              (A)
-uma seca de rimas não esgota                 (B)
-A cobrança do povo e da imprensa,            (A)
-três jurados julgando na presença            (C)
-e meio ponto faz muita diferença             (C)
-quando a gente precisa de uma nota           (A)
+Qualidade é um item que invalida       (A - /in.va.ˈli.da/)
+a ação do processo de derrota          (B - /de.ˈʁɔ.ta/)
+com a fonte da mente abastecida        (A - /a.bas.te.ˈsi.da/) ← rima com invalida
+uma seca de rimas não esgota           (B - /es.ˈgɔ.ta/) ← rima com derrota
+A cobrança do povo e da imprensa,      (A - /ĩ.ˈpɾẽ.sa/)
+três jurados julgando na presença      (C - /pɾe.ˈzẽ.sa/)
+e meio ponto faz muita diferença       (C - /di.fe.ˈɾẽ.sa/)
+quando a gente precisa de uma nota     (B - /ˈnɔ.ta/) ← fecha ciclo B com derrota/esgota
 ```
+
+**Esquema confirmado**: ABBAACCB em todas as oitavas!
+
+## 🎵 Rimas Fonéticas na Oitava
+
+**Descoberta crucial**: O verso 8 sempre fecha o ciclo da rima B (versos 2 e 4), não da rima A!
+
+### Por Que "exalto" rima com "desalta"?
+
+Na pronúncia nordestina:
+- **exalto** → /e.ˈzal.to/
+- **desalta** → /de.ˈzal.ta/
+
+O som base **/al.t/** é idêntico. A diferença entre -o e -a no final é mínima ou inexistente na fala rápida do repente.
+
+### Outros Exemplos de Rimas Fonéticas em Oitavas:
+
+| Verso 2 | Verso 4 | Verso 8 | Base Sonora |
+|---------|---------|---------|-------------|
+| exalto | falto | desalta | /al.t/ |
+| derrota | esgota | nota | /ɔ.ta/ |
+| vivência | presença | diferença | /ẽ.sa/ |
+| distante | gigante | importante | /ãn.tʃi/ |
+
+### Rima Toante em Oitavas
+
+Às vezes, o grupo A usa rimas toantes (vogais iguais, consoantes diferentes):
+
+```
+escuta (A - /ˈku.ta/)
+disputa (A - /ˈpu.ta/) ← rima perfeita
+cidade (A - /ˈda.dʒi/) ← rima toante!
+```
+
+Isso é ACEITO porque:
+- A vogal tônica /a/ está presente em todas
+- Na pronúncia rápida, as diferenças diminuem
+- O ritmo da viola ajuda a "mascarar" pequenas variações
 
 ## Dificuldade
 

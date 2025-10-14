@@ -77,9 +77,20 @@ function CantoriasPage() {
             Acervo de Cantorias
           </h1>
           
-          <p className="text-xl text-[#2E5266]/70 text-center max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-[#2E5266]/70 text-center max-w-3xl mx-auto mb-4">
             Cantorias catalogadas, transcritas e estruturadas do repente nordestino
           </p>
+          
+          <div className="text-center mb-8">
+            <a
+              href="https://github.com/lucis/vilanova/blob/main/public/data/acervo.json"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-[#C84B31] hover:underline"
+            >
+              📄 Ver dados brutos no GitHub
+            </a>
+          </div>
           
           {/* Estatísticas */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">

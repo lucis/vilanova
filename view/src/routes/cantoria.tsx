@@ -3,6 +3,7 @@ import { Music, MapPin, Calendar } from "lucide-react";
 import acervoData from "../../../public/data/acervo.json";
 import type { Cantoria } from "../lib/types";
 import { SiteHeader } from "../components/site-header";
+import { EditButton } from "../components/edit-button";
 
 function extractYouTubeId(url: string): string {
   if (!url) return '';
@@ -39,13 +40,19 @@ function CantoriaDetail() {
       {/* Hero da Cantoria */}
       <section className="py-12 md:py-16 px-5 md:px-12 bg-gradient-to-b from-white to-[#F5EBE0]">
         <div className="max-w-5xl mx-auto">
-          {/* Breadcrumb */}
-          <div className="text-sm text-[#2E5266]/60 mb-6">
-            <Link to="/" className="hover:text-[#C84B31]">Início</Link>
-            <span className="mx-2">→</span>
-            <span>Cantorias</span>
-            <span className="mx-2">→</span>
-            <span className="text-[#2E5266]">{cantoria.titulo}</span>
+          {/* Breadcrumb e Edit Button */}
+          <div className="flex items-start justify-between gap-4 mb-6">
+            <div className="text-sm text-[#2E5266]/60">
+              <Link to="/" className="hover:text-[#C84B31]">Início</Link>
+              <span className="mx-2">→</span>
+              <Link to="/cantorias" className="hover:text-[#C84B31]">Cantorias</Link>
+              <span className="mx-2">→</span>
+              <span className="text-[#2E5266]">{cantoria.titulo}</span>
+            </div>
+            <EditButton 
+              filePath="repentes/acervo-estruturado.json"
+              size="sm"
+            />
           </div>
           
           {/* Título */}
@@ -80,6 +87,30 @@ function CantoriaDetail() {
             </div>
           </div>
           
+          {/* Alerts de informações faltantes */}
+          {(!cantoria.links.youtube || !cantoria.local || !cantoria.ano) && (
+            <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg mb-6">
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1">
+                  <p className="text-sm font-semibold text-blue-800 mb-2">
+                    📝 Ajude a completar esta cantoria
+                  </p>
+                  <ul className="text-xs text-blue-700 space-y-1">
+                    {!cantoria.links.youtube && <li>• Link do YouTube não informado</li>}
+                    {!cantoria.local && <li>• Local da cantoria não informado</li>}
+                    {!cantoria.ano && <li>• Ano não informado</li>}
+                  </ul>
+                </div>
+                <EditButton 
+                  filePath="repentes/acervo-estruturado.json"
+                  label="Adicionar"
+                  variant="text"
+                  size="sm"
+                />
+              </div>
+            </div>
+          )}
+
           {/* Cantadores */}
           <div className="bg-white border-2 border-[#8B6F47] rounded-lg p-6 mb-8">
             <h3 className="font-semibold text-lg text-[#2E5266] mb-4">Cantadores:</h3>
@@ -182,6 +213,29 @@ function CantoriaDetail() {
             Estrofes
           </h2>
           
+          {/* Alert para cantorias sem estrofes */}
+          {cantoria.estrofes.length === 0 && (
+            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-lg mb-8">
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1">
+                  <p className="text-sm font-semibold text-yellow-800 mb-2">
+                    💡 Esta cantoria ainda precisa de estrofes estruturadas
+                  </p>
+                  <p className="text-xs text-yellow-700">
+                    A transcrição existe, mas as estrofes ainda não foram separadas e catalogadas. 
+                    Você pode ajudar estruturando os versos!
+                  </p>
+                </div>
+                <EditButton 
+                  filePath="repentes/acervo-estruturado.json"
+                  label="Estruturar"
+                  variant="text"
+                  size="sm"
+                />
+              </div>
+            </div>
+          )}
+
           {cantoria.estrofes.length > 0 ? (
             <div className="space-y-8">
               {cantoria.estrofes.map((estrofe, idx) => (

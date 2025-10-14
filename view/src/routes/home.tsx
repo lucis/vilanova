@@ -882,7 +882,108 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Section 8: Entre Cordas e Poesia */}
+      {/* Section 8: Como Contribuir */}
+      <section className="py-16 md:py-24 px-5 md:px-12 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#C84B31] text-center mb-6">
+            Como Contribuir
+          </h2>
+          
+          <p className="text-xl text-[#2E5266]/70 text-center max-w-3xl mx-auto mb-12">
+            O Vilanova é colaborativo. Você pode ajudar a preservar o repente nordestino!
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            {/* Card 1 */}
+            <div className="border-2 border-[#8B6F47] rounded-lg p-6 bg-[#F5EBE0]">
+              <div className="text-3xl mb-3">✏️</div>
+              <h3 className="font-bold text-xl text-[#2E5266] mb-3">
+                Corrigir Informações
+              </h3>
+              <p className="text-sm text-[#2E5266]/80 leading-relaxed mb-4">
+                Viu um erro em uma cantoria? Falta o local ou ano? 
+                Clique em <strong>"Sugerir Melhoria"</strong> na página e edite diretamente no GitHub.
+              </p>
+              <span className="inline-block text-xs bg-[#4A7C59] text-white px-3 py-1 rounded-full">
+                1 clique
+              </span>
+            </div>
+            
+            {/* Card 2 */}
+            <div className="border-2 border-[#8B6F47] rounded-lg p-6 bg-[#F5EBE0]">
+              <div className="text-3xl mb-3">📖</div>
+              <h3 className="font-bold text-xl text-[#2E5266] mb-3">
+                Adicionar Biografias
+              </h3>
+              <p className="text-sm text-[#2E5266]/80 leading-relaxed mb-4">
+                Conhece a história de algum cantador? Suas conquistas, prêmios, trajetória?
+                Clique em <strong>"Sugerir Bio"</strong> e compartilhe!
+              </p>
+              <span className="inline-block text-xs bg-[#4A7C59] text-white px-3 py-1 rounded-full">
+                Via GitHub Issue
+              </span>
+            </div>
+            
+            {/* Card 3 */}
+            <div className="border-2 border-[#8B6F47] rounded-lg p-6 bg-[#F5EBE0]">
+              <div className="text-3xl mb-3">🎵</div>
+              <h3 className="font-bold text-xl text-[#2E5266] mb-3">
+                Enviar Novas Cantorias
+              </h3>
+              <p className="text-sm text-[#2E5266]/80 leading-relaxed mb-4">
+                Tem gravações de repentes? Links do YouTube de cantorias não catalogadas?
+                Abra uma issue no GitHub!
+              </p>
+              <a
+                href="https://github.com/lucis/vilanova/issues/new?title=Nova Cantoria&labels=nova-cantoria"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-xs bg-[#C84B31] text-white px-3 py-1 rounded-full hover:bg-[#A63D40] transition-colors"
+              >
+                Sugerir Cantoria
+              </a>
+            </div>
+          </div>
+          
+          <div className="bg-[#E8D4B0] border-2 border-[#8B6F47] rounded-lg p-8 text-center">
+            <h3 className="font-bold text-2xl text-[#2E5266] mb-4">
+              O Processo é Simples
+            </h3>
+            <div className="max-w-2xl mx-auto space-y-3 text-left">
+              <div className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-6 h-6 bg-[#C84B31] text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+                <p className="text-sm text-[#2E5266]/80">
+                  <strong>Clique em "Sugerir Melhoria"</strong> em qualquer página
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-6 h-6 bg-[#C84B31] text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+                <p className="text-sm text-[#2E5266]/80">
+                  <strong>GitHub abre o editor</strong> (cria fork automaticamente se necessário)
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-6 h-6 bg-[#C84B31] text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+                <p className="text-sm text-[#2E5266]/80">
+                  <strong>Você edita o JSON</strong> (com syntax highlighting e validação)
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-6 h-6 bg-[#C84B31] text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+                <p className="text-sm text-[#2E5266]/80">
+                  <strong>Pull Request criado automaticamente</strong> para revisão
+                </p>
+              </div>
+            </div>
+            
+            <p className="text-sm text-[#2E5266]/60 mt-6 italic">
+              Todas as contribuições são reconhecidas no histórico do GitHub! 🏆
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 9: Entre Cordas e Poesia */}
       <section className="py-16 md:py-24 px-5 md:px-12 bg-gradient-to-b from-[#2E5266] to-[#4A7C59]">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
