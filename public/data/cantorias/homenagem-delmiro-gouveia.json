@@ -1,0 +1,142 @@
+{
+  "id": "homenagem-delmiro-gouveia",
+  "slug": "homenagem-delmiro-gouveia",
+  "titulo": "Homenagem a Delmiro Gouveia",
+  "estilo": {
+    "nome": "Décima (Mote Fixo)",
+    "slug": "decima-mote-fixo",
+    "versos_por_estrofe": 10,
+    "metrica": "decassílabos (10 sílabas)",
+    "esquema_rima": "ABBAACCDDC",
+    "mote_fixo": "Foi Delmiro Gouveia, o pioneiro, / implantando o progresso no sertão"
+  },
+  "cantadores": [
+    {
+      "nome": "Valdir Teles",
+      "slug": "valdir-teles"
+    },
+    {
+      "nome": "Zé Cardoso",
+      "slug": "ze-cardoso"
+    }
+  ],
+  "local": null,
+  "ano": null,
+  "contexto": "Homenagem histórica a Delmiro Gouveia (1863-1917), industrial pioneiro que industrializou o sertão alagoano",
+  "estrofes": [
+    {
+      "numero": 1,
+      "cantador": "Valdir Teles ou Zé Cardoso",
+      "versos": [
+        "Quando Almiro Gouveia, a nossa história",
+        "teve um lindo prefácio industrial.",
+        "Com visão de alcance mundial",
+        "e a luz de futuro na memória.",
+        "Começando na sua trajetória",
+        "no Recife, viveu como barão.",
+        "Rei das peles, fazendo exportação",
+        "do Nordeste direto ao estrangeiro",
+        "foi Delmiro Gouveia, o pioneiro,",
+        "implantando o progresso no sertão."
+      ],
+      "tema": "Início da trajetória de Delmiro Gouveia no Recife, comércio de peles"
+    },
+    {
+      "numero": 2,
+      "cantador": "Valdir Teles ou Zé Cardoso",
+      "versos": [
+        "No Recife, chegou e conseguiu",
+        "um espaço bem novo e trabalhou",
+        "o mercado do dérbi. Ele criou,",
+        "mas o fogo da inveja o destruiu.",
+        "Em procura da pedra, ele partiu.",
+        "Fixou-se naquela região",
+        "numa casa encostada à estação.",
+        "Comprou couro de bode e de carneiro.",
+        "Foi Delmiro Gouveia, o pioneiro,",
+        "implantando o progresso no sertão."
+      ],
+      "tema": "Mudança para o sertão após inveja destruir negócio no Recife"
+    },
+    {
+      "numero": 3,
+      "cantador": "Valdir Teles ou Zé Cardoso",
+      "versos": [
+        "Começou namorando a cachoeira.",
+        "Apesar de correr um grande risco,",
+        "levou a água do rio São Francisco,",
+        "fez da pedra uma terra ouriçareira,",
+        "onde a fábrica de linho era a bandeira,",
+        "dando impulso pra civilização.",
+        "Seu produto ganhou aceitação",
+        "no Brasil e depois no estrangeiro.",
+        "Foi Delmiro Gouveia o pioneiro",
+        "implantando o progresso no sertão."
+      ],
+      "tema": "Construção da fábrica de linhas e aproveitamento do Rio São Francisco"
+    },
+    {
+      "numero": 4,
+      "cantador": "Valdir Teles ou Zé Cardoso",
+      "versos": [
+        "Anjiquinhos o ponto de partida,",
+        "testemunha do grande desafio",
+        "na batalha de um homem contra o rio,",
+        "à procura da Terra Prometida.",
+        "Se na Terra o sertão não tinha vida,",
+        "com Delmiro chegou a solução.",
+        "Botou água e eletrificação,",
+        "construiu uma fábrica e fez dinheiro.",
+        "Foi Delmiro Gouveia o pioneiro",
+        "implantando o progresso no sertão."
+      ],
+      "tema": "Transformação do sertão árido com água e eletricidade"
+    },
+    {
+      "numero": 5,
+      "cantador": "Valdir Teles ou Zé Cardoso",
+      "versos": [
+        "Na limpeza, Delmiro era imbatível.",
+        "Na cultura, foi grande educador.",
+        "Sertanejo com cara de doutor,",
+        "na saúde, ele fez o impossível.",
+        "Na coragem, ele foi incorrigível.",
+        "Na linguagem, ele teve educação.",
+        "No direito, ele foi um cidadão.",
+        "De seu povo, ele foi o conselheiro.",
+        "Foi Delmiro Gouveia, o pioneiro,",
+        "implantando o progresso no sertão."
+      ],
+      "tema": "Qualidades pessoais de Delmiro: educação, saúde, liderança"
+    },
+    {
+      "numero": 6,
+      "cantador": "Valdir Teles ou Zé Cardoso",
+      "versos": [
+        "A inveja cresceu contra Delmiro.",
+        "O seu grupo rival foi mais cruel.",
+        "Dois ou três matadores de aluguel",
+        "conseguiram alcançar o seu retiro.",
+        "Ao quebrar da espoleta, ouviu-se um tiro.",
+        "Uma bala acertou seu coração.",
+        "Toda a fábrica parou na emoção.",
+        "Começou do seu povo o desespero.",
+        "Foi Delmiro Gouveia, o pioneiro,",
+        "implantando o progresso no sertão."
+      ],
+      "tema": "Assassinato de Delmiro Gouveia em 1917"
+    }
+  ],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=ShaRk_Fv404",
+    "spotify": null
+  },
+  "transcricao_path": "/repentes/homenagem-delmiro-gouveia.txt",
+  "audio_path": null,
+  "destaque": true,
+  "_metadata": {
+    "created_at": "2025-01-17",
+    "file_ref": "/cantorias/homenagem-delmiro-gouveia.json",
+    "source": "Projeto Vilanova - vilanova.deco.page"
+  }
+}

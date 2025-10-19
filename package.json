@@ -10,7 +10,9 @@
     "gen": "deco gen --output=shared/deco.gen.ts",
     "deploy": "npm run build && deco deploy ./dist/server",
     "build": "vite build",
-    "db:generate": "drizzle-kit generate"
+    "db:generate": "drizzle-kit generate",
+    "data:split": "npx tsx scripts/split-acervo.ts",
+    "data:sync": "npm run data:split && cp -r public/data/* dist/client/data/"
   },
   "dependencies": {
     "@deco/workers-runtime": "npm:@jsr/deco__workers-runtime@0.20.4",

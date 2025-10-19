@@ -65,9 +65,9 @@
       "estrutura": {
         "metrica": "decassílabos (10 sílabas poéticas)",
         "versos_por_estrofe": 10,
-        "esquema_rima": "AAAAAAAAAB + mote triplo",
+        "esquema_rima": "ABBAACCDDC",
         "tonicas": "Ritmo cadenciado, quase militar",
-        "obrigatoriedade": "9 versos com mesma rima A, verso 10 rima B, seguido do mote repetido 3 vezes"
+        "obrigatoriedade": "Esquema ABBAACCDDC com mote fixo repetido 3 vezes (nas posições 11, 12 e 13)"
       },
       "dificuldade": "Mestre",
       "nivel_numero": 4,

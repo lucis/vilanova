@@ -1,0 +1,192 @@
+{
+  "id": "martelo-alagoano-valdir-teles-ze-cardoso",
+  "slug": "martelo-alagoano-valdir-teles-ze-cardoso",
+  "titulo": "Martelo Alagoano - Valdir Teles e Zé Cardoso",
+  "estilo": {
+    "nome": "Martelo Alagoano",
+    "slug": "martelo-alagoano",
+    "versos_por_estrofe": 10,
+    "metrica": "decassílabos (10 sílabas)",
+    "esquema_rima": "ABBAACCDDC",
+    "mote_fixo": "Nos dez pés de martelo alagoano (repetido 3x)"
+  },
+  "cantadores": [
+    {
+      "nome": "Valdir Teles",
+      "slug": "valdir-teles"
+    },
+    {
+      "nome": "Zé Cardoso",
+      "slug": "ze-cardoso"
+    }
+  ],
+  "local": null,
+  "ano": null,
+  "contexto": "Martelo Alagoano narrando as dificuldades e honras de diferentes profissões brasileiras",
+  "estrofes": [
+    {
+      "numero": 1,
+      "cantador": "Valdir Teles ou Zé Cardoso",
+      "versos": [
+        "No cenário de cada profissão,",
+        "cada um se espelha no que faz.",
+        "O vaqueiro é pastor dos animais,",
+        "responsável por toda a criação.",
+        "Dá duzentos reais pelo gibão,",
+        "mas não gasta real comprando pano.",
+        "Na batalha do pão cotidiano,",
+        "o cavalo de campo é seu transporte.",
+        "Desafia o perigo, enfrenta a morte.",
+        "Nos dez pés de martelo alagoano.",
+        "Nos dez pés de martelo alagoano.",
+        "Nos dez pés de martelo alagoano."
+      ],
+      "tema": "Profissão: Vaqueiro - dedicação e sacrifício"
+    },
+    {
+      "numero": 2,
+      "cantador": "Valdir Teles ou Zé Cardoso",
+      "versos": [
+        "O soldado precisa muita sorte",
+        "pra poder exercer o seu ofício.",
+        "Quantas vezes se entrega ao sacrifício,",
+        "dando prova pra o mundo o quanto é forte.",
+        "Vai de um tanque de guerra o seu transporte",
+        "pra mostrar que o país é soberano.",
+        "A Marinha defende o oceano.",
+        "A Aeronáutica no ar enfrenta a guerra.",
+        "O Exército defende a nossa terra.",
+        "Nos dez pés de martelo alagoano.",
+        "Nos dez pés de martelo alagoano.",
+        "Nos dez pés de martelo alagoano."
+      ],
+      "tema": "Profissão: Soldado - sacrifício pela pátria"
+    },
+    {
+      "numero": 3,
+      "cantador": "Valdir Teles ou Zé Cardoso",
+      "versos": [
+        "Já o homem da roça faz da terra",
+        "a empresa que gera seu sustento.",
+        "No inverno, produz o alimento.",
+        "Quando o ano é de seca, ele se ferra.",
+        "Faz a casa num triste pé de serra.",
+        "Parecendo morada de cigano.",
+        "Numa festa, só vai de ano em ano.",
+        "Festejar as lições do padroeiro.",
+        "Assim mesmo, ainda vai sem ter dinheiro.",
+        "Nos dez pés de martelo alagoano.",
+        "Nos dez pés de martelo alagoano.",
+        "Nos dez pés de martelo alagoano."
+      ],
+      "tema": "Profissão: Agricultor - luta contra a seca e a pobreza"
+    },
+    {
+      "numero": 4,
+      "cantador": "Valdir Teles ou Zé Cardoso",
+      "versos": [
+        "Admiro o chofer caminhoneiro,",
+        "conduzindo o progresso da nação.",
+        "Dirigindo o carreta ou caminhão,",
+        "se pegando com Deus o tempo inteiro.",
+        "Tem bandido que mata carreteiro.",
+        "Só por ter o instinto desumano,",
+        "se pensasse no Cristo soberano,",
+        "de fazer mal ao próximo, desistia.",
+        "Ao invés de ofender, ajudaria.",
+        "Nos dez pés de martelo alagoano.",
+        "Nos dez pés de martelo alagoano.",
+        "Nos dez pés de martelo alagoano."
+      ],
+      "tema": "Profissão: Caminhoneiro - perigo nas estradas"
+    },
+    {
+      "numero": 5,
+      "cantador": "Valdir Teles ou Zé Cardoso",
+      "versos": [
+        "Jangadeiro trabalha todo o dia,",
+        "manobrando a jangada em alto mar,",
+        "vendo a hora seu barco naufragar,",
+        "sem poder se livrar da maresia.",
+        "Quando o mar está ruim para a pescaria,",
+        "de voltar ele pega fazer plano.",
+        "Muito embora conheça o oceano,",
+        "mas não quer arriscar a sua vida.",
+        "Quem lutar contra o mar se suicida.",
+        "Nos dez pés de martelo alagoano.",
+        "Nos dez pés de martelo alagoano.",
+        "Nos dez pés de martelo alagoano."
+      ],
+      "tema": "Profissão: Jangadeiro - risco constante no mar"
+    },
+    {
+      "numero": 6,
+      "cantador": "Valdir Teles ou Zé Cardoso",
+      "versos": [
+        "É o padre, figura conhecida.",
+        "Das ovelhas de Deus é o pastor.",
+        "Ensinando o caminho do amor",
+        "pra quem quer lhe alcançar a outra vida.",
+        "A igreja lhe serve de guarida.",
+        "Dá conselho ao espírito leviano.",
+        "Um ministro fiel do soberano.",
+        "Sua roupa de luxo é a batina.",
+        "Professor das lições que Deus ensina.",
+        "Nos dez pés de martelo alagoano.",
+        "Nos dez pés de martelo alagoano.",
+        "Nos dez pés de martelo alagoano."
+      ],
+      "tema": "Profissão: Padre - missão espiritual"
+    },
+    {
+      "numero": 7,
+      "cantador": "Valdir Teles ou Zé Cardoso",
+      "versos": [
+        "Ei, o médico que faz da medicina.",
+        "A mais bela de todas profissões.",
+        "A missão mais sagrada das lições.",
+        "Consagrada por Deus, a mais divina.",
+        "É o homem que nasce com a sina",
+        "de lutar pra salvar o ser humano.",
+        "Faz transplante de órgão, sem engano.",
+        "Quando a vida anuncia a despedida,",
+        "não é Deus, mas concede nova vida.",
+        "Nos dez pés de martelo alagoano.",
+        "Nos dez pés de martelo alagoano.",
+        "Nos dez pés de martelo alagoano."
+      ],
+      "tema": "Profissão: Médico - missão de salvar vidas"
+    },
+    {
+      "numero": 8,
+      "cantador": "Valdir Teles ou Zé Cardoso",
+      "versos": [
+        "A missão da mulher prostituída",
+        "é cuidar dos fregueses no bordel.",
+        "Faz do corpo uma empresa de aluguel",
+        "pra poder arrumar o pão da vida.",
+        "Tantas vezes no fogo da bebida",
+        "se entrega ao parceiro desumano.",
+        "Pelo copo de uísque, eu disse insano.",
+        "Ela aceita o primeiro sedutor.",
+        "Praticante de sexo sem amor.",
+        "Nos dez pés de martelo alagoano.",
+        "Nos dez pés de martelo alagoano.",
+        "Nos dez pés de martelo alagoano."
+      ],
+      "tema": "Profissão: Profissional do sexo - sobrevivência e marginalização"
+    }
+  ],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=NWRN0E3v2u4",
+    "spotify": null
+  },
+  "transcricao_path": "/repentes/martelo-alagoano-valdir-teles-ze-cardoso.txt",
+  "audio_path": null,
+  "destaque": true,
+  "_metadata": {
+    "created_at": "2025-01-17",
+    "file_ref": "/cantorias/martelo-alagoano-valdir-teles-ze-cardoso.json",
+    "source": "Projeto Vilanova - vilanova.deco.page"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "oitavas-os-nonatos-sao-lourenco",
+  "slug": "oitavas-os-nonatos-sao-lourenco-mata",
+  "titulo": "Oitavas em São Lourenço da Mata",
+  "estilo": {
+    "nome": "Oitava",
+    "slug": "oitava",
+    "versos_por_estrofe": 8,
+    "metrica": "setissílabos (7 sílabas)",
+    "esquema_rima": "ABBAACCB"
+  },
+  "cantadores": [
+    {
+      "nome": "Nonato Costa",
+      "slug": "nonato-costa",
+      "dupla": "Os Nonatos"
+    },
+    {
+      "nome": "Nonato Neto",
+      "slug": "nonato-neto",
+      "dupla": "Os Nonatos"
+    }
+  ],
+  "local": "São Lourenço da Mata, Pernambuco",
+  "ano": null,
+  "contexto": "Festival/Competição",
+  "estrofes": [
+    {
+      "numero": 1,
+      "cantador": "Nonato Costa",
+      "versos": [
+        "São Lourenço da Mata nos escuta",
+        "e pelo povo que aplaude, agora exalto",
+        "Mesmo estando em primeiro na disputa,",
+        "com respeito aos outros eu não falto",
+        "Obrigado a vocês desta cidade",
+        "pela grande receptividade",
+        "Quem não calça as sandálias da humildade",
+        "torce o pé se correr desalta"
+      ],
+      "tema": "Humildade na competição, respeito aos adversários"
+    },
+    {
+      "numero": 2,
+      "cantador": "Nonato Costa",
+      "versos": [
+        "Aos colegas que ficam aqui, ressalto",
+        "que é comum ter pequeno, grande e médio",
+        "Os que vão do Recife pra o Planalto",
+        "vão atrás de troféu, fama e assédio",
+        "Na fornalha não diminui a frágua,",
+        "não pretendo levar nem deixar mágoa",
+        "Chega a hora da onça beber água",
+        "e quem sofrer da pressão tome remédio"
+      ],
+      "tema": "Pressão da competição, sabedoria sobre rivalidade"
+    },
+    {
+      "numero": 3,
+      "cantador": "Nonato Neto",
+      "versos": [
+        "Encarar público, grande palco e prédio,",
+        "anotei como meta em minha lida",
+        "As piadas injustas só dão tédio",
+        "a quem é revoltado com a vida",
+        "O triunfo Deus dá a quem merece",
+        "pelo sonho do título a pressão cresce",
+        "e é no fim da ladeira que aparece",
+        "o maior obstáculo da corrida"
+      ],
+      "tema": "Desafios da carreira, superação"
+    },
+    {
+      "numero": 4,
+      "cantador": "Nonato Neto",
+      "versos": [
+        "Qualidade é um item que invalida",
+        "a ação do processo de derrota",
+        "com a fonte da mente abastecida",
+        "uma seca de rimas não esgota",
+        "A cobrança do povo e da imprensa,",
+        "três jurados julgando na presença",
+        "e meio ponto faz muita diferença",
+        "quando a gente precisa de uma nota"
+      ],
+      "tema": "Preparação mental, julgamento"
+    }
+  ],
+  "links": {
+    "youtube": "",
+    "spotify": null
+  },
+  "transcricao_path": "/repentes/oitavas-dos-nonatos.txt",
+  "audio_path": null,
+  "destaque": true,
+  "_metadata": {
+    "created_at": "2025-01-17",
+    "file_ref": "/cantorias/oitavas-os-nonatos-sao-lourenco.json",
+    "source": "Projeto Vilanova - vilanova.deco.page"
+  }
+}

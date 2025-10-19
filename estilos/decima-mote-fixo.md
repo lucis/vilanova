@@ -167,7 +167,7 @@ Cada estrofe termina com o mesmo mote, criando um **efeito de refrão** que refo
 
 ### Décima vs. Martelo Alagoano
 - **Décima**: Esquema ABBAACCDDC, mote de 2 versos
-- **Martelo**: Esquema AAAAAAAAAB, mote triplo (3x)
+- **Martelo Alagoano**: Esquema ABBAACCDDC, mote triplo (3x)
 - Décima permite maior variação de rima, Martelo é mais desafiador tecnicamente
 
 ### Décima vs. Galope

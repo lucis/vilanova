@@ -1,7 +1,6 @@
 import { createRoute, Link, type RootRoute } from "@tanstack/react-router";
-import { ExternalLink, Github } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import acervoData from "../../../public/data/acervo.json";
+import { ExternalLink } from "lucide-react";
+import acervoData from "../lib/acervoCompat";
 import { useMemo } from "react";
 import { agregarCantadores } from "../lib/cantadores";
 import type { Cantoria } from "../lib/types";
@@ -171,25 +170,31 @@ function HomePage() {
           {/* Exemplo de Estrofe Completa */}
           <div className="border-2 border-[#8B6F47] bg-white rounded-lg overflow-hidden mb-12">
             <div className="bg-[#E8D4B0] p-6 md:p-8">
+              <p className="text-xs text-[#2E5266]/70 mb-3 font-semibold uppercase tracking-wide">🏛️ História do Nordeste</p>
               <p className="italic text-base md:text-lg text-[#2E5266] leading-relaxed space-y-2">
-                <span className="block">São Lourenço da Mata nos escuta</span>
-                <span className="block">e pelo povo que aplaude, agora exalto</span>
-                <span className="block">Mesmo estando em primeiro na disputa,</span>
-                <span className="block">com respeito aos outros eu não falto</span>
-                <span className="block">Obrigado a vocês desta cidade</span>
-                <span className="block">pela grande receptividade</span>
-                <span className="block font-semibold">Quem não calça as sandálias da humildade</span>
-                <span className="block font-semibold">torce o pé se correr desalta</span>
+                <span className="block">Começou namorando a cachoeira.</span>
+                <span className="block">Apesar de correr um grande risco,</span>
+                <span className="block">levou a água do rio São Francisco,</span>
+                <span className="block">fez da pedra uma terra ouriçareira,</span>
+                <span className="block">onde a fábrica de linho era a bandeira,</span>
+                <span className="block">dando impulso pra civilização.</span>
+                <span className="block">Seu produto ganhou aceitação</span>
+                <span className="block">no Brasil e depois no estrangeiro.</span>
+                <span className="block font-bold">Foi Delmiro Gouveia o pioneiro</span>
+                <span className="block font-bold">implantando o progresso no sertão.</span>
+              </p>
+              <p className="text-xs text-[#2E5266]/60 mt-3 italic">
+                * Os últimos 2 versos são o mote fixo da Décima
               </p>
             </div>
             <div className="bg-white p-4 border-t-2 border-[#8B6F47]">
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <div className="flex items-center gap-3">
-                  <span className="text-sm font-semibold text-[#2E5266]">Nonato Costa</span>
+                  <span className="text-sm font-semibold text-[#2E5266]">Valdir Teles e Zé Cardoso</span>
                   <span className="text-xs text-[#2E5266]/50">·</span>
-                  <span className="text-sm text-[#2E5266]/70">Oitava</span>
+                  <span className="text-sm text-[#2E5266]/70">Décima (Mote Fixo)</span>
                 </div>
-                <Link to="/cantorias/$slug" params={{ slug: "oitavas-os-nonatos-sao-lourenco-mata" }} className="text-sm text-[#C84B31] font-semibold hover:underline">
+                <Link to="/cantorias/$slug" params={{ slug: "homenagem-delmiro-gouveia" }} className="text-sm text-[#C84B31] font-semibold hover:underline">
                   Ver cantoria completa →
                 </Link>
               </div>
@@ -538,7 +543,7 @@ function HomePage() {
                   em dados estruturados.
                 </p>
                 <span className="inline-block text-xs bg-[#4A7C59] text-white px-3 py-1 rounded-full">
-                  ✅ JÁ FUNCIONA (4 repentes transcritos)
+                  ✅ JÁ FUNCIONA (13 cantorias transcritas · 57 estrofes catalogadas)
                 </span>
               </div>
         </div>
@@ -640,11 +645,11 @@ function HomePage() {
           {/* Estatísticas */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
             <Link to="/cantorias" className="text-center hover:scale-105 transition-transform">
-              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">10</div>
+              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">13</div>
               <div className="text-sm md:text-base text-[#2E5266]/70">Cantorias</div>
             </Link>
             <Link to="/estilos" className="text-center hover:scale-105 transition-transform">
-              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">5</div>
+              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">6</div>
               <div className="text-sm md:text-base text-[#2E5266]/70">Estilos</div>
             </Link>
             <Link to="/cantadores" className="text-center hover:scale-105 transition-transform">
@@ -652,87 +657,96 @@ function HomePage() {
               <div className="text-sm md:text-base text-[#2E5266]/70">Cantadores</div>
             </Link>
             <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">49</div>
+              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">57</div>
               <div className="text-sm md:text-base text-[#2E5266]/70">Estrofes</div>
             </div>
           </div>
           
           {/* Exemplos Reais do Acervo */}
           <div className="space-y-6">
-            {/* Card 1: Oitava */}
+            {/* Card 1: Galope - Ingratidão */}
             <div className="border-2 border-[#8B6F47] bg-white rounded-lg overflow-hidden">
               <div className="p-4 bg-[#C84B31]/5">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="text-2xl">📖</div>
+                  <div className="text-2xl">🌊</div>
                 <div>
-                    <h3 className="font-bold text-lg text-[#2E5266]">Oitava</h3>
-                    <p className="text-xs text-[#2E5266]/60">8 versos setissílabos · ABBAACCA</p>
+                    <h3 className="font-bold text-lg text-[#2E5266]">Galope à Beira Mar · Ingratidão</h3>
+                    <p className="text-xs text-[#2E5266]/60">10 versos decassílabos · AAAAABBCCM</p>
                   </div>
                 </div>
               </div>
               
               <div className="p-6 bg-[#E8D4B0]">
-                <p className="italic text-sm md:text-base text-[#2E5266] leading-relaxed space-y-1">
-                  <span className="block">São Lourenço da Mata nos escuta</span>
-                  <span className="block">e pelo povo que aplaude, agora exalto</span>
-                  <span className="block">Mesmo estando em primeiro na disputa,</span>
-                  <span className="block">com respeito aos outros eu não falto</span>
-                  <span className="block">Obrigado a vocês desta cidade</span>
-                  <span className="block">pela grande receptividade</span>
-                  <span className="block font-semibold">Quem não calça as sandálias da humildade</span>
-                  <span className="block font-semibold">torce o pé se correr desalta</span>
+                <p className="text-xs text-[#2E5266]/70 mb-3 font-semibold uppercase tracking-wide">💔 Mestre e Aprendiz</p>
+                <p className="italic text-base md:text-lg text-[#2E5266] leading-relaxed space-y-1">
+                  <span className="block">Se não for loucura, você esqueceu</span>
+                  <span className="block">que teve por mestre esse professor.</span>
+                  <span className="block font-semibold">Você no presente só é cantador</span>
+                  <span className="block font-semibold">porque no passado foi aluno meu.</span>
+                  <span className="block">Do pão do meu prato você já comeu</span>
+                  <span className="block">e na minha sombra já foi repousar.</span>
+                  <span className="block">Mas por ser covarde resolveu pagar</span>
+                  <span className="block">o que recebeu dessa mão amiga,</span>
+                  <span className="block font-bold text-lg">cuspindo no prato que encheu a barriga,</span>
+                  <span className="block font-semibold">nos dez de galope da beira do mar.</span>
+                </p>
+                <p className="text-xs text-[#2E5266]/60 mt-3 italic">
+                  * Galope: 4 versos A, 2 B, 2 C + mote final
                 </p>
               </div>
               
               <div className="p-4 bg-white border-t-2 border-[#8B6F47]">
                 <div className="flex items-center justify-between flex-wrap gap-3">
                   <div className="flex items-center gap-2">
-                    <span className="text-sm font-bold text-[#2E5266]">Nonato Costa</span>
+                    <span className="text-sm font-bold text-[#2E5266]">Valdir Teles e Moacir Laurentino</span>
                     <span className="text-[#2E5266]/50">·</span>
-                    <span className="text-sm text-[#2E5266]/70">São Lourenço da Mata, PE</span>
+                    <span className="text-sm text-[#2E5266]/70">Tema: Traição entre mestre e aluno</span>
                   </div>
-                  <a href="/cantorias/oitavas-os-nonatos-sao-lourenco-mata" className="text-sm text-[#C84B31] font-semibold hover:underline">
+                  <Link to="/cantorias/$slug" params={{ slug: "galope-valdir-teles-moacir-laurentino" }} className="text-sm text-[#C84B31] font-semibold hover:underline">
                     Ver cantoria completa →
-                  </a>
+                  </Link>
                 </div>
               </div>
                 </div>
 
-            {/* Card 2: Martelo */}
+            {/* Card 2: Martelo Alagoano - Profissões */}
             <div className="border-2 border-[#8B6F47] bg-white rounded-lg overflow-hidden">
               <div className="p-4 bg-[#D49B54]/5">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="text-2xl">🔨</div>
                 <div>
-                    <h3 className="font-bold text-lg text-[#2E5266]">Martelo Alagoano</h3>
+                    <h3 className="font-bold text-lg text-[#2E5266]">Martelo Alagoano · Profissões</h3>
                     <p className="text-xs text-[#2E5266]/60">10 versos decassílabos + mote triplo</p>
                   </div>
                 </div>
               </div>
               
               <div className="p-6 bg-[#E8D4B0]">
-                <p className="text-sm text-[#2E5266]/80 mb-3">
-                  Estrofe completa a ser extraída da transcrição
-                </p>
+                <p className="text-xs text-[#2E5266]/70 mb-2 font-semibold uppercase tracking-wide">🌾 O Homem da Roça</p>
                 <p className="italic text-sm md:text-base text-[#2E5266] leading-relaxed space-y-1">
-                  <span className="block font-semibold">[...final da estrofe...]</span>
-                  <span className="block font-semibold">Nos dez pés de martelo alagoano</span>
-                  <span className="block font-semibold">Nos dez pés de martelo alagoano</span>
-                  <span className="block font-semibold">Nos dez pés de martelo alagoano</span>
-                </p>
-                <p className="text-xs text-[#2E5266]/60 mt-3">
-                  * Característica do Martelo: repetição tripla do mote
+                  <span className="block">Já o homem da roça faz da terra</span>
+                  <span className="block">a empresa que gera seu sustento.</span>
+                  <span className="block">No inverno, produz o alimento.</span>
+                  <span className="block font-semibold">Quando o ano é de seca, ele se ferra.</span>
+                  <span className="block">Faz a casa num triste pé de serra.</span>
+                  <span className="block">Parecendo morada de cigano.</span>
+                  <span className="block font-semibold">Numa festa, só vai de ano em ano.</span>
+                  <span className="block">Festejar as lições do padroeiro.</span>
+                  <span className="block font-bold">Assim mesmo, ainda vai sem ter dinheiro.</span>
+                  <span className="block text-xs opacity-70">Nos dez pés de martelo alagoano. (3x)</span>
                 </p>
               </div>
               
               <div className="p-4 bg-white border-t-2 border-[#8B6F47]">
                 <div className="flex items-center justify-between flex-wrap gap-3">
                   <div className="flex items-center gap-2">
-                    <span className="text-sm font-bold text-[#2E5266]">Cantador a identificar</span>
+                    <span className="text-sm font-bold text-[#2E5266]">Valdir Teles e Zé Cardoso</span>
+                    <span className="text-[#2E5266]/50">·</span>
+                    <span className="text-sm text-[#2E5266]/70">Crítica social</span>
                   </div>
-                  <a href="/cantorias/martelo-alagoano" className="text-sm text-[#C84B31] font-semibold hover:underline">
+                  <Link to="/cantorias/$slug" params={{ slug: "martelo-alagoano-valdir-teles-ze-cardoso" }} className="text-sm text-[#C84B31] font-semibold hover:underline">
                     Ver cantoria completa →
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -745,51 +759,110 @@ function HomePage() {
             </h3>
             
             <div className="space-y-6">
-              {/* Estrofe 2 - Nonato Costa */}
-              <div className="border-l-4 border-[#C84B31] bg-[#E8D4B0] p-4 rounded-r-lg">
+              {/* Estrofe 1 - Pensamento Positivo */}
+              <div className="border-l-4 border-[#D49B54] bg-[#E8D4B0] p-4 rounded-r-lg">
+                <p className="text-xs text-[#2E5266]/70 mb-2 font-semibold">💪 PENSAMENTO POSITIVO</p>
                 <p className="italic text-sm text-[#2E5266] leading-relaxed space-y-1">
-                  <span className="block">Aos colegas que ficam aqui, ressalto</span>
-                  <span className="block">que é comum ter pequeno, grande e médio</span>
-                  <span className="block">Os que vão do Recife pra o Planalto</span>
-                  <span className="block">vão atrás de troféu, fama e assédio</span>
-                  <span className="block font-semibold">Na fornalha não diminui a frágua,</span>
-                  <span className="block font-semibold">não pretendo levar nem deixar mágoa</span>
-                  <span className="block font-semibold">Chega a hora da onça beber água</span>
-                  <span className="block font-semibold">e quem sofrer da pressão tome remédio</span>
+                  <span className="block">O destino é ramal que se estende</span>
+                  <span className="block">à procura de oásis no deserto,</span>
+                  <span className="block">na certeza que a glória está por perto,</span>
+                  <span className="block">uma luz de incentivo a fé acende.</span>
+                  <span className="block font-semibold">Liberdade que voa ninguém prende.</span>
+                  <span className="block font-semibold">Incerteza nem sempre atrai engano,</span>
+                  <span className="block font-semibold">e por mais frágil que seja o ser humano</span>
+                  <span className="block font-semibold">se tiver pensamento positivo,</span>
+                  <span className="block font-bold">não desiste de nada enquanto é vivo</span>
+                  <span className="block text-xs opacity-70">nos dez pés de martelo Alagoano. (3x)</span>
                 </p>
                 <div className="mt-3 pt-3 border-t border-[#8B6F47]/30 flex items-center justify-between flex-wrap gap-2">
                   <div className="flex items-center gap-2 text-xs">
-                    <span className="font-semibold text-[#2E5266]">Nonato Costa</span>
+                    <span className="font-semibold text-[#2E5266]">Os Nonatos</span>
                     <span className="text-[#2E5266]/50">·</span>
-                    <span className="text-[#2E5266]/70">Oitava</span>
+                    <span className="text-[#2E5266]/70">Martelo Alagoano</span>
                   </div>
-                  <a href="/cantorias/oitavas-os-nonatos-sao-lourenco-mata" className="text-xs text-[#C84B31] font-semibold hover:underline">
+                  <Link to="/cantorias/$slug" params={{ slug: "pensamento-positivo-martelo-alagoano-os-nonatos" }} className="text-xs text-[#C84B31] font-semibold hover:underline">
                     Ver cantoria →
-                  </a>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Estrofe 2 - Desafio de Autoestima */}
+              <div className="border-l-4 border-[#C84B31] bg-[#E8D4B0] p-4 rounded-r-lg">
+                <p className="text-xs text-[#2E5266]/70 mb-2 font-semibold uppercase tracking-wide">🦁 Força e Determinação</p>
+                <p className="italic text-sm text-[#2E5266] leading-relaxed space-y-1">
+                  <span className="block">Pesquisando, cheguei à conclusão</span>
+                  <span className="block font-bold">Meu espírito de luta é de uma fera</span>
+                  <span className="block font-bold">Corto mais do que unha de pantera</span>
+                  <span className="block font-bold">A minha força supera a do leão</span>
+                  <span className="block">Contra a vítima que cai na minha mão</span>
+                  <span className="block">Eu não sou cascavel, mas sei morder</span>
+                  <span className="block">Mike Tyson eu não sou, mas sei bater</span>
+                  <span className="block font-semibold">Se você tiver dúvida, me enfrente</span>
+                  <span className="block text-xs opacity-70 mt-1">Cantador, pra cantar na minha frente / Deus não faz, nunca fez, nem vai fazer</span>
+                </p>
+                <div className="mt-3 pt-3 border-t border-[#8B6F47]/30 flex items-center justify-between flex-wrap gap-2">
+                  <div className="flex items-center gap-2 text-xs">
+                    <span className="font-semibold text-[#2E5266]">Louro Branco</span>
+                    <span className="text-[#2E5266]/50">·</span>
+                    <span className="text-[#2E5266]/70">Desafio</span>
+                  </div>
+                  <Link to="/cantorias/$slug" params={{ slug: "desafio-ze-cardoso-louro-branco" }} className="text-xs text-[#C84B31] font-semibold hover:underline">
+                    Ver cantoria →
+                  </Link>
                 </div>
               </div>
               
-              {/* Estrofe 3 - Nonato Neto */}
-              <div className="border-l-4 border-[#4A7C59] bg-[#E8D4B0] p-4 rounded-r-lg">
+              {/* Estrofe 3 - Provérbio Nordestino */}
+              <div className="border-l-4 border-[#D49B54] bg-[#E8D4B0] p-4 rounded-r-lg">
+                <p className="text-xs text-[#2E5266]/70 mb-2 font-semibold uppercase tracking-wide">🎯 Provérbio Nordestino</p>
                 <p className="italic text-sm text-[#2E5266] leading-relaxed space-y-1">
-                  <span className="block">Qualidade é um item que invalida</span>
-                  <span className="block">a ação do processo de derrota</span>
-                  <span className="block">com a fonte da mente abastecida</span>
-                  <span className="block">uma seca de rimas não esgota</span>
-                  <span className="block font-semibold">A cobrança do povo e da imprensa,</span>
-                  <span className="block font-semibold">três jurados julgando na presença</span>
-                  <span className="block font-semibold">e meio ponto faz muita diferença</span>
-                  <span className="block font-semibold">quando a gente precisa de uma nota</span>
+                  <span className="block">Precisamos ter tudo que não temos,</span>
+                  <span className="block">que o esforço é o teste do sufoco.</span>
+                  <span className="block">Quem se assombra com muito, pede pouco</span>
+                  <span className="block">e quem fracassa não chega aos extremos.</span>
+                  <span className="block">Ir atrás da medalha que perdemos,</span>
+                  <span className="block">é provar ao contrário, desengano.</span>
+                  <span className="block font-semibold">Quem não move uma palha, entra no cano</span>
+                  <span className="block">e quem se omite, não vence nem perdura.</span>
+                  <span className="block font-bold text-lg">Só encontra a botija quem procura</span>
+                  <span className="block text-xs opacity-70 mt-1">nos dez pés de martelo Alagoano. (3x)</span>
                 </p>
                 <div className="mt-3 pt-3 border-t border-[#8B6F47]/30 flex items-center justify-between flex-wrap gap-2">
                   <div className="flex items-center gap-2 text-xs">
-                    <span className="font-semibold text-[#2E5266]">Nonato Neto</span>
+                    <span className="font-semibold text-[#2E5266]">Os Nonatos</span>
                     <span className="text-[#2E5266]/50">·</span>
-                    <span className="text-[#2E5266]/70">Oitava</span>
+                    <span className="text-[#2E5266]/70">Martelo Alagoano</span>
                   </div>
-                  <a href="/cantorias/oitavas-os-nonatos-sao-lourenco-mata" className="text-xs text-[#C84B31] font-semibold hover:underline">
+                  <Link to="/cantorias/$slug" params={{ slug: "pensamento-positivo-martelo-alagoano-os-nonatos" }} className="text-xs text-[#C84B31] font-semibold hover:underline">
                     Ver cantoria →
-                  </a>
+                  </Link>
+                </div>
+              </div>
+              
+              {/* Estrofe 4 - Caminhoneiro */}
+              <div className="border-l-4 border-[#4A7C59] bg-[#E8D4B0] p-4 rounded-r-lg">
+                <p className="text-xs text-[#2E5266]/70 mb-2 font-semibold uppercase tracking-wide">🚛 O Caminhoneiro</p>
+                <p className="italic text-sm text-[#2E5266] leading-relaxed space-y-1">
+                  <span className="block font-semibold">Admiro o chofer caminhoneiro,</span>
+                  <span className="block font-semibold">conduzindo o progresso da nação.</span>
+                  <span className="block">Dirigindo o carreta ou caminhão,</span>
+                  <span className="block">se pegando com Deus o tempo inteiro.</span>
+                  <span className="block font-bold">Tem bandido que mata carreteiro.</span>
+                  <span className="block">Só por ter o instinto desumano,</span>
+                  <span className="block">se pensasse no Cristo soberano,</span>
+                  <span className="block">de fazer mal ao próximo, desistia.</span>
+                  <span className="block font-bold">Ao invés de ofender, ajudaria.</span>
+                  <span className="block text-xs opacity-70 mt-1">Nos dez pés de martelo alagoano. (3x)</span>
+                </p>
+                <div className="mt-3 pt-3 border-t border-[#8B6F47]/30 flex items-center justify-between flex-wrap gap-2">
+                  <div className="flex items-center gap-2 text-xs">
+                    <span className="font-semibold text-[#2E5266]">Valdir Teles e Zé Cardoso</span>
+                    <span className="text-[#2E5266]/50">·</span>
+                    <span className="text-[#2E5266]/70">Martelo · Profissões</span>
+                  </div>
+                  <Link to="/cantorias/$slug" params={{ slug: "martelo-alagoano-valdir-teles-ze-cardoso" }} className="text-xs text-[#C84B31] font-semibold hover:underline">
+                    Ver cantoria →
+                  </Link>
                 </div>
               </div>
             </div>

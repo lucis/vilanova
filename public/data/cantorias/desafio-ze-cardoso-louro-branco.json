@@ -1,0 +1,176 @@
+{
+  "id": "desafio-ze-cardoso-louro-branco",
+  "slug": "desafio-ze-cardoso-louro-branco",
+  "titulo": "Desafio - Zé Cardoso e Louro Branco",
+  "estilo": {
+    "nome": "Desafio (Mote em Decassílabos)",
+    "slug": "desafio-mote-decassilabos",
+    "versos_por_estrofe": 10,
+    "metrica": "decassílabos (10 sílabas)",
+    "esquema_rima": "AAAAAAAABC (com mote fixo BC)",
+    "mote_fixo": "Cantador, pra cantar na minha frente, / Deus não faz, nunca fez, nem vai fazer"
+  },
+  "cantadores": [
+    {
+      "nome": "Zé Cardoso",
+      "slug": "ze-cardoso"
+    },
+    {
+      "nome": "Louro Branco",
+      "slug": "louro-branco"
+    }
+  ],
+  "local": null,
+  "ano": null,
+  "contexto": "Desafio de autoestima com provocações e hipérboles sobre superioridade",
+  "estrofes": [
+    {
+      "numero": 1,
+      "cantador": "Zé Cardoso",
+      "versos": [
+        "Um casal de modernos marcianos",
+        "Por inveja na luz dos meus valores",
+        "Inventou de gerar três cantadores",
+        "Pra acabar com meu nome em poucos anos",
+        "Do projeto surgiram três enganos",
+        "O primeiro não pode acontecer",
+        "O segundo gerou-se sem nascer",
+        "E o terceiro nasceu, mas foi doente",
+        "Cantador pra cantar na minha frente",
+        "Deus não faz, nunca fez, nem vai fazer"
+      ],
+      "tema": "Superioridade, desafio inicial - projeto falho de criar rivais"
+    },
+    {
+      "numero": 2,
+      "cantador": "Louro Branco",
+      "versos": [
+        "Pesquisando, cheguei à conclusão",
+        "Meu espírito de luta é de uma fera",
+        "Corto mais do que unha de pantera",
+        "A minha força supera a do leão",
+        "Contra a vítima que cai na minha mão",
+        "Eu não sou cascavel, mas sei morder",
+        "Mike Tyson eu não sou, mas sei bater",
+        "Se você tiver dúvida, me enfrente",
+        "Cantador, pra cantar na minha frente",
+        "Deus não faz, nunca fez, nem vai fazer"
+      ],
+      "tema": "Força comparada a animais ferozes e lutadores"
+    },
+    {
+      "numero": 3,
+      "cantador": "Zé Cardoso",
+      "versos": [
+        "Uma vez eu bati num poetaço",
+        "Que rodou duas horas num só canto",
+        "Fez careta e berrou, e subiu tanto",
+        "Que escondeu-se do peso do meu braço",
+        "Doze anos voou pelo espaço",
+        "Bem depois resolveu aparecer",
+        "Mas aí não deu mais pra conhecer",
+        "Se esse troço era bicho ou era gente",
+        "Cantador, pra cantar na minha frente",
+        "Deus não faz, nunca fez, nem vai fazer"
+      ],
+      "tema": "Vitória sobre adversário que fugiu e voltou desfigurado"
+    },
+    {
+      "numero": 4,
+      "cantador": "Louro Branco",
+      "versos": [
+        "O meu nível na arte é cem por cento",
+        "Ninguém pode medir minha grandeza",
+        "Eu sou mestre cantor da natureza",
+        "Muito mais, e sem pouco conhecimento",
+        "Repentista pra ter o meu talento",
+        "No sertão vai custar a aparecer",
+        "Se você replantar, não vai nascer",
+        "Falta chuva, o cupim come a semente",
+        "Cantador, pra cantar na minha frente",
+        "Deus não faz, nunca fez, nem vai fazer"
+      ],
+      "tema": "Maestria incomparável, impossibilidade de surgir rival"
+    },
+    {
+      "numero": 5,
+      "cantador": "Zé Cardoso",
+      "versos": [
+        "Se o primeiro caiu de corpo aberto",
+        "O segundo e terceiro se perderam",
+        "Se o quarto e o quinto não correram",
+        "Já o sexto correu, mas cansou perto",
+        "Se o sétimo tentou, mas não deu certo",
+        "O oitavo fez plano pra perder",
+        "Foi fazer um repente, sem saber",
+        "Terminou, foi morrer de repente",
+        "Cantador, pra cantar na minha frente",
+        "Deus não faz, nunca fez, nem vai fazer"
+      ],
+      "tema": "Lista de oito adversários derrotados de formas diversas"
+    },
+    {
+      "numero": 6,
+      "cantador": "Louro Branco",
+      "versos": [
+        "Minha marca já é reconhecida",
+        "Conheci nota dez no meu trabalho",
+        "Meu repente não tem um ponto falho",
+        "Só parece uma história corrigida",
+        "Tem poeta tão leigo que duvida",
+        "Que não sou vencedor, mas quero ser",
+        "Qualquer um que pensar em me vencer",
+        "Leia mais, veja o mundo e abra a mente",
+        "Cantador, pra cantar na minha frente",
+        "Deus não faz, nunca fez, nem vai fazer"
+      ],
+      "tema": "Reconhecimento da qualidade, perfeição do trabalho"
+    },
+    {
+      "numero": 7,
+      "cantador": "Zé Cardoso",
+      "versos": [
+        "Eu, além de ser fera, é no repente",
+        "Faço o mar ficar doce, manso e raso",
+        "Faço a lua nascer pelo ocaso",
+        "E uma estrela se pôr pelo nascente",
+        "Se acaso eu pisar numa serpente",
+        "Revoltado se a mesma me morder",
+        "Ao invés de escapar e eu morrer",
+        "Eu escape, quem morre é a serpente",
+        "Cantador, pra cantar na minha frente",
+        "Deus não faz, nunca fez, nem vai fazer"
+      ],
+      "tema": "Poderes sobrenaturais, controle sobre a natureza"
+    },
+    {
+      "numero": 8,
+      "cantador": "Louro Branco",
+      "versos": [
+        "Pra topar o terror riograndense",
+        "Zé Viola talvez que não aceite",
+        "Moacyr, Tigan, Valdir, enjeite",
+        "Se Geraldo souber, talvez dispense",
+        "Vila Nova sabendo que não vence",
+        "Chega a carta, ele abre, não quer ler",
+        "Louro preto com medo de perder",
+        "A desculpa é não vou, porque sou crente",
+        "Cantador, pra cantar na minha frente",
+        "Deus não faz, nunca fez, nem vai fazer"
+      ],
+      "tema": "Cantadores famosos que recusariam enfrentá-lo"
+    }
+  ],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=05ZG7oK2ClY",
+    "spotify": null
+  },
+  "transcricao_path": "/repentes/desafio-ze-cardoso-louro-branco.txt",
+  "audio_path": null,
+  "destaque": true,
+  "_metadata": {
+    "created_at": "2025-01-17",
+    "file_ref": "/cantorias/desafio-ze-cardoso-louro-branco.json",
+    "source": "Projeto Vilanova - vilanova.deco.page"
+  }
+}

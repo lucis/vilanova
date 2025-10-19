@@ -1,0 +1,333 @@
+# Cursor Rules - Projeto Vilanova
+
+Você está trabalhando no **Projeto Vilanova**, um acervo digital de repente nordestino (cantoria de viola).
+
+## 🎯 Missão do Projeto
+
+Preservar digitalmente a cantoria nordestina através de:
+- Transcrição automática de vídeos/áudios
+- Catalogação estruturada de repentes
+- Análise de métricas e rimas
+- Documentação de cantadores e estilos
+
+---
+
+## 📊 Estrutura de Dados (MUITO IMPORTANTE!)
+
+O projeto usa **arquitetura modular** otimizada para edição por IA:
+
+```
+public/data/
+├── index.json              # Índice leve (5 KB)
+├── estilos.json            # Catálogo de estilos (10 KB)
+└── cantorias/              # 📁 Arquivos individuais (2-8 KB cada)
+    ├── pensamento-positivo-os-nonatos.json
+    ├── oitavas-os-nonatos-sao-lourenco.json
+    └── ... (13 arquivos no total)
+```
+
+### Por Que Arquivos Separados?
+
+- ✅ **Fácil para você (IA)** - Arquivos pequenos cabem melhor no contexto
+- ✅ **Edição precisa** - Escopo reduzido evita erros
+- ✅ **Git-friendly** - Mudanças isoladas
+- ✅ **Performance** - Carrega só o necessário
+
+---
+
+## 🎵 Como Adicionar uma Nova Cantoria
+
+Quando o usuário pedir para adicionar uma cantoria (geralmente com link do YouTube + transcrição), siga estes passos:
+
+### 1. Crie o arquivo individual
+
+**Arquivo:** `public/data/cantorias/{id}.json`
+
+**Template:**
+```json
+{
+  "id": "nome-cantoria-slug",
+  "slug": "url-amigavel-slug",
+  "titulo": "Título da Cantoria",
+  "estilo": {
+    "nome": "Martelo Alagoano",
+    "slug": "martelo-alagoano",
+    "versos_por_estrofe": 10,
+    "metrica": "decassílabos (10 sílabas)",
+    "esquema_rima": "AAAAAAAAAB + mote triplo",
+    "mote_fixo": "Nos dez pés de martelo Alagoano (3x)"
+  },
+  "cantadores": [
+    {
+      "nome": "Nome do Cantador",
+      "slug": "cantador-slug",
+      "dupla": "Nome da Dupla (se houver)"
+    }
+  ],
+  "local": null,
+  "ano": null,
+  "duracao": "5:07",
+  "contexto": "Descrição breve do tema/contexto",
+  "estrofes": [
+    {
+      "numero": 1,
+      "cantador": "Nome do Cantador",
+      "versos": [
+        "Primeiro verso da estrofe",
+        "Segundo verso da estrofe",
+        "... (total depende do estilo)"
+      ],
+      "tema": "Tema abordado nesta estrofe"
+    }
+  ],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=...",
+    "spotify": null
+  },
+  "transcricao_path": "/repentes/nome-arquivo.txt",
+  "audio_path": null,
+  "destaque": true,
+  "_metadata": {
+    "created_at": "2025-01-17",
+    "file_ref": "/cantorias/nome-cantoria-slug.json",
+    "source": "Projeto Vilanova"
+  }
+}
+```
+
+### 2. Atualize o índice
+
+**Arquivo:** `public/data/index.json`
+
+Adicione no array `cantorias`:
+
+```json
+{
+  "id": "nome-cantoria-slug",
+  "slug": "url-amigavel-slug",
+  "titulo": "Título da Cantoria",
+  "estilo": "Martelo Alagoano",
+  "destaque": true,
+  "youtube": "https://www.youtube.com/watch?v=...",
+  "_ref": "/cantorias/nome-cantoria-slug.json"
+}
+```
+
+### 3. Atualize os metadados
+
+Em `public/data/index.json` → `metadata`:
+
+```json
+"metadata": {
+  "ultima_atualizacao": "2025-01-17",  // ← Data atual
+  "total_repentes": 14,                // ← Incrementar
+  "total_estrofes_catalogadas": 65     // ← Somar estrofes novas
+}
+```
+
+### 4. (Opcional) Crie transcrição completa
+
+**Arquivo:** `repentes/{id}.txt`
+
+Formato livre com análise detalhada das estrofes.
+
+### 5. Sincronize para dist/
+
+```bash
+npm run data:sync
+```
+
+---
+
+## 📖 Estilos de Repente (Referência Rápida)
+
+### Principais Estilos
+
+1. **Sextilha**
+   - 6 versos setissílabos (7 sílabas)
+   - Esquema: AABCCB
+   - Mais comum e versátil
+
+2. **Oitava**
+   - 8 versos setissílabos (7 sílabas)
+   - Esquema: ABBAACCA
+   - Popular em competições
+
+3. **Martelo Alagoano**
+   - 10 versos decassílabos (10 sílabas)
+   - Esquema: AAAAAAAAAB + mote triplo
+   - Mote: "Nos dez pés de martelo Alagoano" (3x)
+   - Muito difícil!
+
+4. **Galope à Beira Mar**
+   - 10 versos decassílabos (10 sílabas)
+   - Esquema: AAAAABBCCM
+   - Mote: "Nos dez de galope na/da beira do mar"
+
+5. **Décima (Mote Fixo)**
+   - 10 versos decassílabos (10 sílabas)
+   - Esquema: ABBAACCDDC
+   - Mote fixo de 2 versos
+
+6. **Desafio (Mote em Decassílabos)**
+   - 10 versos decassílabos (10 sílabas)
+   - Esquema: AAAAAAAABC (mote fixo BC)
+   - Usado em pelejas
+
+**Consulte:** `public/data/estilos.json` e `/estilos/*.md` para detalhes completos.
+
+---
+
+## 🎨 Padrões de Código
+
+### Imports
+
+```typescript
+// ✅ CORRETO - Use acervoCompat
+import acervoData from "../lib/acervoCompat";
+
+// ❌ ERRADO - Não importe acervo.json diretamente
+import acervoData from "../../../public/data/acervo.json";
+```
+
+### Navegação
+
+```typescript
+// ✅ CORRETO - Use TanStack Router Link
+<Link to="/cantorias/$slug" params={{ slug: "cantoria-slug" }}>
+
+// ❌ ERRADO - Não use <a> para rotas internas
+<a href="/cantorias/cantoria-slug">
+```
+
+### Hooks RPC
+
+```typescript
+// ✅ CORRETO - Use TanStack Query hooks
+const { data } = useMyTool({ param: "value" });
+
+// ❌ ERRADO - Não chame client.TOOL() diretamente em componentes
+const data = await client.MY_TOOL({ param: "value" });
+```
+
+---
+
+## 🔍 Localização de Arquivos
+
+### Componentes React
+```
+view/src/
+├── routes/           # Páginas (TanStack Router)
+├── components/       # Componentes reutilizáveis
+├── lib/              # Utilitários
+└── hooks/            # Custom hooks
+```
+
+### Dados
+```
+public/data/
+├── index.json        # SEMPRE atualize ao adicionar cantoria
+├── estilos.json      # Raramente muda
+└── cantorias/        # Adicione arquivos individuais aqui
+```
+
+### Transcrições
+```
+repentes/             # Arquivos .txt com transcrições completas
+```
+
+---
+
+## 🚨 Regras Importantes
+
+### Ao Adicionar Cantoria
+
+1. ✅ **SEMPRE** crie arquivo individual em `cantorias/`
+2. ✅ **SEMPRE** atualize `index.json` (array + metadata)
+3. ✅ **SEMPRE** use ID único (kebab-case)
+4. ✅ **SEMPRE** incremente `total_repentes` e `total_estrofes_catalogadas`
+5. ✅ **SEMPRE** atualize `ultima_atualizacao` com data atual
+6. ✅ **NUNCA** edite `acervo.json` (não existe mais!)
+7. ✅ **NUNCA** edite arquivos em `dist/` (gerados automaticamente)
+
+### Ao Editar Cantoria
+
+1. ✅ Edite apenas o arquivo individual em `cantorias/{id}.json`
+2. ✅ Se mudar número de estrofes, atualize `total_estrofes_catalogadas` no `index.json`
+3. ✅ Mantenha consistência entre `index.json` e arquivo individual
+
+### Validação
+
+Após qualquer mudança:
+
+```bash
+# Verificar JSON válido
+jq . public/data/index.json > /dev/null && echo "✅ Válido"
+
+# Contar cantorias
+jq '.cantorias | length' public/data/index.json
+
+# Sincronizar para dist
+npm run data:sync
+```
+
+---
+
+## 📚 Referências Importantes
+
+- **Data Model:** `DATA-MODEL.md`
+- **Estilos de Repente:** `/estilos/*.md`
+- **Contribuição:** `README.md`
+- **Refatoração:** `SUMMARY-REFATORACAO.md`
+
+---
+
+## 🎯 Comportamento Esperado
+
+### Quando usuário pede "Adicione esta cantoria..."
+
+1. **Analise** a transcrição fornecida
+2. **Identifique** o estilo (métrica + esquema de rima)
+3. **Crie** arquivo em `cantorias/{id}.json`
+4. **Adicione** entrada no `index.json`
+5. **Atualize** metadata (totals + data)
+6. **Crie** transcrição em `repentes/{id}.txt`
+7. **Confirme** que tudo foi adicionado
+
+### Quando usuário pede "Corrija esta cantoria..."
+
+1. **Localize** arquivo em `cantorias/{id}.json`
+2. **Edite** apenas esse arquivo
+3. **Atualize** `index.json` se necessário
+4. **Recalcule** metadata se mudou número de estrofes
+
+---
+
+## 💡 Dicas para Performance
+
+- Use `index.json` para listar/filtrar (leve)
+- Carregue arquivo individual só quando necessário
+- Não carregue todos os 13 arquivos de uma vez se não precisar
+- `acervoCompat.ts` já agrega tudo (use para retrocompatibilidade)
+
+---
+
+## ✅ Checklist de Qualidade
+
+Ao adicionar cantoria, verifique:
+
+- [ ] ID único (sem conflitos)
+- [ ] Slug amigável (kebab-case, sem acentos)
+- [ ] Estilo correto (nome + esquema de rima)
+- [ ] Cantadores com nomes consistentes
+- [ ] Versos estruturados corretamente
+- [ ] Contagem de sílabas validada
+- [ ] Link YouTube válido
+- [ ] Entrada em index.json criada
+- [ ] Metadata atualizado (total_repentes, total_estrofes, data)
+- [ ] JSON válido (sem erros de sintaxe)
+
+---
+
+**Lembre-se:** Arquivos pequenos = IA feliz! Sempre prefira editar arquivos individuais. 🎯
+

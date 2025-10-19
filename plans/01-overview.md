@@ -93,7 +93,7 @@ Baseado em schemas de dados que representam:
 - Último verso é sempre o mote fixo
 - Tema: autoestima, desafio entre cantadores
 - Métrica: decassílabos
-- Rima: AAAAAAAAAB (9 versos rimando entre si + mote)
+- Rima: ABBAACCDDC (esquema complexo + mote triplo)
 
 **Exemplo: Mourão Voltado**
 - 10 versos por estrofe

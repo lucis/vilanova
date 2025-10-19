@@ -48,6 +48,54 @@ Toda a lógica de transcrição, análise de estrutura e catalogação é feita 
 
 ---
 
+## 📊 Estrutura de Dados (Data Model)
+
+O Vilanova usa uma **arquitetura modular** otimizada para edição por IA:
+
+```
+public/data/
+├── index.json              # Índice leve (lista de cantorias)
+├── estilos.json            # Catálogo de estilos de repente
+└── cantorias/              # 📁 Arquivos individuais (2-8 KB cada)
+    ├── pensamento-positivo-os-nonatos.json
+    ├── oitavas-os-nonatos-sao-lourenco.json
+    └── ... (13 arquivos)
+```
+
+### Por que arquivos separados?
+
+- ✅ **Fácil para IA** - Arquivos pequenos são mais gerenciáveis por LLMs
+- ✅ **Git-friendly** - Mudanças isoladas, menos conflitos
+- ✅ **Performance** - Carrega só o necessário
+- ✅ **Manutenção** - Um arquivo por cantoria
+
+📖 **[Ver documentação completa do data model](DATA-MODEL.md)**
+
+### Como Adicionar uma Cantoria via IA Editor (Cursor/Windsurf)
+
+**É muito simples!** Basta abrir o projeto no Cursor ou Windsurf e pedir:
+
+```
+Adicione esta cantoria ao acervo:
+https://www.youtube.com/watch?v=MrQSh9-k5XU
+
+[Cole a transcrição ou informações que tiver]
+
+Título: Pensamento Positivo
+Estilo: Martelo Alagoano
+Cantadores: Os Nonatos
+```
+
+A IA irá:
+1. ✅ Criar arquivo em `public/data/cantorias/{id}.json`
+2. ✅ Atualizar `public/data/index.json`
+3. ✅ Atualizar metadados automaticamente
+4. ✅ Criar transcrição estruturada em `repentes/`
+
+**Sem esforço manual!** A arquitetura modular facilita muito o trabalho da IA.
+
+---
+
 ## 🤝 Como Começar a Contribuir
 
 ### 1. Clone o Repositório

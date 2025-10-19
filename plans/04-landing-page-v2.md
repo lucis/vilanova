@@ -863,7 +863,7 @@ Esquema: ABCBDB
 
 "Nos dez pés de martelo alagoano"
 
-Esquema: AAAAAAAAAB (+ mote 3x)
+Esquema: ABBAACCDDC (+ mote 3x)
 
 [Ver Detalhes]
 ```

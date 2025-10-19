@@ -1,6 +1,6 @@
 import { createRoute, Link, type RootRoute } from "@tanstack/react-router";
 import { Music, Youtube, FileText } from "lucide-react";
-import acervoData from "../../../public/data/acervo.json";
+import acervoData from "../lib/acervoCompat";
 import { useState, useMemo } from "react";
 import type { Cantoria } from "../lib/types";
 import { SiteHeader } from "../components/site-header";
@@ -84,7 +84,7 @@ function CantoriasPage() {
           
           <div className="text-center mb-8">
             <a
-              href="https://github.com/lucis/vilanova/blob/main/public/data/acervo.json"
+              href="https://github.com/lucis/vilanova/tree/main/public/data/cantorias"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm text-[#C84B31] hover:underline"

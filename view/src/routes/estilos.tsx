@@ -1,6 +1,6 @@
 import { createRoute, Link, type RootRoute } from "@tanstack/react-router";
 import estilosData from "../../../public/data/estilos.json";
-import acervoData from "../../../public/data/acervo.json";
+import acervoData from "../lib/acervoCompat";
 import { useMemo } from "react";
 import type { Estilo } from "../lib/types";
 import { SiteHeader } from "../components/site-header";

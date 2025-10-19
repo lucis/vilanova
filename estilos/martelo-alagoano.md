@@ -17,20 +17,26 @@ O Martelo Alagoano tem suas raízes em **Alagoas**, daí seu nome. É uma varia�
 
 1. **Métrica**: Versos decassílabos (10 sílabas poéticas)
 2. **Estrofes**: 10 versos + mote triplo (total de 13 linhas)
-3. **Esquema de rima**: **AAAAAAAAAB** + mote repetido 3x
+3. **Esquema de rima**: **ABBAACCDDC** (mote triplo no último C)
 4. **Mote**: Os 3 últimos versos são idênticos (mote fixo)
 5. **Característica especial**: O mote geralmente faz referência ao próprio estilo
 
 ### Estrutura Detalhada
 
 ```
-Versos 1-7:  Rima A (mesma terminação)
-Verso 8:     Rima A (preparação para o mote)
-Verso 9:     Rima A (transição)
-Verso 10:    Rima B (introduz o mote)
-Verso 11:    MOTE (repetição 1)
-Verso 12:    MOTE (repetição 2)
-Verso 13:    MOTE (repetição 3)
+Verso 1:     Rima A
+Verso 2:     Rima B
+Verso 3:     Rima B
+Verso 4:     Rima A
+Verso 5:     Rima A
+Verso 6:     Rima C
+Verso 7:     Rima C
+Verso 8:     Rima D
+Verso 9:     Rima D
+Verso 10:    Rima C (introduz o mote)
+Verso 11:    MOTE (repetição 1 - rima C)
+Verso 12:    MOTE (repetição 2 - rima C)
+Verso 13:    MOTE (repetição 3 - rima C)
 ```
 
 ## Exemplo Típico
@@ -55,9 +61,9 @@ O Martelo Alagoano é considerado um dos estilos mais difíceis porque exige:
    - Manter 10 sílabas exatas em cada verso
    - Controlar as tônicas e átonas
 
-2. **Manutenção da mesma rima por 9 versos**
-   - Encontrar palavras suficientes com a mesma terminação
-   - Evitar forçar rimas ou perder o sentido
+2. **Controle complexo do esquema de rimas ABBAACCDDC**
+   - Alternar entre 4 diferentes terminações de rima
+   - Manter coesão mesmo com as mudanças de rima
 
 3. **Preparação inteligente do mote**
    - Os 10 versos devem construir um raciocínio que justifique a repetição tripla
@@ -103,9 +109,9 @@ Usado em pelejas para intimidar o adversário com a dificuldade técnica.
 
 ## Por Que É Difícil?
 
-1. **Rima Única**: Manter 9 versos rimando igual é extremamente desafiador
+1. **Esquema de Rimas Complexo**: O padrão ABBAACCDDC exige alternar entre 4 terminações diferentes mantendo a coesão
 2. **Métrica Precisa**: Decassílabos exigem controle silábico exato
-3. **Preparação do Mote**: O verso 10 precisa "preparar o terreno" para o mote
+3. **Preparação do Mote**: O verso 10 precisa "preparar o terreno" para o mote e rimar com ele
 4. **Repetição Significativa**: O mote repetido 3x precisa fazer sentido no contexto
 5. **Improviso**: Fazer tudo isso de improviso, na hora, exige maestria
 

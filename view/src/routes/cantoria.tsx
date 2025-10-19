@@ -1,6 +1,6 @@
 import { createRoute, Link, type RootRoute } from "@tanstack/react-router";
 import { Music, MapPin, Calendar } from "lucide-react";
-import acervoData from "../../../public/data/acervo.json";
+import acervoData from "../lib/acervoCompat";
 import type { Cantoria } from "../lib/types";
 import { SiteHeader } from "../components/site-header";
 import { EditButton } from "../components/edit-button";

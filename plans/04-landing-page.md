@@ -191,7 +191,7 @@ Estruturas Poéticas Sofisticadas
 
 Cada estilo de repente tem regras precisas:
 • Galope à Beira Mar: 10 versos decassílabos
-• Martelo Alagoano: mote fixo, rimas AAAAAAAAAB
+• Martelo Alagoano: mote fixo, rimas ABBAACCDDC
 • Sextilha: 6 versos setissílabos, rima ABCBDB
 
 Os cantadores adaptam até a pronúncia das palavras ("dez de" → "dérbi") 

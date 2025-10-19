@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "title": "Índice de Cantorias - Vilanova",
+  "description": "Lista de todas as cantorias disponíveis. Cada cantoria está em seu próprio arquivo.",
+  "cantorias": [
+    {
+      "id": "oitavas-os-nonatos-sao-lourenco",
+      "slug": "oitavas-os-nonatos-sao-lourenco-mata",
+      "titulo": "Oitavas em São Lourenço da Mata",
+      "estilo": "Oitava",
+      "destaque": true,
+      "youtube": null,
+      "_ref": "/cantorias/oitavas-os-nonatos-sao-lourenco.json"
+    },
+    {
+      "id": "galope-os-nonatos-serra-talhada",
+      "slug": "galope-beira-mar-os-nonatos-serra-talhada",
+      "titulo": "Galope à Beira Mar em Serra Talhada",
+      "estilo": "Galope à Beira Mar",
+      "destaque": true,
+      "youtube": null,
+      "_ref": "/cantorias/galope-os-nonatos-serra-talhada.json"
+    },
+    {
+      "id": "galope-sebastiao-ivanildo",
+      "slug": "galope-beira-mar-sebastiao-ivanildo-caruaru",
+      "titulo": "Galope à Beira Mar - Sebastião da Silva e Ivanildo Vilanova",
+      "estilo": "Galope à Beira Mar",
+      "destaque": true,
+      "youtube": null,
+      "_ref": "/cantorias/galope-sebastiao-ivanildo.json"
+    },
+    {
+      "id": "martelo-alagoano",
+      "slug": "martelo-alagoano",
+      "titulo": "Martelo Alagoano",
+      "estilo": "Martelo Alagoano",
+      "destaque": false,
+      "youtube": null,
+      "_ref": "/cantorias/martelo-alagoano.json"
+    },
+    {
+      "id": "galope-hipolito-rogerio-tv",
+      "slug": "galope-hipolito-rogerio-tv-diario",
+      "titulo": "Galope à Beira Mar - Desafio na TV Diário",
+      "estilo": "Galope à Beira Mar",
+      "destaque": true,
+      "youtube": "https://www.youtube.com/watch?v=3CXPD0IkYQE",
+      "_ref": "/cantorias/galope-hipolito-rogerio-tv.json"
+    },
+    {
+      "id": "desafio-ze-cardoso-louro-branco",
+      "slug": "desafio-ze-cardoso-louro-branco",
+      "titulo": "Desafio - Zé Cardoso e Louro Branco",
+      "estilo": "Desafio (Mote em Decassílabos)",
+      "destaque": true,
+      "youtube": "https://www.youtube.com/watch?v=05ZG7oK2ClY",
+      "_ref": "/cantorias/desafio-ze-cardoso-louro-branco.json"
+    },
+    {
+      "id": "galope-valdir-teles-moacir-laurentino",
+      "slug": "galope-valdir-teles-moacir-laurentino",
+      "titulo": "Galope à Beira Mar - Valdir Teles e Moacir Laurentino",
+      "estilo": "Galope à Beira Mar",
+      "destaque": true,
+      "youtube": "https://www.youtube.com/watch?v=ccrQfZDFTVQ",
+      "_ref": "/cantorias/galope-valdir-teles-moacir-laurentino.json"
+    },
+    {
+      "id": "martelo-alagoano-valdir-teles-ze-cardoso",
+      "slug": "martelo-alagoano-valdir-teles-ze-cardoso",
+      "titulo": "Martelo Alagoano - Valdir Teles e Zé Cardoso",
+      "estilo": "Martelo Alagoano",
+      "destaque": true,
+      "youtube": "https://www.youtube.com/watch?v=NWRN0E3v2u4",
+      "_ref": "/cantorias/martelo-alagoano-valdir-teles-ze-cardoso.json"
+    },
+    {
+      "id": "desafio-valdir-teles-ze-cardoso-bonito",
+      "slug": "desafio-valdir-teles-ze-cardoso-bonito",
+      "titulo": "Isso É Muito Bonito Pra Você - Valdir Teles e Zé Cardoso",
+      "estilo": "Desafio (Mote em Decassílabos)",
+      "destaque": true,
+      "youtube": "https://www.youtube.com/watch?v=Ajhevwh848I",
+      "_ref": "/cantorias/desafio-valdir-teles-ze-cardoso-bonito.json"
+    },
+    {
+      "id": "homenagem-delmiro-gouveia",
+      "slug": "homenagem-delmiro-gouveia",
+      "titulo": "Homenagem a Delmiro Gouveia",
+      "estilo": "Décima (Mote Fixo)",
+      "destaque": true,
+      "youtube": "https://www.youtube.com/watch?v=ShaRk_Fv404",
+      "_ref": "/cantorias/homenagem-delmiro-gouveia.json"
+    },
+    {
+      "id": "sextilha-lampiao-gruta-angicos",
+      "slug": "sextilha-lampiao-gruta-angicos",
+      "titulo": "Lampião e a Gruta de Angicos",
+      "estilo": "Sextilha",
+      "destaque": true,
+      "youtube": "https://www.youtube.com/watch?v=f1dN-dkSOuY",
+      "_ref": "/cantorias/sextilha-lampiao-gruta-angicos.json"
+    },
+    {
+      "id": "martelo-alagoano-valdir-teles-ze-cardoso-2",
+      "slug": "martelo-alagoano-profissoes",
+      "titulo": "Martelo Alagoano - Valdir Teles e Zé Cardoso (Profissões)",
+      "estilo": "Martelo Alagoano",
+      "destaque": true,
+      "youtube": "https://www.youtube.com/watch?v=KjSqrG9a6z4",
+      "_ref": "/cantorias/martelo-alagoano-valdir-teles-ze-cardoso-2.json"
+    },
+    {
+      "id": "pensamento-positivo-os-nonatos",
+      "slug": "pensamento-positivo-martelo-alagoano-os-nonatos",
+      "titulo": "Pensamento Positivo (Martelo Alagoano)",
+      "estilo": "Martelo Alagoano",
+      "destaque": true,
+      "youtube": "https://www.youtube.com/watch?v=MrQSh9-k5XU",
+      "_ref": "/cantorias/pensamento-positivo-os-nonatos.json"
+    }
+  ],
+  "metadata": {
+    "ultima_atualizacao": "2025-10-19",
+    "total_repentes": 13,
+    "total_estrofes_catalogadas": 57,
+    "com_estrofes_completas": 9,
+    "observacoes": [
+      "Estrofes completas disponíveis para 8 cantorias",
+      "Sextilha Lampião e Martelo Profissões aguardam estruturação de estrofes",
+      "Esquemas de rima corrigidos conforme análise fonética (2025-10-14)",
+      "Identificação de cantadores individuais em duplas (estimativa inicial)",
+      "Alguns metadados (ano, duração, local) estão incompletos"
+    ]
+  }
+}

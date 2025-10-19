@@ -1,6 +1,6 @@
 import { createRoute, Link, type RootRoute } from "@tanstack/react-router";
 import { Music2, Youtube } from "lucide-react";
-import acervoData from "../../../public/data/acervo.json";
+import acervoData from "../lib/acervoCompat";
 import { useMemo } from "react";
 import { agregarCantadores } from "../lib/cantadores";
 import type { Cantoria } from "../lib/types";

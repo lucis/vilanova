@@ -140,25 +140,27 @@ cantigas de adeuses na beira do mar.          (C - /maʁ/) ← rima com teimar/f
 
 **Status**: ✅ **CORRETO** 
 
-A estrutura é realmente AAAAAAAAAB + BBB (mote repetido 3x).
+A estrutura é realmente ABBAACCDDC (mote repetido 3x no último C).
 
 #### Exemplo Real:
 ```
 No cenário de cada profissão,            (A - /sãw̃/)
-cada um se espelha no que faz.           (A - /faz/) ← rima toante
-O vaqueiro é pastor dos animais,         (A - /ais/) ← rima toante
-responsável por toda a criação.          (A - /sãw̃/)
-Dá duzentos reais pelo gibão,            (A - /bãw̃/)
-mas não gasta real comprando pano.       (A - /pa.no/) ← rima toante
-Na batalha do pão cotidiano,             (A - /di.a.no/) ← rima toante
-o cavalo de campo é seu transporte.      (A - /pɔʁ.tʃi/) ← rima toante
-Desafia o perigo, enfrenta a morte.      (A - /mɔʁ.tʃi/) ← rima toante
-Nos dez pés de martelo alagoano.         (B - mote)
-Nos dez pés de martelo alagoano.         (B - mote)
-Nos dez pés de martelo alagoano.         (B - mote)
+cada um se espelha no que faz.           (B - /faz/)
+O vaqueiro é pastor dos animais,         (B - /ais/) ← rima toante com faz
+responsável por toda a criação.          (A - /sãw̃/) ← rima com profissão
+Dá duzentos reais pelo gibão,            (A - /bãw̃/) ← rima com profissão/criação
+mas não gasta real comprando pano.       (C - /pa.no/)
+Na batalha do pão cotidiano,             (C - /di.a.no/) ← rima com pano
+o cavalo de campo é seu transporte.      (D - /pɔʁ.tʃi/)
+Desafia o perigo, enfrenta a morte.      (D - /mɔʁ.tʃi/) ← rima com transporte
+Nos dez pés de martelo alagoano.         (C - mote, rima com pano/cotidiano)
+Nos dez pés de martelo alagoano.         (C - mote)
+Nos dez pés de martelo alagoano.         (C - mote)
 ```
 
-**Observação**: Martelo usa muito **rimas toantes** (vogais iguais, consoantes diferentes).
+**Padrão**: ABBAACCDDC (mote triplo rima com C)
+
+**Observação**: Martelo usa **rimas toantes** (vogais iguais, consoantes diferentes) e alterna entre 4 terminações diferentes (A, B, C, D).
 
 ---
 
@@ -254,4 +256,5 @@ Exemplos:
 **Data desta análise**: 2025-10-14
 **Autor**: Revisão sistemática do acervo Vilanova
 **Status**: Correções identificadas, aguardando implementação
+
 

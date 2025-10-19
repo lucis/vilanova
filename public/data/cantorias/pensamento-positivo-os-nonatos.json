@@ -1,0 +1,179 @@
+{
+  "id": "pensamento-positivo-os-nonatos",
+  "slug": "pensamento-positivo-martelo-alagoano-os-nonatos",
+  "titulo": "Pensamento Positivo (Martelo Alagoano)",
+  "estilo": {
+    "nome": "Martelo Alagoano",
+    "slug": "martelo-alagoano",
+    "versos_por_estrofe": 10,
+    "metrica": "decassílabos (10 sílabas)",
+    "esquema_rima": "AAAAAAAAAB + mote triplo",
+    "mote_fixo": "Nos dez pés de martelo Alagoano (repetido 3x)"
+  },
+  "cantadores": [
+    {
+      "nome": "Nonato Costa",
+      "slug": "nonato-costa",
+      "dupla": "Os Nonatos"
+    },
+    {
+      "nome": "Nonato Neto",
+      "slug": "nonato-neto",
+      "dupla": "Os Nonatos"
+    }
+  ],
+  "local": null,
+  "ano": null,
+  "duracao": "5:07",
+  "contexto": "Mensagem motivacional sobre persistência, fé e trabalho",
+  "estrofes": [
+    {
+      "numero": 1,
+      "cantador": "Os Nonatos",
+      "versos": [
+        "Quem consegue manter-se firme em pé,",
+        "não tem medo da crise quando sofre.",
+        "Todo mundo no peito tem um cofre",
+        "como banco central pra guardar fé.",
+        "A hipótese de ser faz quem não é.",
+        "Trabalhar noite e dia mês e ano.",
+        "Sonhar alto, rezar e fazer plano",
+        "ir a luta buscando o que não há.",
+        "De vez em quando tem um que chega lá",
+        "nos dez pés de martelo Alagoano."
+      ],
+      "tema": "Resiliência e fé - perseverança diante das crises"
+    },
+    {
+      "numero": 2,
+      "cantador": "Os Nonatos",
+      "versos": [
+        "Muito além do que pode tem quem vá,",
+        "sem receio dos ermos do além.",
+        "Encontrar quem tá indo à vida vem",
+        "esperando quem custa Deus está.",
+        "Quem insiste num sonho é quem se dá",
+        "e quando nota o que fez se sente ufano.",
+        "De início ninguém é veterano",
+        "e ninguém nasce sabendo o que defende,",
+        "mas depois de errar muito a gente aprende",
+        "nos dez pés de martelo Alagoano."
+      ],
+      "tema": "Aprendizado através dos erros - ninguém nasce sabendo"
+    },
+    {
+      "numero": 3,
+      "cantador": "Os Nonatos",
+      "versos": [
+        "O destino é ramal que se estende",
+        "à procura de oásis no deserto,",
+        "na certeza que a glória está por perto,",
+        "uma luz de incentivo a fé acende.",
+        "Liberdade que voa ninguém prende.",
+        "Incerteza nem sempre atrai engano,",
+        "e por mais frágil que seja o ser humano",
+        "se tiver pensamento positivo,",
+        "não desiste de nada enquanto é vivo",
+        "nos dez pés de martelo Alagoano."
+      ],
+      "tema": "Pensamento positivo - liberdade e determinação humana"
+    },
+    {
+      "numero": 4,
+      "cantador": "Os Nonatos",
+      "versos": [
+        "Fraco e forte precisam de incentivo",
+        "essa tese faz séculos que não muda",
+        "todo mundo precisa de uma ajuda",
+        "e todos lutam por um objetivo.",
+        "O agente não deixa o distintivo",
+        "pra ser pego num ato leviano.",
+        "Pianista não foge do piano,",
+        "mas tem gente que pega o prato feito",
+        "e ainda fica botando algum defeito,",
+        "nos dez pés de martelo Alagoano."
+      ],
+      "tema": "Dedicação profissional - crítica à ingratidão"
+    },
+    {
+      "numero": 5,
+      "cantador": "Os Nonatos",
+      "versos": [
+        "Não precisa ser rico e escorreito",
+        "pra tentar ser feliz e ser um dia.",
+        "Se perder sem lutar é covardia",
+        "e se abrir mão do que quer perde o direito.",
+        "Se for negro que encare o preconceito",
+        "que alguns brancos têm contra o africano.",
+        "Se for crente que evoque o soberano",
+        "que a fortuna de graça não se oferta.",
+        "Sem jogar um cartão ninguém acerta,",
+        "nos dez pés de martelo Alagoano."
+      ],
+      "tema": "Igualdade e luta contra preconceito - mérito pelo esforço"
+    },
+    {
+      "numero": 6,
+      "cantador": "Os Nonatos",
+      "versos": [
+        "Quem insiste, persiste e vive alerta",
+        "para ser vencedor é candidato",
+        "quando o pé é maior que o sapato,",
+        "só o dono é quem sabe aonde aperta.",
+        "Muita porta precisa ser aberta",
+        "por criança, por jovem, por decano.",
+        "Como o fogo precisa do abano",
+        "e a canoa precisa dos dois remos,",
+        "é preciso ir atrás do que queremos,",
+        "nos dez pés de martelo Alagoano."
+      ],
+      "tema": "Persistência geracional - busca ativa de oportunidades"
+    },
+    {
+      "numero": 7,
+      "cantador": "Os Nonatos",
+      "versos": [
+        "Precisamos ter tudo que não temos,",
+        "que o esforço é o teste do sufoco.",
+        "Quem se assombra com muito, pede pouco",
+        "e quem fracassa não chega aos extremos.",
+        "Ir atrás da medalha que perdemos,",
+        "é provar ao contrário, desengano.",
+        "Quem não move uma palha, entra no cano",
+        "e quem se omite, não vence nem perdura.",
+        "Só encontra a botija quem procura",
+        "nos dez pés de martelo Alagoano."
+      ],
+      "tema": "Esforço e busca ativa - rejeição à passividade"
+    },
+    {
+      "numero": 8,
+      "cantador": "Os Nonatos",
+      "versos": [
+        "Se gostar de moleza, a vida é dura.",
+        "E se não for procurado, vá atrás.",
+        "Vivos mortos no mundo tem demais,",
+        "esperando somente a sepultura.",
+        "Contra a pedra, a maré que bate fura",
+        "porque é insistente o oceano.",
+        "Não inveje fulano, nem cicrano,",
+        "mas pudendo trabalhe pelos dois.",
+        "Que em dobro o retorno vem depois",
+        "dos dez pés de martelo alagoano."
+      ],
+      "tema": "Rejeição à passividade - persistência como força natural"
+    }
+  ],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=MrQSh9-k5XU",
+    "spotify": null
+  },
+  "transcricao_path": "/repentes/pensamento-positivo-os-nonatos.txt",
+  "audio_path": null,
+  "destaque": true,
+  "_metadata": {
+    "created_at": "2025-01-17",
+    "file_ref": "/cantorias/pensamento-positivo-os-nonatos.json",
+    "source": "Projeto Vilanova - vilanova.deco.page"
+  }
+}

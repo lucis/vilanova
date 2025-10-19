@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect, useRef } from "react";
 import { Link } from "@tanstack/react-router";
 import { Search, X, Music, Users, BookOpen } from "lucide-react";
-import acervoData from "../../../public/data/acervo.json";
+import acervoData from "../lib/acervoCompat";
 import estilosData from "../../../public/data/estilos.json";
 import { agregarCantadores } from "../lib/cantadores";
 import type { Cantoria, Estilo } from "../lib/types";

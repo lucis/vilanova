@@ -192,3 +192,6 @@ O acervo está **pronto para consumo pela aplicação**, com:
 
 **Assinado**: Revisão completa dos dados estruturados - 2025-10-14
 
+
+
+
