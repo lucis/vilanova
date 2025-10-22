@@ -19,6 +19,8 @@ import homenagemDelmiro from "../../../public/data/cantorias/homenagem-delmiro-g
 import sextilhaLampiao from "../../../public/data/cantorias/sextilha-lampiao-gruta-angicos.json";
 import marteloValdirZe2 from "../../../public/data/cantorias/martelo-alagoano-valdir-teles-ze-cardoso-2.json";
 import pensamentoPositivo from "../../../public/data/cantorias/pensamento-positivo-os-nonatos.json";
+import nordesteIndependente from "../../../public/data/cantorias/nordeste-independente-braulio-ivanildo.json";
+import viuvaNamoradeira from "../../../public/data/cantorias/viuva-namoradeira-ze-galdino-daniel-olimpio.json";
 
 /**
  * Agrega todas as cantorias em um único objeto compatível com o formato antigo
@@ -42,6 +44,8 @@ const acervoData = {
     sextilhaLampiao,
     marteloValdirZe2,
     pensamentoPositivo,
+    nordesteIndependente,
+    viuvaNamoradeira,
   ],
   metadata: (indexData as any).metadata,
 };

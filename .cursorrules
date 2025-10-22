@@ -125,17 +125,36 @@ Em `public/data/index.json` → `metadata`:
 }
 ```
 
-### 4. (Opcional) Crie transcrição completa
+### 4. Atualize acervoCompat.ts
 
-**Arquivo:** `repentes/{id}.txt`
+**Arquivo:** `view/src/lib/acervoCompat.ts`
 
-Formato livre com análise detalhada das estrofes.
+Adicione o import e inclua no array `repentes`:
+
+```typescript
+import novaCantoria from "../../../public/data/cantorias/nova-cantoria.json";
+
+// No array repentes:
+repentes: [
+  // ... existentes
+  novaCantoria,
+],
+```
 
 ### 5. Sincronize para dist/
 
 ```bash
 npm run data:sync
 ```
+
+### ⚠️ IMPORTANTE: NÃO crie arquivos .txt
+
+**Nova política:** Não crie arquivos `.txt` em `repentes/` - isso é duplicação de dados!
+
+- ❌ **ERRADO:** Criar `repentes/{id}.txt` com as mesmas estrofes
+- ✅ **CORRETO:** Tudo já está no JSON em `cantorias/{id}.json`
+
+**Exceção:** Só crie .txt se tiver análises extras, anotações ou contexto que NÃO caiba no JSON.
 
 ---
 

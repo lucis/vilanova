@@ -1,0 +1,265 @@
+{
+  "id": "viuva-namoradeira-ze-galdino-daniel-olimpio",
+  "slug": "viuva-namoradeira-sextilha-ze-galdino-daniel-olimpio",
+  "titulo": "Viúva Namoradeira",
+  "estilo": {
+    "nome": "Sextilha",
+    "slug": "sextilha",
+    "versos_por_estrofe": 6,
+    "metrica": "setissílabos (7 sílabas)",
+    "esquema_rima": "AABCCB"
+  },
+  "cantadores": [
+    {
+      "nome": "Zé Galdino",
+      "slug": "ze-galdino",
+      "origem": "Buenos Aires, Pernambuco"
+    },
+    {
+      "nome": "Daniel Olimpio",
+      "slug": "daniel-olimpio",
+      "origem": "Gravatá, Pernambuco"
+    }
+  ],
+  "local": "Pernambuco",
+  "ano": null,
+  "duracao": "6:13",
+  "contexto": "Sextilhas humorísticas sobre viúva que não respeita luto do marido falecido, com crítica social disfarçada de comédia",
+  "estrofes": [
+    {
+      "numero": 1,
+      "cantador": "Zé Galdino",
+      "versos": [
+        "Viúva namoradeira",
+        "que o defunto não respeita.",
+        "Marcando encontro ela vai",
+        "e qualquer cantada ela aceita.",
+        "Abrindo o carro ela entra,",
+        "mostrando a cama ela deita."
+      ],
+      "tema": "Introdução - viúva sem respeito ao falecido"
+    },
+    {
+      "numero": 2,
+      "cantador": "Daniel Olimpio",
+      "versos": [
+        "Viúva que não respeita",
+        "é viuveira nem sentimento.",
+        "O enterro ela acompanha,",
+        "assiste o sepultamento.",
+        "Já volta do cemitério",
+        "procurando casamento."
+      ],
+      "tema": "Rapidez em buscar novo relacionamento"
+    },
+    {
+      "numero": 3,
+      "cantador": "Zé Galdino",
+      "versos": [
+        "Quando pega o rendimento",
+        "da aposentadoria,",
+        "faz plástica, põe silicone,",
+        "pinta as unha e se maquia.",
+        "Toda noite bota um homem",
+        "onde o marido dormia."
+      ],
+      "tema": "Transformação física e substituição rápida"
+    },
+    {
+      "numero": 4,
+      "cantador": "Daniel Olimpio",
+      "versos": [
+        "Se cobre de fantasia",
+        "pra não parecer coroa.",
+        "Na frente da casa dela",
+        "passa o vendedor à toa.",
+        "Gritando pra ela ouvir,",
+        "vendo ovo e uva boa."
+      ],
+      "tema": "Disfarce da idade e duplo sentido picante"
+    },
+    {
+      "numero": 5,
+      "cantador": "Zé Galdino",
+      "versos": [
+        "Não xinga nem se magoa",
+        "quando alguém lhe convida.",
+        "Na hora que os pais reclamam,",
+        "ela diz aborrecida:",
+        "\"Quem me prendia morreu,",
+        "vou aproveitar a vida.\""
+      ],
+      "tema": "Libertação pós-viuvez - resposta aos pais"
+    },
+    {
+      "numero": 6,
+      "cantador": "Daniel Olimpio",
+      "versos": [
+        "Invés de saia comprida,",
+        "veste curta e transparente.",
+        "Vê um velho na calçada,",
+        "sai rebolando na frente.",
+        "Não tem viagra que dê,",
+        "não tem pressão que aguente."
+      ],
+      "tema": "Provocação visual e efeito nos homens"
+    },
+    {
+      "numero": 7,
+      "cantador": "Zé Galdino",
+      "versos": [
+        "Quando arruma um pretendente,",
+        "ela dá tudo que tem.",
+        "Não lhe falta namorado,",
+        "quando um vai, o outro vem.",
+        "Que botar chifre em defunto,",
+        "nunca fez medo a ninguém."
+      ],
+      "tema": "Multiplicidade de relacionamentos"
+    },
+    {
+      "numero": 8,
+      "cantador": "Daniel Olimpio",
+      "versos": [
+        "No cemitério também,",
+        "quando vai acender vela,",
+        "não botam a flor na cova",
+        "que estava o marido dela.",
+        "Mas botas óleo nos homens",
+        "que estão olhando pra ela."
+      ],
+      "tema": "Irreverência até no cemitério"
+    },
+    {
+      "numero": 9,
+      "cantador": "Zé Galdino",
+      "versos": [
+        "Quem abrir a bolsa dela",
+        "sem querer vai encontrar.",
+        "Agenda, preservativo,",
+        "comprimidos, NeoVlar,",
+        "que ela toma toda noite",
+        "para não engravidar."
+      ],
+      "tema": "Preparação para vida sexual ativa"
+    },
+    {
+      "numero": 10,
+      "cantador": "Daniel Olimpio",
+      "versos": [
+        "Todo dia vai ao bar,",
+        "toda noite à gafieira.",
+        "Quando uma amiga reclama,",
+        "ela diz: \"Isso é besteira.",
+        "Eu não vou perder meu tempo",
+        "respeitando uma caveira.\""
+      ],
+      "tema": "Vida social intensa - resposta à crítica"
+    },
+    {
+      "numero": 11,
+      "cantador": "Zé Galdino",
+      "versos": [
+        "Viúva namoradeira",
+        "só quer calça ligadinha.",
+        "Só quer vestir mini blusa,",
+        "só usa saia curtinha.",
+        "Que é pra tirar o sossego",
+        "do marido da vizinha."
+      ],
+      "tema": "Vestimenta provocativa"
+    },
+    {
+      "numero": 12,
+      "cantador": "Daniel Olimpio",
+      "versos": [
+        "Acha ruim dormir sozinha,",
+        "quer sempre alguém do seu lado.",
+        "Quando está fazendo amor",
+        "com o novo namorado.",
+        "Diz assim você é muito",
+        "melhor do que o finado."
+      ],
+      "tema": "Comparação com marido falecido"
+    },
+    {
+      "numero": 13,
+      "cantador": "Zé Galdino",
+      "versos": [
+        "Depois do corpo enterrado,",
+        "ela muda de sentido.",
+        "Ao invés de veste luto",
+        "em memória do marido.",
+        "Arruma é um gigolô",
+        "pra chifrar o falecido."
+      ],
+      "tema": "Inversão do luto - gigolô no lugar de viúva honrada"
+    },
+    {
+      "numero": 14,
+      "cantador": "Daniel Olimpio",
+      "versos": [
+        "O seu tempo é dividido",
+        "pra namorado e passeio.",
+        "Só gosta de andar em ônibus",
+        "quando o corredor tá cheio.",
+        "Pra esfregar o bumbum",
+        "nos homens que estão no meio."
+      ],
+      "tema": "Comportamento provocativo em transporte público"
+    },
+    {
+      "numero": 15,
+      "cantador": "Zé Galdino",
+      "versos": [
+        "Pra festa, baile e rodeio,",
+        "vai com qualquer vagabundo.",
+        "Se a alma do defunto ver",
+        "o que ela faz no mundo.",
+        "Mesmo se estiver no céu,",
+        "não tem sossego um segundo."
+      ],
+      "tema": "Comportamento que nem no céu o marido teria paz"
+    },
+    {
+      "numero": 16,
+      "cantador": "Daniel Olimpio",
+      "versos": [
+        "Depois que deixa o segundo,",
+        "do terceiro, corre atrás.",
+        "Porque quem não ama os filhos",
+        "não quer conselho dos pais.",
+        "Depois que cai da gandaia,",
+        "nem o cão segura mais."
+      ],
+      "tema": "Sequência de relacionamentos - libertação total"
+    },
+    {
+      "numero": 17,
+      "cantador": "Zé Galdino",
+      "versos": [
+        "Eu tenho visto demais",
+        "viúva namoradeira.",
+        "Saí de casa na sexta,",
+        "chega na segunda-feira.",
+        "Sem um pingo de vergonha",
+        "e sem um tostão na carteira."
+      ],
+      "tema": "Conclusão - retrato completo da viúva namoradeira"
+    }
+  ],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=2VeJzy-7PQE",
+    "spotify": null
+  },
+  "transcricao_path": null,
+  "audio_path": null,
+  "destaque": true,
+  "_metadata": {
+    "created_at": "2025-01-17",
+    "file_ref": "/cantorias/viuva-namoradeira-ze-galdino-daniel-olimpio.json",
+    "source": "Projeto Vilanova",
+    "nota": "Transcrição incluída diretamente no JSON - sem arquivo .txt separado para evitar duplicação"
+  }
+}
+

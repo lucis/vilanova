@@ -81,8 +81,20 @@ https://www.youtube.com/watch?v=MrQSh9-k5XU
 }
 ```
 
-#### 3. (Opcional) Crie transcrição
-**Arquivo:** `repentes/{id}.txt`
+#### 3. Atualize acervoCompat.ts
+**Arquivo:** `view/src/lib/acervoCompat.ts`
+
+Adicione import e inclua no array `repentes`.
+
+#### 4. Sincronize
+```bash
+npm run data:sync
+```
+
+### ⚠️ NÃO crie arquivos .txt
+
+- ❌ Não crie `repentes/{id}.txt` (duplicação!)
+- ✅ Tudo já está no JSON
 
 ---
 
@@ -176,7 +188,8 @@ const cantoria = await loadCantoria('cantoria-id');
 **Adicionar cantoria:**
 1. Crie `cantorias/{id}.json`
 2. Atualize `index.json` (array + metadata)
-3. (Opcional) Crie `repentes/{id}.txt`
+3. Atualize `acervoCompat.ts` (import + array)
+4. Rode `npm run data:sync`
 
 **Editar cantoria:**
 1. Edite `cantorias/{id}.json`

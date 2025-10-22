@@ -1,0 +1,213 @@
+{
+  "id": "nordeste-independente-braulio-ivanildo",
+  "slug": "nordeste-independente-braulio-tavares-ivanildo-vilanova",
+  "titulo": "Nordeste Independente",
+  "estilo": {
+    "nome": "Décima (Mote Fixo)",
+    "slug": "decima-mote-fixo",
+    "versos_por_estrofe": 10,
+    "metrica": "decassílabos (10 sílabas)",
+    "esquema_rima": "ABBAACCDDC",
+    "mote_fixo": "imagine o Brasil ser dividido / e o Nordeste ficar independente"
+  },
+  "cantadores": [
+    {
+      "nome": "Bráulio Tavares",
+      "slug": "braulio-tavares"
+    },
+    {
+      "nome": "Ivanildo Vilanova",
+      "slug": "ivanildo-vilanova",
+      "apelido": "O Poeta do Improviso"
+    }
+  ],
+  "local": null,
+  "ano": null,
+  "duracao": "4:45",
+  "contexto": "Crítica política satírica sobre a relação Sul-Nordeste, propondo imaginariamente a independência nordestina e invertendo estereótipos regionais",
+  "estrofes": [
+    {
+      "numero": 1,
+      "cantador": "Bráulio Tavares ou Ivanildo Vilanova",
+      "versos": [
+        "Já existe no Sul esse conceito",
+        "que o Nordeste é ruim, seco e ingrato,",
+        "se existe a separação de fato,",
+        "é preciso torná-la de direito.",
+        "Quando um dia qualquer isso for feito,",
+        "todos os dois vão vibrar abertamente,",
+        "se o Sul vai ficar indiferente,",
+        "ficará o Nordeste agradecido,",
+        "imagine o Brasil ser dividido",
+        "e o Nordeste ficar independente."
+      ],
+      "tema": "Separação como resposta ao preconceito sulista"
+    },
+    {
+      "numero": 2,
+      "cantador": "Bráulio Tavares ou Ivanildo Vilanova",
+      "versos": [
+        "Separados porém, sem haver luta",
+        "e deixar o Nordeste com seus vícios,",
+        "mas sem ele pagar com sacrifícios,",
+        "grandes obras reais quem não desfruta?",
+        "Não precisa haver sangue na disputa,",
+        "bastaria separação somente,",
+        "que se fosse medir o mais valente,",
+        "eu já sei qual dos dois era vencido,",
+        "imagine o Brasil ser dividido",
+        "e o Nordeste ficar independente."
+      ],
+      "tema": "Separação pacífica - quem realmente paga pelas grandes obras"
+    },
+    {
+      "numero": 3,
+      "cantador": "Bráulio Tavares ou Ivanildo Vilanova",
+      "versos": [
+        "Se o Nordeste tivesse outras fronteiras,",
+        "talvez fosse tratado com capricho,",
+        "sem servir de depósito para o lixo",
+        "das usinas atômicas brasileiras.",
+        "A enchente das músicas estrangeiras",
+        "talvez fosse pra outro continente,",
+        "se vivesse uma vida diferente",
+        "da que a gente até hoje tem vivido,",
+        "imagine o Brasil ser dividido",
+        "e o Nordeste ficar independente."
+      ],
+      "tema": "Crítica ao uso do Nordeste como depósito de lixo atômico e imposição cultural"
+    },
+    {
+      "numero": 4,
+      "cantador": "Bráulio Tavares ou Ivanildo Vilanova",
+      "versos": [
+        "Talvez quê, muita gente até proteste,",
+        "minha ideia chamando de imbecil,",
+        "um país com o nome de Brasil",
+        "e o outro chamado de Nordeste,",
+        "o Brasil não padecer a peste",
+        "da seca que vem constantemente,",
+        "o Nordeste sem esse seu parente",
+        "ia ser bem melhor compreendido,",
+        "imagine o Brasil ser dividido",
+        "e o Nordeste ficar independente."
+      ],
+      "tema": "Proposta de dois países - Brasil livre da seca, Nordeste livre do Sul"
+    },
+    {
+      "numero": 5,
+      "cantador": "Bráulio Tavares ou Ivanildo Vilanova",
+      "versos": [
+        "Paraíba eram o centro artesanal,",
+        "Piauí o setor da criação,",
+        "em Sergipe, cultura é tradição,",
+        "Maranhão, a reserva florestal.",
+        "Na Bahia, o distrito industrial,",
+        "Alagoas, agrícola enflorescente,",
+        "Rio Grande, o poder militarmente,",
+        "Ceará pra turismo era escolhido,",
+        "imagine o Brasil ser dividido",
+        "e o Nordeste ficar independente."
+      ],
+      "tema": "Potencialidades de cada estado nordestino em um país independente"
+    },
+    {
+      "numero": 6,
+      "cantador": "Bráulio Tavares ou Ivanildo Vilanova",
+      "versos": [
+        "A parte linda sendo homologada,",
+        "o Nordeste guiando os seus destinos,",
+        "mais de cinco milhões de nordestinos",
+        "voltarão para a terra idolatrada,",
+        "trocarão a garoa e a geada",
+        "pela roça, a enxada e o sol quente,",
+        "ninguém vai explorar mais nossa gente",
+        "como tem até hoje acontecido,",
+        "imagine o Brasil ser dividido",
+        "e o Nordeste ficar independente."
+      ],
+      "tema": "Retorno dos migrantes nordestinos - fim da exploração"
+    },
+    {
+      "numero": 7,
+      "cantador": "Bráulio Tavares ou Ivanildo Vilanova",
+      "versos": [
+        "O Brasil ia ter de exportado",
+        "nordeste, cacau, coco e caju,",
+        "canaúba, minério, babaçu,",
+        "abacaxi e o sal de cozinhar.",
+        "A lagosta, o agave do lugar,",
+        "a cebola, o petróleo, água-ardente,",
+        "que o Nordeste é autossuficiente,",
+        "o seu lucro seria garantido,",
+        "imagine o Brasil ser dividido",
+        "e o Nordeste ficar independente."
+      ],
+      "tema": "Riquezas naturais e produtos nordestinos - autossuficiência econômica"
+    },
+    {
+      "numero": 8,
+      "cantador": "Bráulio Tavares ou Ivanildo Vilanova",
+      "versos": [
+        "As rádios ser nordestinadas,",
+        "tocariam forró, xote, baião,",
+        "as TVs só fariam transmissão",
+        "de cantoria, ciranda e vaquejadas,",
+        "as crianças seriam batizadas",
+        "só com nomes bem simples como a gente,",
+        "não se usava mais nome diferente",
+        "que não pode botar nem apelido,",
+        "imagine o Brasil ser dividido",
+        "e o Nordeste ficar independente."
+      ],
+      "tema": "Cultura nordestina sem imposição externa - valorização das tradições"
+    },
+    {
+      "numero": 9,
+      "cantador": "Bráulio Tavares ou Ivanildo Vilanova",
+      "versos": [
+        "Dividindo a partir de Salvador,",
+        "o Nordeste seria outro país",
+        "vigoroso, normal, rico e feliz,",
+        "sem dever à ninguém no exterior.",
+        "Jangadeiro seriam senador,",
+        "um caboclo da roça era o suplente,",
+        "cantador de viola o presidente",
+        "e o vaqueiro era o líder do partido,",
+        "imagine o Brasil ser dividido",
+        "e o Nordeste ficar independente."
+      ],
+      "tema": "Inversão social - trabalhadores nordestinos no poder"
+    },
+    {
+      "numero": 10,
+      "cantador": "Bráulio Tavares ou Ivanildo Vilanova",
+      "versos": [
+        "Em Recife, o Distrito Federal,",
+        "o idioma ia ser nordestinense,",
+        "a bandeira de renda cearense,",
+        "asa branca era o hino nacional.",
+        "O folheto, o símbolo oficial,",
+        "a moeda do chão de antigamente,",
+        "conselheiro seria o inconfidente,",
+        "Lampião, o herói inesquecido,",
+        "imagine o Brasil ser dividido",
+        "e o Nordeste ficar independente."
+      ],
+      "tema": "Símbolos nacionais nordestinos - cultura popular como oficial"
+    }
+  ],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=CvMAJnwF16s",
+    "spotify": null
+  },
+  "transcricao_path": null,
+  "audio_path": null,
+  "destaque": true,
+  "_metadata": {
+    "created_at": "2025-01-17",
+    "file_ref": "/cantorias/nordeste-independente-braulio-ivanildo.json",
+    "source": "Projeto Vilanova"
+  }
+}
+

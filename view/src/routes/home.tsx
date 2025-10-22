@@ -543,7 +543,7 @@ function HomePage() {
                   em dados estruturados.
                 </p>
                 <span className="inline-block text-xs bg-[#4A7C59] text-white px-3 py-1 rounded-full">
-                  ✅ JÁ FUNCIONA (13 cantorias transcritas · 57 estrofes catalogadas)
+                  ✅ JÁ FUNCIONA (15 cantorias · 84 estrofes catalogadas)
                 </span>
               </div>
         </div>
@@ -645,7 +645,7 @@ function HomePage() {
           {/* Estatísticas */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
             <Link to="/cantorias" className="text-center hover:scale-105 transition-transform">
-              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">13</div>
+              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">15</div>
               <div className="text-sm md:text-base text-[#2E5266]/70">Cantorias</div>
             </Link>
             <Link to="/estilos" className="text-center hover:scale-105 transition-transform">
@@ -657,7 +657,7 @@ function HomePage() {
               <div className="text-sm md:text-base text-[#2E5266]/70">Cantadores</div>
             </Link>
             <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">57</div>
+              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">84</div>
               <div className="text-sm md:text-base text-[#2E5266]/70">Estrofes</div>
             </div>
           </div>

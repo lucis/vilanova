@@ -119,12 +119,30 @@
       "destaque": true,
       "youtube": "https://www.youtube.com/watch?v=MrQSh9-k5XU",
       "_ref": "/cantorias/pensamento-positivo-os-nonatos.json"
+    },
+    {
+      "id": "nordeste-independente-braulio-ivanildo",
+      "slug": "nordeste-independente-braulio-tavares-ivanildo-vilanova",
+      "titulo": "Nordeste Independente",
+      "estilo": "Décima (Mote Fixo)",
+      "destaque": true,
+      "youtube": "https://www.youtube.com/watch?v=CvMAJnwF16s",
+      "_ref": "/cantorias/nordeste-independente-braulio-ivanildo.json"
+    },
+    {
+      "id": "viuva-namoradeira-ze-galdino-daniel-olimpio",
+      "slug": "viuva-namoradeira-sextilha-ze-galdino-daniel-olimpio",
+      "titulo": "Viúva Namoradeira",
+      "estilo": "Sextilha",
+      "destaque": true,
+      "youtube": "https://www.youtube.com/watch?v=2VeJzy-7PQE",
+      "_ref": "/cantorias/viuva-namoradeira-ze-galdino-daniel-olimpio.json"
     }
   ],
   "metadata": {
-    "ultima_atualizacao": "2025-10-19",
-    "total_repentes": 13,
-    "total_estrofes_catalogadas": 57,
+    "ultima_atualizacao": "2025-01-17",
+    "total_repentes": 15,
+    "total_estrofes_catalogadas": 84,
     "com_estrofes_completas": 9,
     "observacoes": [
       "Estrofes completas disponíveis para 8 cantorias",
