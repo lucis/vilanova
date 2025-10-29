@@ -1,0 +1,88 @@
+{
+  "id": "martelo-alagoano-alceu-valenca",
+  "slug": "martelo-alagoano-alceu-valenca",
+  "titulo": "Martelo Alagoano",
+  "tipo": "musica",
+  "artista": {
+    "nome": "Alceu Valença",
+    "slug": "alceu-valenca"
+  },
+  "estilo_referencia": {
+    "nome": "Martelo Alagoano",
+    "slug": "martelo-alagoano",
+    "versos_por_estrofe": 10,
+    "metrica": "decassílabos (10 sílabas)",
+    "esquema_rima": "AAAAAAAAAB",
+    "descricao": "Homenagem ao estilo de repente nordestino"
+  },
+  "ano": 1980,
+  "album": "Coração Bobo",
+  "duracao": "4:23",
+  "contexto": "Música que homenageia a tradição da cantoria nordestina e os grandes cantadores, celebrando o estilo Martelo Alagoano e suas raízes culturais",
+  "estrofes": [
+    {
+      "numero": 1,
+      "versos": [
+        "Cantador, o teu canto de improviso",
+        "É o mais nobre poder da criação",
+        "O teu verso tem a força de Sansão",
+        "É fatal, é perfeito e é preciso",
+        "",
+        "Cantador do inconsciente coletivo",
+        "Canta a força do povo e o desengano",
+        "E a esperança que brota todo ano",
+        "Vai tecendo nos versos e nas loas",
+        "Batucando a toada de Alagoas",
+        "Nos dez pés de martelo alagoano"
+      ],
+      "comentario": "Alceu Valença abre a música com uma reverência profunda ao cantador de repente, reconhecendo o improviso como 'o mais nobre poder da criação'. Ele equipara o verso do cantador à força mítica de Sansão, destacando sua precisão e poder. A referência ao 'inconsciente coletivo' eleva a cantoria a uma expressão cultural que transcende o individual, expressando as esperanças e desencantos de todo um povo. O refrão 'Nos dez pés de martelo alagoano' celebra a métrica característica deste estilo de repente."
+    },
+    {
+      "numero": 2,
+      "versos": [
+        "Da cidade de Campina e do Monteiro",
+        "De Passira Panelas e Ingazeira",
+        "São José do Egito Capoeira",
+        "É viola, é ganzá e é pandeiro",
+        "",
+        "Salve Dimas e Pinto do Monteiro",
+        "Lourival trocadilho sobre-humano",
+        "Vitorino o teu verso tem bom plano",
+        "Oliveira Castanha e Beija-Flor",
+        "E Mocinha de Passira é um condor",
+        "Nos dez pés de martelo alagoano"
+      ],
+      "comentario": "Nesta estrofe, Alceu faz uma geografia poética do sertão pernambucano e paraibano, citando cidades que são berços da cantoria. Mais importante, ele presta homenagem nominal aos grandes mestres: Dimas Batista, Pinto do Monteiro, Lourival Batista, Cego Aderaldo (Oliveira), Severino Pinto (Castanha), João Alexandre (Beija-Flor) e Mocinha de Passira - única mulher citada, comparada a um condor, simbolizando sua força em um universo predominantemente masculino. Os instrumentos citados (viola, ganzá, pandeiro) completam a atmosfera sonora da cantoria."
+    },
+    {
+      "numero": 3,
+      "versos": [
+        "Cantador cem por cento brasileiro",
+        "Tem no sangue a saudade lusitana",
+        "O batuque das terras africanas",
+        "Caetés teu guerreiro violento",
+        "",
+        "Cantador de alegrias e tormentos",
+        "Tem os pés calejados dos ciganos",
+        "É poeta perfeito e soberano",
+        "Soberano é perfeito e é poeta",
+        "Tem o arco o batuque e tem a flecha",
+        "Nos dez pés de martelo alagoano"
+      ],
+      "comentario": "Na estrofe final, Alceu Valença sintetiza a identidade multicultural do cantador brasileiro, traçando suas raízes portuguesas (saudade lusitana), africanas (batuque) e indígenas (Caetés, povo guerreiro do nordeste). A imagem dos 'pés calejados dos ciganos' evoca a vida itinerante dos cantadores, sempre viajando de feira em feira. O jogo poético 'É poeta perfeito e soberano / Soberano é perfeito e é poeta' demonstra a própria habilidade do compositor em trabalhar com palavras, imitando a técnica dos repentistas. A união de 'arco, batuque e flecha' no verso final une as três matrizes culturais brasileiras em uma síntese poética."
+    }
+  ],
+  "links": {
+    "youtube": "https://youtu.be/bujZdiDSnJU?si=XO2QRHj0CkJ2J1IB",
+    "spotify": null,
+    "youtube_embed": "https://www.youtube.com/embed/bujZdiDSnJU"
+  },
+  "transcricao_path": "/musicas/martelo-alagoano-alceu-valenca.txt",
+  "destaque": true,
+  "_metadata": {
+    "created_at": "2025-10-29",
+    "file_ref": "/musicas/martelo-alagoano-alceu-valenca.json",
+    "source": "Projeto Vilanova - vilanova.deco.page",
+    "categoria": "Homenagem à Cantoria"
+  }
+}

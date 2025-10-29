@@ -40,6 +40,13 @@ export function SiteHeader({ showBackButton, backTo = "/", backLabel = "Voltar" 
               Cantorias
             </Link>
             <Link 
+              to="/musicas"
+              className="text-sm font-semibold text-[#2E5266] hover:text-[#C84B31] transition-colors"
+              activeProps={{ className: "text-[#C84B31]" }}
+            >
+              Músicas
+            </Link>
+            <Link 
               to="/estilos"
               className="text-sm font-semibold text-[#2E5266] hover:text-[#C84B31] transition-colors"
               activeProps={{ className: "text-[#C84B31]" }}
@@ -65,6 +72,13 @@ export function SiteHeader({ showBackButton, backTo = "/", backLabel = "Voltar" 
             activeProps={{ className: "text-[#C84B31]" }}
           >
             Cantorias
+          </Link>
+          <Link 
+            to="/musicas"
+            className="text-xs font-semibold text-[#2E5266] hover:text-[#C84B31] transition-colors"
+            activeProps={{ className: "text-[#C84B31]" }}
+          >
+            Músicas
           </Link>
           <Link 
             to="/estilos"

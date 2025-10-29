@@ -648,6 +648,10 @@ function HomePage() {
               <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">15</div>
               <div className="text-sm md:text-base text-[#2E5266]/70">Cantorias</div>
             </Link>
+            <Link to="/musicas" className="text-center hover:scale-105 transition-transform">
+              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">1</div>
+              <div className="text-sm md:text-base text-[#2E5266]/70">Músicas</div>
+            </Link>
             <Link to="/estilos" className="text-center hover:scale-105 transition-transform">
               <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">6</div>
               <div className="text-sm md:text-base text-[#2E5266]/70">Estilos</div>
@@ -656,10 +660,6 @@ function HomePage() {
               <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">{totalCantadores}</div>
               <div className="text-sm md:text-base text-[#2E5266]/70">Cantadores</div>
             </Link>
-            <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">84</div>
-              <div className="text-sm md:text-base text-[#2E5266]/70">Estrofes</div>
-            </div>
           </div>
           
           {/* Exemplos Reais do Acervo */}

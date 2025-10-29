@@ -13,6 +13,8 @@ import EstilosRoute from "./routes/estilos.tsx";
 import EstiloRoute from "./routes/estilo.tsx";
 import CantadoresRoute from "./routes/cantadores.tsx";
 import CantadorRoute from "./routes/cantador.tsx";
+import MusicasRoute from "./routes/musicas.tsx";
+import MusicaRoute from "./routes/musica.tsx";
 import { Toaster } from "sonner";
 
 import "./styles.css";
@@ -30,6 +32,8 @@ const routeTree = rootRoute.addChildren([
   EstiloRoute(rootRoute),
   CantadoresRoute(rootRoute),
   CantadorRoute(rootRoute),
+  MusicasRoute(rootRoute),
+  MusicaRoute(rootRoute),
 ]);
 
 const queryClient = new QueryClient();
