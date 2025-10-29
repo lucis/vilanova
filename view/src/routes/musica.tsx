@@ -1,3 +1,4 @@
+import * as React from "react";
 import { createRoute, Link, type RootRoute } from "@tanstack/react-router";
 import { Music, Calendar, Disc, Youtube } from "lucide-react";
 import { SiteHeader } from "../components/site-header";
@@ -298,9 +299,6 @@ function MusicaDetail() {
     </div>
   );
 }
-
-// Need to import React
-import * as React from "react";
 
 export const MusicaDetailRoute = createRoute({
   path: "/musicas/$slug",
