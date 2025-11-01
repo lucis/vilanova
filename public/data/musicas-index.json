@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "title": "Índice de Músicas - Vilanova",
+  "description": "Músicas inspiradas na cultura da cantoria ou que prestam homenagem à tradição nordestina",
+  "musicas": [
+    {
+      "id": "martelo-alagoano-alceu-valenca",
+      "slug": "martelo-alagoano-alceu-valenca",
+      "titulo": "Martelo Alagoano",
+      "artista": "Alceu Valença",
+      "estilo_referencia": "Martelo Alagoano",
+      "destaque": true,
+      "youtube": "https://youtu.be/bujZdiDSnJU?si=XO2QRHj0CkJ2J1IB",
+      "_ref": "/musicas/martelo-alagoano-alceu-valenca.json"
+    }
+  ],
+  "metadata": {
+    "ultima_atualizacao": "2025-10-29",
+    "total_musicas": 1,
+    "total_estrofes": 3,
+    "observacoes": [
+      "Seção inaugurada com Martelo Alagoano de Alceu Valença",
+      "Esta seção distingue músicas autorais que homenageiam a cantoria das cantorias de improviso tradicionais"
+    ]
+  }
+}

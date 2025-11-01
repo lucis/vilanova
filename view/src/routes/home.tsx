@@ -648,6 +648,10 @@ function HomePage() {
               <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">15</div>
               <div className="text-sm md:text-base text-[#2E5266]/70">Cantorias</div>
             </Link>
+            <Link to="/musicas" className="text-center hover:scale-105 transition-transform">
+              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">1</div>
+              <div className="text-sm md:text-base text-[#2E5266]/70">Músicas</div>
+            </Link>
             <Link to="/estilos" className="text-center hover:scale-105 transition-transform">
               <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">6</div>
               <div className="text-sm md:text-base text-[#2E5266]/70">Estilos</div>
@@ -656,14 +660,60 @@ function HomePage() {
               <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">{totalCantadores}</div>
               <div className="text-sm md:text-base text-[#2E5266]/70">Cantadores</div>
             </Link>
-            <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">84</div>
-              <div className="text-sm md:text-base text-[#2E5266]/70">Estrofes</div>
-            </div>
           </div>
           
           {/* Exemplos Reais do Acervo */}
           <div className="space-y-6">
+
+            {/* NEW SECTION: Destaque de Músicas */}
+            <div className="bg-gradient-to-r from-[#D49B54]/20 to-[#C84B31]/20 border-2 border-[#D49B54] rounded-lg overflow-hidden">
+              <div className="p-6 md:p-8 bg-gradient-to-r from-[#F5EBE0] to-white">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="text-4xl">🎵</div>
+                  <div className="flex-1">
+                    <h3 className="font-serif text-2xl md:text-3xl font-bold text-[#C84B31] mb-2">
+                      Músicas Inspiradas na Cantoria
+                    </h3>
+                    <p className="text-lg text-[#2E5266]/80 leading-relaxed">
+                      Além de preservar as cantorias de improviso, catalogamos <strong>músicas autorais</strong> que 
+                      prestam homenagem à tradição nordestina. São composições que mantêm viva a essência da cantoria 
+                      na música popular brasileira.
+                    </p>
+                  </div>
+                </div>
+                
+                {/* Featured Music Card */}
+                <div className="bg-white border-2 border-[#8B6F47] rounded-lg overflow-hidden mt-6 hover:shadow-lg transition-all duration-300">
+                  <div className="p-4 bg-[#D49B54]/10">
+                    <h4 className="font-bold text-lg text-[#2E5266]">🎼 Martelo Alagoano - Alceu Valença</h4>
+                    <p className="text-xs text-[#2E5266]/60 mt-1">Álbum: Coração Bobo · 1980 · 4:23</p>
+                  </div>
+                  
+                  <div className="p-4 bg-[#E8D4B0]">
+                    <p className="italic text-sm md:text-base text-[#2E5266] leading-relaxed">
+                      Homenagem aos grandes mestres como Dimas Batista, Pinto do Monteiro, Lourival Batista e Mocinha de Passira.
+                    </p>
+                  </div>
+                  
+                  <div className="p-4 bg-white border-t-2 border-[#8B6F47] flex items-center justify-between">
+                    <span className="text-xs text-[#2E5266]/70">Composição autorizada com análise métrica</span>
+                    <Link to="/musicas/martelo-alagoano-alceu-valenca" className="text-sm text-[#C84B31] font-semibold hover:underline">
+                      Ver detalhes →
+                    </Link>
+                  </div>
+                </div>
+                
+                <div className="mt-6 flex flex-col sm:flex-row gap-3">
+                  <Link 
+                    to="/musicas"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#D49B54] text-white font-semibold rounded-lg hover:bg-[#C84B31] transition-all duration-300"
+                  >
+                    🎵 Explorar Coleção de Músicas
+                  </Link>
+                </div>
+              </div>
+            </div>
+
             {/* Card 1: Galope - Ingratidão */}
             <div className="border-2 border-[#8B6F47] bg-white rounded-lg overflow-hidden">
               <div className="p-4 bg-[#C84B31]/5">
@@ -1201,6 +1251,11 @@ function HomePage() {
                 <li>
                   <Link to="/cantorias" className="hover:text-[#D49B54] transition-colors">
                     → Cantorias
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/musicas" className="hover:text-[#D49B54] transition-colors">
+                    → Músicas
                   </Link>
                 </li>
                 <li>
