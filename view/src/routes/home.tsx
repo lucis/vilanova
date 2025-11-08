@@ -4,12 +4,30 @@ import acervoData from "../lib/acervoCompat";
 import { useMemo } from "react";
 import { agregarCantadores } from "../lib/cantadores";
 import type { Cantoria } from "../lib/types";
+import { MetricPill } from "../components/hero/MetricPill";
+import { MetricCard } from "../components/dashboard/MetricCard";
+import { StyleBar } from "../components/dashboard/StyleBar";
+import { ContribCard } from "../components/contribute/ContribCard";
 
 function HomePage() {
   const totalCantadores = useMemo(() => {
     const cantadores = agregarCantadores(acervoData.repentes as Cantoria[]);
     return cantadores.length;
   }, []);
+  
+  // Calcular estatísticas de estilos
+  const estilosStats = useMemo(() => {
+    const counts: Record<string, number> = {};
+    acervoData.repentes.forEach((cantoria: any) => {
+      const estilo = cantoria.estilo?.nome || "Não especificado";
+      counts[estilo] = (counts[estilo] || 0) + 1;
+    });
+    return Object.entries(counts)
+      .sort(([, a], [, b]) => b - a)
+      .slice(0, 5); // Top 5 estilos
+  }, []);
+  
+  const maxEstiloCount = estilosStats[0]?.[1] || 1;
   
   return (
     <div className="min-h-screen bg-[#F5EBE0]">
@@ -37,6 +55,13 @@ function HomePage() {
               <h2 className="font-serif text-xl md:text-2xl text-[#2E5266]/85 leading-relaxed">
                 Organizando o Repente Nordestino no Mundo Digital
               </h2>
+              
+              {/* Métricas visuais */}
+              <div className="flex flex-wrap justify-center md:justify-start gap-3 mb-6">
+                <MetricPill value={15} label="Cantorias" />
+                <MetricPill value={totalCantadores} label="Cantadores" />
+                <MetricPill value={6} label="Estilos" />
+              </div>
               
               <div className="prose prose-lg max-w-none space-y-6">
                 <p className="text-xl md:text-2xl text-[#2E5266]/80 leading-relaxed">
@@ -97,10 +122,21 @@ function HomePage() {
             O Que É Repente?
           </h2>
           
-          <p className="text-xl md:text-2xl text-[#2E5266]/70 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
+          <p className="text-xl md:text-2xl text-[#2E5266]/70 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
             Arte brasileira de improviso cantado, alternada por dois poetas 
             ao som da viola, criando versos "de repente" em métrica e rima perfeitas.
           </p>
+          
+          {/* Vídeo Embed */}
+          <div className="aspect-video rounded-xl overflow-hidden shadow-2xl mb-12 border-3 border-[#8B6F47]">
+            <iframe 
+              src="https://www.youtube.com/embed/ULbBggbGpB8"
+              title="Entre Cordas e Poesia - O Que é Repente"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
           
           {/* Características Fundamentais */}
           <div className="bg-white border-3 border-[#8B6F47] rounded-lg p-8 md:p-12 space-y-8 mb-12">
@@ -268,6 +304,61 @@ function HomePage() {
               Explorar Guia de Estilos
               <span className="text-xs bg-[#D49B54] text-white px-2 py-1 rounded">EM BREVE</span>
             </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 2.5: Acervo em Números (Dashboard) */}
+      <section className="py-16 md:py-24 px-5 md:px-12 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#2E5266] text-center mb-4">
+            📊 Acervo em Números
+          </h2>
+          
+          <p className="text-lg text-[#2E5266]/70 text-center mb-12">
+            Dados atualizados sobre o catálogo de repentes
+          </p>
+          
+          {/* Métricas principais */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <MetricCard value={15} label="Cantorias" icon="🎵" color="#C84B31" />
+            <MetricCard value={totalCantadores} label="Cantadores" icon="🎸" color="#2E5266" />
+            <MetricCard value={6} label="Estilos" icon="📏" color="#4A7C59" />
+            <MetricCard value={84} label="Estrofes" icon="📖" color="#D49B54" />
+          </div>
+          
+          {/* Estilos mais frequentes */}
+          <div className="bg-[#F5EBE0] border-2 border-[#8B6F47] rounded-lg p-8">
+            <h3 className="font-bold text-xl text-[#2E5266] mb-6 text-center">
+              Estilos Mais Frequentes no Acervo
+            </h3>
+            
+            <div className="space-y-4 max-w-2xl mx-auto">
+              {estilosStats.map(([estilo, count], index) => (
+                <StyleBar 
+                  key={estilo}
+                  estilo={estilo}
+                  count={count as number}
+                  maxCount={maxEstiloCount}
+                  color={[
+                    "#C84B31", // Galope
+                    "#4A7C59", // Martelo
+                    "#D49B54", // Sextilha
+                    "#2E5266", // Décima
+                    "#8B6F47"  // Desafio
+                  ][index]}
+                />
+              ))}
+            </div>
+            
+            <div className="mt-8 text-center">
+              <Link 
+                to="/cantorias"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#C84B31] text-white font-semibold rounded-lg hover:bg-[#A63D40] transition-all duration-300"
+              >
+                Explorar Acervo Completo →
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -1000,65 +1091,70 @@ function HomePage() {
 
       {/* Section 8: Como Contribuir */}
       <section className="py-16 md:py-24 px-5 md:px-12 bg-white">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#C84B31] text-center mb-6">
-            Como Contribuir
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#C84B31] text-center mb-4">
+            🤝 Como Contribuir
           </h2>
           
           <p className="text-xl text-[#2E5266]/70 text-center max-w-3xl mx-auto mb-12">
-            O Vilanova é colaborativo. Você pode ajudar a preservar o repente nordestino!
+            Somos open source e precisamos de você. Ajude a preservar o repente nordestino!
           </p>
           
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {/* Card 1 */}
-            <div className="border-2 border-[#8B6F47] rounded-lg p-6 bg-[#F5EBE0]">
-              <div className="text-3xl mb-3">✏️</div>
-              <h3 className="font-bold text-xl text-[#2E5266] mb-3">
-                Corrigir Informações
-              </h3>
-              <p className="text-sm text-[#2E5266]/80 leading-relaxed mb-4">
-                Viu um erro em uma cantoria? Falta o local ou ano? 
-                Clique em <strong>"Sugerir Melhoria"</strong> na página e edite diretamente no GitHub.
-              </p>
-              <span className="inline-block text-xs bg-[#4A7C59] text-white px-3 py-1 rounded-full">
-                1 clique
-              </span>
-            </div>
+            {/* Card 1: Design */}
+            <ContribCard
+              icon="🎨"
+              title="Design"
+              subtitle="PRECISAMOS DE AJUDA!"
+              items={[
+                "Ilustrações em SVG de elementos nordestinos",
+                "Ícones para estilos de repente",
+                "Padrões visuais que fujam de clichês",
+                "Identidade visual moderna e respeitosa"
+              ]}
+              callout={{
+                title: "Desafio Criativo:",
+                description: "Representar o repente de forma contemporânea, sem cair em estereótipos ou folclorismo exagerado."
+              }}
+              linkText="Ver Issues de Design"
+              linkUrl="https://github.com/lucis/vilanova/labels/design"
+              badgeText="AJUDA NECESSÁRIA"
+              badgeColor="#C84B31"
+            />
             
-            {/* Card 2 */}
-            <div className="border-2 border-[#8B6F47] rounded-lg p-6 bg-[#F5EBE0]">
-              <div className="text-3xl mb-3">📖</div>
-              <h3 className="font-bold text-xl text-[#2E5266] mb-3">
-                Adicionar Biografias
-              </h3>
-              <p className="text-sm text-[#2E5266]/80 leading-relaxed mb-4">
-                Conhece a história de algum cantador? Suas conquistas, prêmios, trajetória?
-                Clique em <strong>"Sugerir Bio"</strong> e compartilhe!
-              </p>
-              <span className="inline-block text-xs bg-[#4A7C59] text-white px-3 py-1 rounded-full">
-                Via GitHub Issue
-              </span>
-            </div>
+            {/* Card 2: Código */}
+            <ContribCard
+              icon="💻"
+              title="Desenvolvimento"
+              subtitle="Desenvolva funcionalidades"
+              items={[
+                "Frontend React + Tailwind CSS",
+                "Backend Node.js + Cloudflare Workers",
+                "Análise de métricas com IA",
+                "Banco de dados e APIs"
+              ]}
+              linkText="Ver Issues de Código"
+              linkUrl="https://github.com/lucis/vilanova/labels/development"
+              badgeText="BOAS ISSUES"
+              badgeColor="#4A7C59"
+            />
             
-            {/* Card 3 */}
-            <div className="border-2 border-[#8B6F47] rounded-lg p-6 bg-[#F5EBE0]">
-              <div className="text-3xl mb-3">🎵</div>
-              <h3 className="font-bold text-xl text-[#2E5266] mb-3">
-                Enviar Novas Cantorias
-              </h3>
-              <p className="text-sm text-[#2E5266]/80 leading-relaxed mb-4">
-                Tem gravações de repentes? Links do YouTube de cantorias não catalogadas?
-                Abra uma issue no GitHub!
-              </p>
-              <a
-                href="https://github.com/lucis/vilanova/issues/new?title=Nova Cantoria&labels=nova-cantoria"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-xs bg-[#C84B31] text-white px-3 py-1 rounded-full hover:bg-[#A63D40] transition-colors"
-              >
-                Sugerir Cantoria
-              </a>
-            </div>
+            {/* Card 3: Conteúdo */}
+            <ContribCard
+              icon="📝"
+              title="Conteúdo"
+              subtitle="Adicione cantorias e biografias"
+              items={[
+                "Transcrever cantorias do YouTube",
+                "Adicionar biografias de cantadores",
+                "Corrigir informações existentes",
+                "Enviar gravações raras"
+              ]}
+              linkText="Sugerir Cantoria"
+              linkUrl="https://github.com/lucis/vilanova/issues/new?title=Nova%20Cantoria&labels=nova-cantoria"
+              badgeText="1 CLIQUE"
+              badgeColor="#2E5266"
+            />
           </div>
           
           <div className="bg-[#E8D4B0] border-2 border-[#8B6F47] rounded-lg p-8 text-center">
