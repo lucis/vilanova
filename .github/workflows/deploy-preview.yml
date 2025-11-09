@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -28,7 +33,19 @@ jobs:
       - name: Deploy
         id: deploy
         run: |
-          deco deploy -y --no-promote ./dist/server -t ${{ secrets.DECO_DEPLOY_TOKEN }}
+          # Capture the deploy output
+          DEPLOY_OUTPUT=$(deco deploy -y --no-promote ./dist/server -t ${{ secrets.DECO_DEPLOY_TOKEN }} 2>&1)
+          echo "$DEPLOY_OUTPUT"
+          
+          # Extract the preview URL (looks for https://vilanova--*.deco.page)
+          PREVIEW_URL=$(echo "$DEPLOY_OUTPUT" | grep -o 'https://[a-zA-Z0-9\-]*\.deco\.page' | head -n 1)
+          
+          if [ -n "$PREVIEW_URL" ]; then
+            echo "preview_url=$PREVIEW_URL" >> $GITHUB_OUTPUT
+            echo "✅ Preview URL captured: $PREVIEW_URL"
+          else
+            echo "⚠️ Warning: Could not extract preview URL from deploy output"
+          fi
         env:
           DECO_DEPLOY_TOKEN: ${{ secrets.DECO_DEPLOY_TOKEN }}
 
