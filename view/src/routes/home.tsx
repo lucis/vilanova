@@ -96,6 +96,28 @@ function HomePage() {
                     Você pode corrigir ou completar qualquer dado clicando em "Sugerir Melhoria" nas páginas.
                   </p>
                 </div>
+
+                {/* DesRepente Card - Nova Ferramenta IA */}
+                <div className="bg-gradient-to-br from-purple-50 to-blue-50 border-2 border-purple-200 rounded-lg p-6 mt-6 shadow-lg">
+                  <div className="flex items-start gap-4">
+                    <div className="text-4xl">✨</div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-purple-900 mb-2">
+                        Experimente: DesRepente com IA
+                      </h3>
+                      <p className="text-purple-800 mb-4">
+                        Crie seus próprios versos de repente! Escolha um estilo, escreva alguns versos 
+                        e deixe a inteligência artificial completar o resto seguindo as regras de métrica e rima.
+                      </p>
+                      <Link
+                        to="/desrepente"
+                        className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 shadow-md"
+                      >
+                        🎨 Criar Repente Agora
+                      </Link>
+                    </div>
+                  </div>
+                </div>
               </div>
               
             </div>
