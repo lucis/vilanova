@@ -15,7 +15,7 @@
     "data:sync": "npm run data:split && cp -r public/data/* dist/client/data/"
   },
   "dependencies": {
-    "@deco/workers-runtime": "npm:@jsr/deco__workers-runtime@0.20.4",
+    "@deco/workers-runtime": "npm:@jsr/deco__workers-runtime@0.23.3",
     "@radix-ui/react-collapsible": "^1.1.12",
     "@radix-ui/react-popover": "^1.1.15",
     "@radix-ui/react-slot": "^1.2.3",
@@ -38,7 +38,7 @@
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.13.4",
     "concurrently": "^9.2.0",
-    "deco-cli": "^0.21.5",
+    "deco-cli": "^0.24.6",
     "drizzle-kit": "^0.31.4",
     "typescript": "^5.7.2",
     "@types/react": "^19.0.8",
