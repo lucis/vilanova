@@ -28,7 +28,6 @@ jobs:
       - name: Deploy
         id: deploy
         run: |
-          cd server
           deco deploy -y --no-promote ./dist/server -t ${{ secrets.DECO_DEPLOY_TOKEN }}
         env:
           DECO_DEPLOY_TOKEN: ${{ secrets.DECO_DEPLOY_TOKEN }}
