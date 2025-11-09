@@ -52,34 +52,31 @@ function HomePage() {
                 Vilanova
               </h1>
               
-              <h2 className="font-serif text-xl md:text-2xl text-[#2E5266]/85 leading-relaxed">
+              <h2 className="font-serif text-lg md:text-xl text-[#2E5266]/80 leading-relaxed mb-4">
                 Organizando o Repente Nordestino no Mundo Digital
               </h2>
               
-              {/* Métricas visuais */}
-              <div className="flex flex-wrap justify-center md:justify-start gap-3 mb-6">
-                <MetricPill value={15} label="Cantorias" />
-                <MetricPill value={totalCantadores} label="Cantadores" />
-                <MetricPill value={6} label="Estilos" />
+              {/* Métricas visuais - DESTAQUE */}
+              <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-8">
+                <MetricPill value={15} label="Cantorias" to="/cantorias" />
+                <MetricPill value={totalCantadores} label="Cantadores" to="/cantadores" />
+                <MetricPill value={6} label="Estilos" to="/estilos" />
               </div>
               
-              <div className="prose prose-lg max-w-none space-y-6">
-                <p className="text-xl md:text-2xl text-[#2E5266]/80 leading-relaxed">
-                  Há gerações, <strong>cantadores de viola</strong> improvisam versos que guardam 
-                  a memória e a sabedoria do Nordeste. São os <strong>"repórteres do sertão"</strong>, 
-                  professores que levaram conhecimento onde livro não chegava.
+              <div className="prose prose-lg max-w-none space-y-4">
+                <p className="text-lg md:text-xl text-[#2E5266]/80 leading-relaxed">
+                  <strong>Cantadores de viola</strong> improvisam versos que guardam a memória do Nordeste. 
+                  São <strong>"repórteres do sertão"</strong>, professores itinerantes.
                 </p>
                 
-                <p className="text-xl md:text-2xl text-[#2E5266]/80 leading-relaxed">
-                  Mas esse <strong>acervo imenso está espalhado</strong>: em gravações de rádio antigas, 
-                  fitas cassete esquecidas, vídeos perdidos no YouTube, na <strong>memória 
-                  de mestres</strong> que não estarão aqui para sempre.
+                <p className="text-lg md:text-xl text-[#2E5266]/80 leading-relaxed">
+                  <strong>Acervo imenso está espalhado</strong>: gravações antigas, vídeos perdidos no YouTube, 
+                  na <strong>memória de mestres</strong> que não estarão aqui para sempre.
                 </p>
                 
-                <p className="text-xl md:text-2xl text-[#2E5266]/80 leading-relaxed font-semibold">
-                  O Vilanova usa <strong>Inteligência Artificial</strong> para catalogar, transcrever 
-                  e organizar esse patrimônio cultural disperso. <strong>Somos open source 
-                  e precisamos de contribuidores.</strong>
+                <p className="text-lg md:text-xl text-[#2E5266] leading-relaxed font-bold">
+                  Usamos <strong>Inteligência Artificial</strong> para catalogar e organizar esse patrimônio. 
+                  <strong className="text-[#C84B31]"> Somos open source.</strong>
                 </p>
                 
                 {/* CTA para Cantorias */}
