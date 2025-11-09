@@ -363,6 +363,116 @@ function HomePage() {
         </div>
       </section>
 
+      {/* Section 2.7: Repente e Música Popular */}
+      <section className="py-16 md:py-24 px-5 md:px-12 bg-gradient-to-b from-[#4A7C59]/5 to-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-[60%_40%] gap-12 items-center">
+            {/* Left: Content */}
+            <div className="space-y-6 order-2 md:order-1">
+              <div className="inline-block bg-[#D49B54] text-white text-xs px-3 py-1 rounded-full font-semibold mb-2">
+                🎵 DNA DA MÚSICA NORDESTINA
+              </div>
+              
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#2E5266] leading-tight">
+                O Repente é o DNA Original da Música Nordestina
+              </h2>
+              
+              <div className="prose prose-lg max-w-none space-y-6">
+                <p className="text-xl text-[#2E5266]/85 leading-relaxed">
+                  A cantoria de viola é a <strong>raiz profunda</strong> de onde brotou grande parte 
+                  da música popular nordestina. Artistas como <strong>Luiz Gonzaga</strong>, 
+                  <strong>Zé Ramalho</strong> e <strong>Alceu Valença</strong> beberam diretamente 
+                  dessa fonte, trazendo para seus discos a métrica, a rima, a cadência e os 
+                  temas do repente.
+                </p>
+                
+                <p className="text-xl text-[#2E5266]/85 leading-relaxed">
+                  Existe uma <strong>relação amistosa e respeitosa</strong> entre cantadores 
+                  e músicos populares — <strong>linhas que se confundem</strong>, onde o repentista 
+                  homenageia o artista em seus versos e o artista incorpora a cantoria em 
+                  suas composições.
+                </p>
+                
+                <div className="bg-[#E8D4B0] border-l-4 border-[#4A7C59] p-6 rounded-r-lg">
+                  <p className="text-lg text-[#2E5266] font-semibold mb-3">
+                    🎼 O Vilanova explora essa influência
+                  </p>
+                  <p className="text-base text-[#2E5266]/80 leading-relaxed">
+                    Catalogamos não apenas cantorias de improviso, mas também 
+                    <strong> músicas autorais</strong> que prestam homenagem à tradição. 
+                    Analisamos a métrica, a rima, e mostramos como o repente vive 
+                    na MPB, no forró, no baião e na música contemporânea.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-3 pt-4">
+                <Link 
+                  to="/musicas"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#D49B54] text-white font-semibold rounded-lg hover:bg-[#C84B31] transition-all duration-300"
+                >
+                  🎵 Explorar Músicas Catalogadas
+                </Link>
+                
+                <Link 
+                  to="/cantorias"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-[#4A7C59] text-[#4A7C59] font-semibold rounded-lg hover:bg-[#4A7C59]/10 transition-all duration-300"
+                >
+                  Ver Cantorias Originais
+                </Link>
+              </div>
+            </div>
+            
+            {/* Right: Featured Artists */}
+            <div className="order-1 md:order-2 space-y-4">
+              <div className="bg-white border-2 border-[#8B6F47] rounded-lg p-6 shadow-lg">
+                <h3 className="font-bold text-lg text-[#2E5266] mb-4">
+                  Artistas Influenciados pelo Repente
+                </h3>
+                
+                <ul className="space-y-3 text-base text-[#2E5266]/80">
+                  <li className="flex items-start gap-3">
+                    <span className="text-2xl flex-shrink-0">🎸</span>
+                    <div>
+                      <strong className="text-[#2E5266]">Luiz Gonzaga</strong>
+                      <p className="text-sm text-[#2E5266]/70">
+                        "O Rei do Baião" incorporou a cantoria em clássicos como "Respeita Januário"
+                      </p>
+                    </div>
+                  </li>
+                  
+                  <li className="flex items-start gap-3">
+                    <span className="text-2xl flex-shrink-0">🎵</span>
+                    <div>
+                      <strong className="text-[#2E5266]">Alceu Valença</strong>
+                      <p className="text-sm text-[#2E5266]/70">
+                        Homenageou mestres em "Martelo Alagoano" e outros sucessos
+                      </p>
+                    </div>
+                  </li>
+                  
+                  <li className="flex items-start gap-3">
+                    <span className="text-2xl flex-shrink-0">🎤</span>
+                    <div>
+                      <strong className="text-[#2E5266]">Zé Ramalho</strong>
+                      <p className="text-sm text-[#2E5266]/70">
+                        Usa métricas e temas do repente em diversas composições
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                
+                <div className="mt-6 pt-4 border-t border-[#8B6F47]/30">
+                  <p className="text-xs text-[#2E5266]/60 italic">
+                    E muitos outros artistas da música nordestina contemporânea
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Section 3: Os Cantadores */}
       <section className="py-16 md:py-24 px-5 md:px-12 bg-white">
         <div className="max-w-7xl mx-auto">
