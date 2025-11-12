@@ -27,7 +27,6 @@ jobs:
 
       - name: Deploy
         run: |
-          cd server
-          deco deploy -y ./dist -t ${{ secrets.DECO_DEPLOY_TOKEN }}
+          deco deploy -y ./dist/server -t ${{ secrets.DECO_DEPLOY_TOKEN }}
         env:
           DECO_DEPLOY_TOKEN: ${{ secrets.DECO_DEPLOY_TOKEN }}
