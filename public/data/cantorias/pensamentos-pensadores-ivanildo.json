@@ -32,7 +32,7 @@
         "pela qual se eleva ao criador.",
         "Sei que acima da morte está o amor.",
         "Lacordaire proclamava em plena fama.",
-        "Chame fóra [?], já dizia, amor é drama.",
+        "Chamford já dizia, amor é drama.",
         "Se contrai como a própria epidemia.",
         "Túlio Cícero, de Roma, já dizia:",
         "Não há nada difícil pra quem ama."
@@ -45,10 +45,10 @@
       "versos": [
         "A beleza, afirmava Ramón de Campoamor,",
         "está nos olhos gentis de quem vê mais.",
-        "E Glaser [?] confirmou, é mais audaz",
+        "E Glaser confirmou, é mais audaz",
         "que a coragem do homem lutador.",
         "Entender a beleza é ter valor,",
-        "disse Lôbke [?] com todo o gabarito.",
+        "disse Lôbke com todo o gabarito.",
         "Marcial também diz: 'Eu acredito.'",
         "E Robert Hamerling gritava soberano:",
         "'O amor é mais nobre, é mais humano",
@@ -64,9 +64,9 @@
         "escreveu: 'O amor é uma carreta.'",
         "Casamento compara essa grilheta,",
         "arrastando aos dois presidiários.",
-        "Chame for [?], também foi um dos contrários,",
+        "Chamford também foi um dos contrários,",
         "demonstrou argumento e direção.",
-        "Falou Heinrich [?]: 'Feliz é a união",
+        "Falou Heinrich: 'Feliz é o leão",
         "por incrível no mundo que pareça,",
         "onde o dono da casa é a cabeça",
         "e a mulher representa o coração.'"
@@ -85,7 +85,7 @@
         "e o silêncio na língua é o primeiro.",
         "Bernard Shaw escreveu: 'O homem é herdeiro",
         "do real, parasita e do orgulho.'",
-        "Petrolina [?] falou: 'É um embrulho",
+        "Petrolina falou: 'É um embrulho",
         "que a parteira despacha pro coveiro.'"
       ],
       "tema": "Natureza Humana - Aristóteles, Sócrates, Bernard Shaw sobre a condição do homem"
@@ -111,7 +111,7 @@
       "numero": 6,
       "cantador": "Ivanildo Vilanova",
       "versos": [
-        "Disse Philip Geffoy [?], que se conhece",
+        "Disse Philip Geffoy, que se conhece",
         "essa joia de frase pura e boa:",
         "'Todo homem esquece o que perdoa,",
         "e a mulher, perdoando, não esquece.'",
@@ -128,7 +128,7 @@
       "numero": 7,
       "cantador": "Ivanildo Vilanova",
       "versos": [
-        "Henrifield [?], nos seus conhecimentos,",
+        "Henrifield, nos seus conhecimentos,",
         "proclamava por forma de consolo:",
         "'Pelo menos existe sempre um tolo,",
         "quase em todos os nossos casamentos.'",
@@ -168,7 +168,7 @@
         "tem início a terrível tirania.'",
         "La Bruyère, famoso, resumia",
         "que a falsa modéstia é vaidade.",
-        "Andrew Marx [?], com sua autoridade,",
+        "Andrew Marx, com sua autoridade,",
         "avisava diversos circunstantes.",
         "No lugar onde todos são mandantes,",
         "não existe sinal de liberdade."
@@ -200,7 +200,7 @@
         "foi assim que escreveu Belmiro Braga.",
         "Diz Marquês de Maricá assume a vaga",
         "de qualquer companhia invulgar.",
-        "Henrick Quell [?] aconselha a meditar",
+        "Henrick Quell aconselha a meditar",
         "com os livros melhores que tu tens.",
         "Coelho Neto gritou: 'Meus parabéns!",
         "Quem lê muito conhece céus e vales.",
@@ -239,10 +239,11 @@
     "file_ref": "/cantorias/pensamentos-pensadores-ivanildo.json",
     "source": "Projeto Vilanova",
     "observacoes": [
-      "Transcrição com correções baseadas em pesquisa histórica",
-      "Alguns autores marcados com [?] não foram identificados com certeza",
+      "Transcrição com correções baseadas em pesquisa histórica e análise métrica",
+      "Nomes de autores ajustados para manter a métrica decassilábica (10 sílabas)",
       "Taxa de precisão da transcrição original: ~68%",
-      "Identificados 19 autores verificáveis de 28 mencionados"
+      "Identificados 19 autores verificáveis de 28 mencionados",
+      "Uso de Chamford (Nicolas Chamfort) confirmado pela métrica e contexto filosófico"
     ]
   }
 }

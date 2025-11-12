@@ -1057,3 +1057,886 @@ Criei um resumo completo em `NOVO-REPENTE-PENSAMENTOS-PENSADORES.md` com todos o
 
 ---
 
+_**User (2025-11-12 10:42Z)**_
+
+Quero que você faca planos/compartilhe.md, uma experiencia simples e interessante para usuarios compartilharem repentes
+
+
+
+Na pagina de detalhe de uma cantoria, é possivel na lista de estrofes selecionar para compartilhar ela
+
+
+
+Isso deve montar uma imagem, usando canvas e depois canvas2img colocando aquele verso como destaque, mas fazendo uma img proporcional ao instagram story que mostra que cantoria é aquela, quem fez, link pra o youtube, e indicacao que isso é no sistema Vilanova 
+
+
+
+Quero apenas um md com plano que deve ter sketches em ascii sobre o funcionamento
+
+---
+
+_**Agent (model claude-4.5-sonnet-thinking, mode Agent)**_
+
+<think><details><summary>Thought Process</summary>
+O usuário quer que eu crie um arquivo de planejamento (em Markdown) para uma funcionalidade de compartilhamento de estrofes de repente. A ideia é:
+
+1. Na página de detalhes de uma cantoria
+2. O usuário pode selecionar estrofes para compartilhar
+3. Gera uma imagem (usando canvas)
+4. A imagem deve ser no formato Instagram Story (9:16)
+5. Deve conter:
+   - A estrofe em destaque
+   - Informação sobre a cantoria
+   - Quem fez (cantador)
+   - Link para YouTube
+   - Marca do Projeto Vilanova
+
+Ele quer um MD com plano e sketches em ASCII para visualizar a interface.
+
+Vou criar um arquivo detalhado com:
+- Visão geral
+- User flow (com ASCII art)
+- Layout da imagem (sketch ASCII)
+- Especificações técnicas
+- Implementação sugerida
+- Considerações de UX</details></think>
+
+---
+
+Vou criar um plano detalhado para a funcionalidade de compartilhamento de estrofes! Esta é uma feature excelente para viralização do conteúdo.
+
+---
+
+<tool-use data-tool-type="write" data-tool-name="write">
+
+<details><summary>Tool use: **code_edit** • Edit file: /Users/lucis/personal/vilanova/plans/compartilhe.md</summary>
+
+**Chunk 1**
+Lines added: 732, lines removed: 1
+
+```diff
+@@ -1,1 +1,732 @@
+- 
++ # Plano: Compartilhar Estrofes como Imagem
++ 
++ **Objetivo:** Permitir que usuários compartilhem estrofes individuais de repentes como imagens otimizadas para Instagram Stories, aumentando o alcance e viralização do Projeto Vilanova.
++ 
++ ---
++ 
++ ## 📱 Visão Geral
++ 
++ Adicionar um botão de compartilhamento em cada estrofe na página de detalhes de uma cantoria. Ao clicar, gera uma imagem bonita (1080x1920px - formato Story) com:
++ 
++ - A estrofe em destaque
++ - Nome da cantoria e cantador
++ - Link para o YouTube
++ - Branding do Projeto Vilanova
++ - Design atraente com identidade visual
++ 
++ ---
++ 
++ ## 🎯 User Flow
++ 
++ &#96;&#96;&#96;ascii
++ ┌─────────────────────────────────────────────────────────────┐
++ │  PÁGINA DE DETALHES DA CANTORIA                             │
++ │  /cantorias/pensamentos-pensadores-ivanildo-vilanova        │
++ ├─────────────────────────────────────────────────────────────┤
++ │                                                              │
++ │  ┌────────────────────────────────────────────────────┐     │
++ │  │ Estrofe 1 - Amor                           [Share] │◄────┼─── Botão em cada estrofe
++ │  │                                                     │     │
++ │  │ &quot;Digo eu, como Chile, o escritor.                  │     │
++ │  │  Sem amor neste mundo não há nada.                 │     │
++ │  │  O amor assemelha-se uma escada                    │     │
++ │  │  pela qual se eleva ao criador...&quot;                 │     │
++ │  └────────────────────────────────────────────────────┘     │
++ │                                                              │
++ │  ┌────────────────────────────────────────────────────┐     │
++ │  │ Estrofe 2 - Beleza                         [Share] │     │
++ │  │                                                     │     │
++ │  │ &quot;A beleza, afirmava Ramón de Campoamor...&quot;         │     │
++ │  └────────────────────────────────────────────────────┘     │
++ │                                                              │
++ └─────────────────────────────────────────────────────────────┘
++                               │
++                               │ Clique no [Share]
++                               ▼
++ ┌─────────────────────────────────────────────────────────────┐
++ │  MODAL DE PREVIEW                                            │
++ ├─────────────────────────────────────────────────────────────┤
++ │                                                              │
++ │  ┌──────────────────────────────────────┐                   │
++ │  │                                      │                   │
++ │  │    [Preview da Imagem Gerada]       │                   │
++ │  │         (1080x1920px)                │                   │
++ │  │                                      │                   │
++ │  │   Mostra como ficará a imagem        │                   │
++ │  │   no Instagram Story                 │                   │
++ │  │                                      │                   │
++ │  └──────────────────────────────────────┘                   │
++ │                                                              │
++ │  [ Baixar Imagem ]  [ Copiar Link ]  [ Fechar ]             │
++ │                                                              │
++ └─────────────────────────────────────────────────────────────┘
++ &#96;&#96;&#96;
++ 
++ ---
++ 
++ ## 🎨 Layout da Imagem Gerada (1080x1920px)
++ 
++ &#96;&#96;&#96;ascii
++ ┌─────────────────────────────────────────────────────┐
++ │ 1080px                                              │ ▲
++ │                                                     │ │
++ │  ╔═════════════════════════════════════════════╗   │ │
++ │  ║                                             ║   │ │
++ │  ║         PROJETO VILANOVA                    ║   │ │ 200px
++ │  ║         Logo + Nome                         ║   │ │ Header
++ │  ║                                             ║   │ │
++ │  ╚═════════════════════════════════════════════╝   │ ▼
++ │                                                     │
++ │  ┌─────────────────────────────────────────────┐   │ ▲
++ │  │                                             │   │ │
++ │  │   &quot;Digo eu, como Chile, o escritor.        │   │ │
++ │  │    Sem amor neste mundo não há nada.       │   │ │
++ │  │    O amor assemelha-se uma escada          │   │ │
++ │  │    pela qual se eleva ao criador.          │   │ │ 1200px
++ │  │    Sei que acima da morte está o amor.     │   │ │ Conteúdo
++ │  │    Lacordaire proclamava em plena fama.    │   │ │ (Estrofe)
++ │  │    Chame fóra [?], já dizia, amor é drama. │   │ │
++ │  │    Se contrai como a própria epidemia.     │   │ │
++ │  │    Túlio Cícero, de Roma, já dizia:        │   │ │
++ │  │    Não há nada difícil pra quem ama.&quot;      │   │ │
++ │  │                                             │   │ │
++ │  │          — Ivanildo Vilanova                │   │ │
++ │  │                                             │   │ │
++ │  └─────────────────────────────────────────────┘   │ ▼
++ │                                                     │
++ │  ┌─────────────────────────────────────────────┐   │ ▲
++ │  │                                             │   │ │
++ │  │  📖 Pensamentos e Pensadores                │   │ │
++ │  │  🎵 Estilo: Décima (Mote Fixo)              │   │ │ 400px
++ │  │  📺 youtu.be/vAdWNTHZReQ                    │   │ │ Footer
++ │  │                                             │   │ │
++ │  │  vilanova.deco.site                         │   │ │
++ │  │                                             │   │ │
++ │  └─────────────────────────────────────────────┘   │ ▼
++ │                                                     │
++ └─────────────────────────────────────────────────┘  │
++                                                    1920px
++ &#96;&#96;&#96;
++ 
++ ---
++ 
++ ## 📐 Especificações Visuais
++ 
++ ### Dimensões
++ - **Tamanho:** 1080x1920px (9:16 - Instagram Story)
++ - **Resolução:** 72 DPI (web)
++ - **Formato de saída:** PNG (melhor qualidade) ou JPEG (menor tamanho)
++ 
++ ### Layout Breakdown
++ 
++ #### Header (200px altura)
++ &#96;&#96;&#96;ascii
++ ┌─────────────────────────────────────────────────────┐
++ │                                                     │
++ │  [Logo]  PROJETO VILANOVA                          │
++ │          Preservando a Cantoria Nordestina         │
++ │                                                     │
++ └─────────────────────────────────────────────────────┘
++ &#96;&#96;&#96;
++ - **Background:** Gradiente (#1a1a1a → #2d2d2d)
++ - **Logo:** 80x80px no canto esquerdo
++ - **Texto:** Branco, fonte Poppins Bold 32px
++ - **Subtítulo:** Cinza claro, Poppins Regular 18px
++ 
++ #### Conteúdo - Estrofe (1200px altura)
++ &#96;&#96;&#96;ascii
++ ┌─────────────────────────────────────────────────────┐
++ │                                                     │
++ │   Padding: 60px                                     │
++ │                                                     │
++ │   &quot;Verso 1 da estrofe aqui                         │
++ │    Verso 2 da estrofe aqui                         │
++ │    Verso 3 da estrofe aqui                         │
++ │    ... todos os 10 versos&quot;                         │
++ │                                                     │
++ │                                                     │
++ │          — Nome do Cantador                        │
++ │             (autor da estrofe)                     │
++ │                                                     │
++ └─────────────────────────────────────────────────────┘
++ &#96;&#96;&#96;
++ - **Background:** Branco (#ffffff)
++ - **Borda:** Sutil sombra externa (box-shadow)
++ - **Versos:** 
++   - Fonte: Georgia ou serif elegante
++   - Tamanho: 28-32px (ajustar para caber)
++   - Cor: #1a1a1a
++   - Line-height: 1.6
++   - Aspas decorativas no início/fim
++ - **Assinatura (cantador):**
++   - Fonte: Poppins Italic
++   - Tamanho: 24px
++   - Cor: #666
++   - Alinhamento: direita
++   - Margem top: 40px
++ 
++ #### Footer - Metadados (400px altura)
++ &#96;&#96;&#96;ascii
++ ┌─────────────────────────────────────────────────────┐
++ │                                                     │
++ │  📖 [Título da Cantoria]                           │
++ │  🎵 Estilo: [Nome do Estilo]                       │
++ │  📺 [YouTube Short URL]                            │
++ │                                                     │
++ │  ─────────────────────────────────────────────     │
++ │                                                     │
++ │  vilanova.deco.site                                │
++ │  Ouça a cantoria completa ↗                        │
++ │                                                     │
++ └─────────────────────────────────────────────────────┘
++ &#96;&#96;&#96;
++ - **Background:** Gradiente invertido (#2d2d2d → #1a1a1a)
++ - **Texto:** Branco
++ - **Ícones:** Emojis ou ícones SVG (📖 🎵 📺)
++ - **Título cantoria:** Poppins Bold 26px
++ - **Metadados:** Poppins Regular 22px
++ - **URL:** Poppins Medium 20px, cor primária (#f59e0b ou similar)
++ - **CTA:** Poppins Regular 18px, opacidade 80%
++ 
++ ---
++ 
++ ## 🛠️ Stack Técnica
++ 
++ ### Bibliotecas Necessárias
++ 
++ &#96;&#96;&#96;json
++ {
++   &quot;dependencies&quot;: {
++     &quot;html2canvas&quot;: &quot;^1.4.1&quot;,
++     &quot;lucide-react&quot;: &quot;^0.263.1&quot;
++   }
++ }
++ &#96;&#96;&#96;
++ 
++ **Nota:** Evitar &#96;canvas2image&#96; (deprecated). Usar &#96;html2canvas&#96; diretamente ou Canvas API nativo.
++ 
++ ### Alternativas de Implementação
++ 
++ #### Opção 1: HTML2Canvas (Recomendado)
++ ✅ **Vantagens:**
++ - Renderiza HTML/CSS diretamente
++ - Fácil manutenção do design
++ - Suporta fontes web
++ - Gradientes e sombras nativos
++ 
++ ❌ **Desvantagens:**
++ - Bundle um pouco maior
++ - Depende de biblioteca externa
++ 
++ #### Opção 2: Canvas API Nativo
++ ✅ **Vantagens:**
++ - Sem dependências externas
++ - Performance melhor
++ - Controle total do render
++ 
++ ❌ **Desvantagens:**
++ - Mais trabalhoso implementar
++ - Limitações com fontes/gradientes
++ - Código mais verboso
++ 
++ **Recomendação:** Usar **HTML2Canvas** pela facilidade e resultado visual superior.
++ 
++ ---
++ 
++ ## 📂 Estrutura de Arquivos
++ 
++ &#96;&#96;&#96;
++ view/src/
++ ├── components/
++ │   ├── ShareEstrofeButton.tsx      # Botão &quot;Share&quot; em cada estrofe
++ │   ├── ShareEstrofeModal.tsx       # Modal de preview + download
++ │   └── ShareEstrofeCanvas.tsx      # Componente que renderiza o layout
++ │
++ ├── hooks/
++ │   └── useGenerateEstrofeImage.ts  # Hook para gerar a imagem
++ │
++ └── routes/
++     └── cantorias/$slug.tsx         # Já existente, adicionar botões
++ &#96;&#96;&#96;
++ 
++ ---
++ 
++ ## 🔧 Implementação Detalhada
++ 
++ ### 1. ShareEstrofeButton.tsx
++ 
++ &#96;&#96;&#96;tsx
++ interface ShareEstrofeButtonProps {
++   estrofe: Estrofe;
++   cantoria: Cantoria;
++ }
++ 
++ export function ShareEstrofeButton({ estrofe, cantoria }: ShareEstrofeButtonProps) {
++   const [showModal, setShowModal] = useState(false);
++ 
++   return (
++     &lt;&gt;
++       &lt;button
++         onClick={() =&gt; setShowModal(true)}
++         className=&quot;flex items-center gap-2 text-sm text-gray-600 hover:text-amber-600&quot;
++         aria-label=&quot;Compartilhar estrofe&quot;
++       &gt;
++         &lt;Share2 size={18} /&gt;
++         Compartilhar
++       &lt;/button&gt;
++ 
++       {showModal &amp;&amp; (
++         &lt;ShareEstrofeModal
++           estrofe={estrofe}
++           cantoria={cantoria}
++           onClose={() =&gt; setShowModal(false)}
++         /&gt;
++       )}
++     &lt;/&gt;
++   );
++ }
++ &#96;&#96;&#96;
++ 
++ ### 2. ShareEstrofeModal.tsx
++ 
++ &#96;&#96;&#96;tsx
++ interface ShareEstrofeModalProps {
++   estrofe: Estrofe;
++   cantoria: Cantoria;
++   onClose: () =&gt; void;
++ }
++ 
++ export function ShareEstrofeModal({ estrofe, cantoria, onClose }: ShareEstrofeModalProps) {
++   const { generateImage, isGenerating, imageUrl } = useGenerateEstrofeImage();
++ 
++   useEffect(() =&gt; {
++     generateImage(estrofe, cantoria);
++   }, []);
++ 
++   const handleDownload = () =&gt; {
++     if (!imageUrl) return;
++     
++     const link = document.createElement(&#39;a&#39;);
++     link.download = &#96;vilanova-${cantoria.slug}-estrofe-${estrofe.numero}.png&#96;;
++     link.href = imageUrl;
++     link.click();
++   };
++ 
++   const handleCopyLink = () =&gt; {
++     const url = &#96;${window.location.origin}/cantorias/${cantoria.slug}?estrofe=${estrofe.numero}&#96;;
++     navigator.clipboard.writeText(url);
++     toast.success(&#39;Link copiado!&#39;);
++   };
++ 
++   return (
++     &lt;Dialog open onOpenChange={onClose}&gt;
++       &lt;DialogContent className=&quot;max-w-md&quot;&gt;
++         &lt;DialogHeader&gt;
++           &lt;DialogTitle&gt;Compartilhar Estrofe {estrofe.numero}&lt;/DialogTitle&gt;
++         &lt;/DialogHeader&gt;
++ 
++         &lt;div className=&quot;space-y-4&quot;&gt;
++           {/* Preview da imagem */}
++           {isGenerating ? (
++             &lt;div className=&quot;aspect-[9/16] bg-gray-100 flex items-center justify-center&quot;&gt;
++               &lt;Loader2 className=&quot;animate-spin&quot; /&gt;
++               &lt;p className=&quot;ml-2&quot;&gt;Gerando imagem...&lt;/p&gt;
++             &lt;/div&gt;
++           ) : imageUrl ? (
++             &lt;img 
++               src={imageUrl} 
++               alt=&quot;Preview da imagem&quot;
++               className=&quot;w-full rounded-lg shadow-lg&quot;
++             /&gt;
++           ) : null}
++ 
++           {/* Ações */}
++           &lt;div className=&quot;flex gap-2&quot;&gt;
++             &lt;Button onClick={handleDownload} className=&quot;flex-1&quot;&gt;
++               &lt;Download size={18} className=&quot;mr-2&quot; /&gt;
++               Baixar Imagem
++             &lt;/Button&gt;
++             &lt;Button onClick={handleCopyLink} variant=&quot;outline&quot;&gt;
++               &lt;Link2 size={18} /&gt;
++             &lt;/Button&gt;
++           &lt;/div&gt;
++         &lt;/div&gt;
++       &lt;/DialogContent&gt;
++     &lt;/Dialog&gt;
++   );
++ }
++ &#96;&#96;&#96;
++ 
++ ### 3. ShareEstrofeCanvas.tsx
++ 
++ &#96;&#96;&#96;tsx
++ interface ShareEstrofeCanvasProps {
++   estrofe: Estrofe;
++   cantoria: Cantoria;
++ }
++ 
++ export const ShareEstrofeCanvas = forwardRef&lt;HTMLDivElement, ShareEstrofeCanvasProps&gt;(
++   ({ estrofe, cantoria }, ref) =&gt; {
++     const youtubeShortUrl = cantoria.links.youtube
++       ? &#96;youtu.be/${new URL(cantoria.links.youtube).searchParams.get(&#39;v&#39;)}&#96;
++       : null;
++ 
++     return (
++       &lt;div
++         ref={ref}
++         className=&quot;relative&quot;
++         style={{
++           width: &#39;1080px&#39;,
++           height: &#39;1920px&#39;,
++           fontFamily: &#39;system-ui, -apple-system, sans-serif&#39;,
++         }}
++       &gt;
++         {/* Header */}
++         &lt;div className=&quot;h-[200px] bg-gradient-to-b from-gray-900 to-gray-800 flex items-center px-16&quot;&gt;
++           &lt;img src=&quot;/logo.png&quot; className=&quot;w-20 h-20 mr-6&quot; /&gt;
++           &lt;div&gt;
++             &lt;h1 className=&quot;text-white text-4xl font-bold&quot;&gt;PROJETO VILANOVA&lt;/h1&gt;
++             &lt;p className=&quot;text-gray-300 text-xl&quot;&gt;Preservando a Cantoria Nordestina&lt;/p&gt;
++           &lt;/div&gt;
++         &lt;/div&gt;
++ 
++         {/* Conteúdo - Estrofe */}
++         &lt;div className=&quot;h-[1200px] bg-white flex items-center justify-center px-16 py-20&quot;&gt;
++           &lt;div className=&quot;max-w-4xl&quot;&gt;
++             {/* Aspas decorativas */}
++             &lt;div className=&quot;text-amber-600 text-8xl leading-none mb-6&quot;&gt;&quot;&lt;/div&gt;
++ 
++             {/* Versos */}
++             &lt;div className=&quot;space-y-3&quot;&gt;
++               {estrofe.versos.map((verso, i) =&gt; (
++                 &lt;p key={i} className=&quot;text-gray-900 text-3xl leading-relaxed font-serif&quot;&gt;
++                   {verso}
++                 &lt;/p&gt;
++               ))}
++             &lt;/div&gt;
++ 
++             {/* Aspas de fechamento */}
++             &lt;div className=&quot;text-amber-600 text-8xl leading-none text-right mt-6&quot;&gt;&quot;&lt;/div&gt;
++ 
++             {/* Assinatura */}
++             &lt;p className=&quot;text-gray-600 text-2xl italic text-right mt-10&quot;&gt;
++               — {estrofe.cantador}
++             &lt;/p&gt;
++           &lt;/div&gt;
++         &lt;/div&gt;
++ 
++         {/* Footer */}
++         &lt;div className=&quot;h-[400px] bg-gradient-to-b from-gray-800 to-gray-900 px-16 py-12 flex flex-col justify-between&quot;&gt;
++           &lt;div className=&quot;space-y-4&quot;&gt;
++             &lt;p className=&quot;text-white text-3xl font-bold flex items-center gap-3&quot;&gt;
++               📖 {cantoria.titulo}
++             &lt;/p&gt;
++             &lt;p className=&quot;text-gray-300 text-2xl flex items-center gap-3&quot;&gt;
++               🎵 Estilo: {cantoria.estilo.nome}
++             &lt;/p&gt;
++             {youtubeShortUrl &amp;&amp; (
++               &lt;p className=&quot;text-gray-300 text-2xl flex items-center gap-3&quot;&gt;
++                 📺 {youtubeShortUrl}
++               &lt;/p&gt;
++             )}
++           &lt;/div&gt;
++ 
++           &lt;div className=&quot;border-t border-gray-700 pt-6&quot;&gt;
++             &lt;p className=&quot;text-amber-500 text-2xl font-medium&quot;&gt;vilanova.deco.site&lt;/p&gt;
++             &lt;p className=&quot;text-gray-400 text-xl mt-2&quot;&gt;Ouça a cantoria completa ↗&lt;/p&gt;
++           &lt;/div&gt;
++         &lt;/div&gt;
++       &lt;/div&gt;
++     );
++   }
++ );
++ &#96;&#96;&#96;
++ 
++ ### 4. useGenerateEstrofeImage.ts
++ 
++ &#96;&#96;&#96;tsx
++ import html2canvas from &#39;html2canvas&#39;;
++ 
++ interface GenerateImageState {
++   imageUrl: string | null;
++   isGenerating: boolean;
++   error: Error | null;
++ }
++ 
++ export function useGenerateEstrofeImage() {
++   const [state, setState] = useState&lt;GenerateImageState&gt;({
++     imageUrl: null,
++     isGenerating: false,
++     error: null,
++   });
++ 
++   const generateImage = async (estrofe: Estrofe, cantoria: Cantoria) =&gt; {
++     setState({ imageUrl: null, isGenerating: true, error: null });
++ 
++     try {
++       // Criar div temporária fora da viewport
++       const container = document.createElement(&#39;div&#39;);
++       container.style.position = &#39;absolute&#39;;
++       container.style.left = &#39;-9999px&#39;;
++       container.style.top = &#39;-9999px&#39;;
++       document.body.appendChild(container);
++ 
++       // Renderizar componente React nessa div
++       const root = ReactDOM.createRoot(container);
++       await new Promise&lt;void&gt;((resolve) =&gt; {
++         root.render(
++           &lt;ShareEstrofeCanvas 
++             estrofe={estrofe} 
++             cantoria={cantoria}
++             ref={(el) =&gt; {
++               if (el) {
++                 // Dar tempo para fontes carregarem
++                 setTimeout(() =&gt; resolve(), 500);
++               }
++             }}
++           /&gt;
++         );
++       });
++ 
++       // Capturar como canvas
++       const canvas = await html2canvas(container.firstChild as HTMLElement, {
++         width: 1080,
++         height: 1920,
++         scale: 2, // Alta resolução
++         backgroundColor: &#39;#ffffff&#39;,
++         logging: false,
++       });
++ 
++       // Converter para blob/URL
++       const blob = await new Promise&lt;Blob&gt;((resolve) =&gt; {
++         canvas.toBlob((b) =&gt; resolve(b!), &#39;image/png&#39;, 1.0);
++       });
++       
++       const url = URL.createObjectURL(blob);
++ 
++       // Limpar
++       root.unmount();
++       document.body.removeChild(container);
++ 
++       setState({ imageUrl: url, isGenerating: false, error: null });
++     } catch (error) {
++       setState({ imageUrl: null, isGenerating: false, error: error as Error });
++       console.error(&#39;Erro ao gerar imagem:&#39;, error);
++     }
++   };
++ 
++   return { ...state, generateImage };
++ }
++ &#96;&#96;&#96;
++ 
++ ---
++ 
++ ## 🎨 Variantes de Design (Futuro)
++ 
++ ### Temas Alternativos
++ 
++ &#96;&#96;&#96;ascii
++ ┌─────────────────────────────────────────┐
++ │  TEMA 1: CLÁSSICO (atual)               │
++ │  - Background branco                    │
++ │  - Fonte serif para versos              │
++ │  - Header/footer escuro                 │
++ └─────────────────────────────────────────┘
++ 
++ ┌─────────────────────────────────────────┐
++ │  TEMA 2: SERTÃO                         │
++ │  - Background bege (#f5f1e8)            │
++ │  - Textura de papel envelhecido         │
++ │  - Cores terrosas (marrom, ocre)        │
++ └─────────────────────────────────────────┘
++ 
++ ┌─────────────────────────────────────────┐
++ │  TEMA 3: NORDESTE VIBRANTE              │
++ │  - Cores quentes (amarelo, laranja)     │
++ │  - Padrões geométricos no fundo         │
++ │  - Inspiração em xilogravura            │
++ └─────────────────────────────────────────┘
++ &#96;&#96;&#96;
++ 
++ ---
++ 
++ ## 📊 Métricas e Analytics
++ 
++ ### Eventos a Trackear
++ 
++ &#96;&#96;&#96;typescript
++ // Quando usuário clica em &quot;Compartilhar&quot;
++ analytics.track(&#39;estrofe_share_clicked&#39;, {
++   cantoria_id: cantoria.id,
++   cantoria_slug: cantoria.slug,
++   estrofe_numero: estrofe.numero,
++   estilo: cantoria.estilo.nome,
++   cantador: estrofe.cantador,
++ });
++ 
++ // Quando usuário baixa a imagem
++ analytics.track(&#39;estrofe_image_downloaded&#39;, {
++   cantoria_id: cantoria.id,
++   estrofe_numero: estrofe.numero,
++ });
++ 
++ // Quando usuário copia o link
++ analytics.track(&#39;estrofe_link_copied&#39;, {
++   cantoria_id: cantoria.id,
++   estrofe_numero: estrofe.numero,
++ });
++ &#96;&#96;&#96;
++ 
++ ### KPIs Esperados
++ - **Taxa de compartilhamento:** % de visitantes que compartilham
++ - **Estrofes mais compartilhadas:** Top 10 estrofes
++ - **Cantorias mais compartilhadas:** Quais geram mais engajamento
++ - **Conversão:** Quantos cliques retornam ao site (via link na imagem)
++ 
++ ---
++ 
++ ## 🚀 Roadmap de Implementação
++ 
++ ### Fase 1: MVP (1-2 dias)
++ - [ ] Componente ShareEstrofeButton
++ - [ ] Modal básico de preview
++ - [ ] Hook useGenerateEstrofeImage com html2canvas
++ - [ ] Layout básico (tema clássico)
++ - [ ] Download de imagem funcional
++ 
++ ### Fase 2: Polimento (1 dia)
++ - [ ] Ajustes de tipografia e espaçamento
++ - [ ] Responsividade do preview no mobile
++ - [ ] Loading states e error handling
++ - [ ] Toast notifications (feedback)
++ - [ ] Testes com diferentes tamanhos de estrofe
++ 
++ ### Fase 3: Features Extras (futuro)
++ - [ ] Seleção de tema/cor
++ - [ ] Compartilhamento direto (Web Share API)
++ - [ ] Preview em tempo real (antes de gerar)
++ - [ ] Marca d&#39;água personalizada
++ - [ ] Opção de incluir/esconder elementos
++ 
++ ---
++ 
++ ## 🎯 UX Considerations
++ 
++ ### Acessibilidade
++ &#96;&#96;&#96;tsx
++ &lt;button
++   onClick={handleShare}
++   aria-label={&#96;Compartilhar estrofe ${estrofe.numero} - ${estrofe.tema}&#96;}
++   className=&quot;...&quot;
++ &gt;
++   &lt;Share2 aria-hidden=&quot;true&quot; /&gt;
++   &lt;span&gt;Compartilhar&lt;/span&gt;
++ &lt;/button&gt;
++ &#96;&#96;&#96;
++ 
++ ### Performance
++ - **Lazy loading:** Carregar html2canvas apenas quando necessário
++ - **Debounce:** Evitar múltiplas gerações simultâneas
++ - **Cleanup:** Liberar URLs de blob após uso
++ - **Otimização:** Considerar cache de imagens já geradas
++ 
++ ### Mobile Experience
++ &#96;&#96;&#96;ascii
++ ┌───────────────────────────┐
++ │  📱 MOBILE                │
++ │                           │
++ │  Preview menor (300px)    │
++ │  Botões em stack          │
++ │  Share API nativo         │
++ │                           │
++ │  [Compartilhar via...]    │
++ │  [Baixar]                 │
++ │  [Cancelar]               │
++ └───────────────────────────┘
++ &#96;&#96;&#96;
++ 
++ ---
++ 
++ ## 🔗 Integrações Futuras
++ 
++ ### Web Share API (Mobile)
++ &#96;&#96;&#96;typescript
++ if (navigator.share) {
++   // Compartilhar direto no app nativo
++   await navigator.share({
++     title: &#96;${cantoria.titulo} - Estrofe ${estrofe.numero}&#96;,
++     text: estrofe.versos.join(&#39;\n&#39;),
++     url: window.location.href,
++   });
++ }
++ &#96;&#96;&#96;
++ 
++ ### Open Graph (quando compartilhado link)
++ &#96;&#96;&#96;html
++ &lt;meta property=&quot;og:image&quot; content=&quot;[URL da imagem gerada]&quot; /&gt;
++ &lt;meta property=&quot;og:title&quot; content=&quot;Pensamentos e Pensadores - Estrofe 1&quot; /&gt;
++ &lt;meta property=&quot;og:description&quot; content=&quot;Digo eu, como Chile, o escritor...&quot; /&gt;
++ &#96;&#96;&#96;
++ 
++ ---
++ 
++ ## 📝 Exemplo de Uso Final
++ 
++ &#96;&#96;&#96;typescript
++ // Em cantorias/$slug.tsx
++ 
++ &lt;div className=&quot;space-y-6&quot;&gt;
++   {cantoria.estrofes?.map((estrofe) =&gt; (
++     &lt;Card key={estrofe.numero}&gt;
++       &lt;CardHeader className=&quot;flex flex-row items-center justify-between&quot;&gt;
++         &lt;CardTitle&gt;Estrofe {estrofe.numero} - {estrofe.tema}&lt;/CardTitle&gt;
++         &lt;ShareEstrofeButton estrofe={estrofe} cantoria={cantoria} /&gt;
++       &lt;/CardHeader&gt;
++       &lt;CardContent&gt;
++         {estrofe.versos.map((verso, i) =&gt; (
++           &lt;p key={i}&gt;{verso}&lt;/p&gt;
++         ))}
++       &lt;/CardContent&gt;
++     &lt;/Card&gt;
++   ))}
++ &lt;/div&gt;
++ &#96;&#96;&#96;
++ 
++ ---
++ 
++ ## ✅ Checklist Final
++ 
++ ### Antes de Lançar
++ - [ ] Testar com estrofes de 6, 8 e 10 versos
++ - [ ] Testar com nomes longos de cantoria
++ - [ ] Testar em diferentes navegadores
++ - [ ] Validar acessibilidade (WCAG AA)
++ - [ ] Performance: tempo de geração &lt; 2s
++ - [ ] Preview funciona em mobile
++ - [ ] Analytics configurado
++ - [ ] Documentação de uso (README)
++ 
++ ### Após Lançar
++ - [ ] Monitorar erros no Sentry
++ - [ ] Analisar métricas de compartilhamento
++ - [ ] Coletar feedback dos usuários
++ - [ ] Iterar sobre design baseado em dados
++ 
++ ---
++ 
++ ## 🎉 Impacto Esperado
++ 
++ Esta feature pode:
++ - ✨ **Aumentar viralização** - Conteúdo visual atrai mais atenção
++ - 📱 **Alcançar novos públicos** - Instagram/Stories tem alto alcance
++ - 🎯 **Fortalecer marca** - Toda imagem leva branding Vilanova
++ - 📈 **Gerar tráfego** - Links trazem pessoas de volta ao site
++ - 💡 **Educar** - Cada estrofe compartilhada é uma mini-aula de repente
++ 
++ ---
++ 
++ **Status:** 📋 Planejamento Completo  
++ **Próximo passo:** Implementar Fase 1 (MVP)  
++ **Estimativa:** 2-3 dias de desenvolvimento  
++ **Prioridade:** Alta (feature de engajamento)
++ 
+```
+
+</details>
+
+</tool-use>
+
+---
+
+<think><details><summary>Thought Process</summary>
+Criei o plano completo! Vou também criar um exemplo visual mais detalhado do layout da imagem em ASCII para deixar ainda mais claro.</details></think>
+
+---
+
+## ✅ Plano Completo Criado! 
+
+Criei um documento detalhado em `plans/compartilhe.md` com toda a especificação da funcionalidade de compartilhamento de estrofes.
+
+### 📋 O que está no plano:
+
+1. **Visão Geral** - Objetivo e conceito da feature
+
+2. **User Flow Completo** (com ASCII art) mostrando:
+   - Página de cantoria com botões Share
+   - Modal de preview
+   - Interações do usuário
+
+3. **Layout da Imagem** (1080x1920px - Instagram Story):
+   ```
+   ┌─ Header (200px) - Logo + Branding Vilanova
+   ├─ Conteúdo (1200px) - Estrofe com tipografia elegante
+   └─ Footer (400px) - Metadados + YouTube + Link
+   ```
+
+4. **Especificações Visuais Detalhadas**:
+   - Dimensões exatas de cada seção
+   - Fontes, tamanhos, cores
+   - Gradientes e sombras
+   - Espaçamentos e padding
+
+5. **Stack Técnica**:
+   - Recomendação: **html2canvas** (melhor custo/benefício)
+   - Estrutura de componentes React
+   - Hooks customizados
+
+6. **Código de Exemplo**:
+   - `ShareEstrofeButton.tsx`
+   - `ShareEstrofeModal.tsx`
+   - `ShareEstrofeCanvas.tsx` (layout renderizável)
+   - `useGenerateEstrofeImage.ts` (hook de geração)
+
+7. **Roadmap de Implementação**:
+   - **Fase 1 (MVP):** 1-2 dias - funcional básico
+   - **Fase 2 (Polimento):** 1 dia - refinamentos UX
+   - **Fase 3 (Futuro):** temas alternativos, Web Share API
+
+8. **Métricas e Analytics**:
+   - Eventos a trackear
+   - KPIs esperados
+   - Conversão e engajamento
+
+9. **Variantes de Design** (futuro):
+   - Tema Clássico (atual)
+   - Tema Sertão (vintage)
+   - Tema Nordeste Vibrante (colorido)
+
+10. **Considerações de UX**:
+    - Acessibilidade (ARIA labels)
+    - Performance (lazy loading)
+    - Mobile (Web Share API)
+    - Error handling
+
+### 🎯 Próximos Passos Sugeridos:
+
+1. **Revisar o plano** e ajustar se necessário
+2. **Implementar Fase 1 (MVP)** - 1-2 dias
+3. **Testar com diferentes estrofes** (6, 8, 10 versos)
+4. **Coletar feedback** dos primeiros usuários
+5. **Iterar** baseado em dados de uso
+
+### 💡 Impacto Esperado:
+
+- ✨ **Viralização** - Conteúdo visual atrai mais no Instagram
+- 📱 **Alcance** - Stories têm alto engajamento
+- 🎯 **Branding** - Toda imagem leva marca Vilanova
+- 📈 **Tráfego** - Links trazem visitantes de volta
+- 💡 **Educação** - Cada share é uma mini-aula de repente
+
+O plano está **pronto para implementação**! 🚀
+
+---
+
