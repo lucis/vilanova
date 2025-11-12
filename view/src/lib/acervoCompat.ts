@@ -21,6 +21,7 @@ import marteloValdirZe2 from "../../../public/data/cantorias/martelo-alagoano-va
 import pensamentoPositivo from "../../../public/data/cantorias/pensamento-positivo-os-nonatos.json";
 import nordesteIndependente from "../../../public/data/cantorias/nordeste-independente-braulio-ivanildo.json";
 import viuvaNamoradeira from "../../../public/data/cantorias/viuva-namoradeira-ze-galdino-daniel-olimpio.json";
+import pensamentosPensadores from "../../../public/data/cantorias/pensamentos-pensadores-ivanildo.json";
 
 /**
  * Agrega todas as cantorias em um único objeto compatível com o formato antigo
@@ -46,6 +47,7 @@ const acervoData = {
     pensamentoPositivo,
     nordesteIndependente,
     viuvaNamoradeira,
+    pensamentosPensadores,
   ],
   metadata: (indexData as any).metadata,
 };

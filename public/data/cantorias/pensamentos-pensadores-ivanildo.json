@@ -1,0 +1,249 @@
+{
+  "id": "pensamentos-pensadores-ivanildo",
+  "slug": "pensamentos-pensadores-ivanildo-vilanova",
+  "titulo": "Pensamentos e Pensadores",
+  "estilo": {
+    "nome": "Décima (Mote Fixo)",
+    "slug": "decima-mote-fixo",
+    "versos_por_estrofe": 10,
+    "metrica": "decassílabos (10 sílabas)",
+    "esquema_rima": "ABBAACCDDC",
+    "mote_fixo": "Varia a cada tema (amor, beleza, homem, mulher, casamento, etc.)"
+  },
+  "cantadores": [
+    {
+      "nome": "Ivanildo Vilanova",
+      "slug": "ivanildo-vilanova",
+      "dupla": null
+    }
+  ],
+  "local": null,
+  "ano": null,
+  "duracao": "6:29",
+  "contexto": "Compilação poética de pensamentos de grandes escritores, filósofos e pensadores sobre diversos temas universais: amor, beleza, natureza humana, casamento, mulher, sabedoria, inveja, casamento, livros e trabalho. Uma verdadeira aula de cultura erudita transformada em verso popular.",
+  "estrofes": [
+    {
+      "numero": 1,
+      "cantador": "Ivanildo Vilanova",
+      "versos": [
+        "Digo eu, como Chile, o escritor.",
+        "Sem amor neste mundo não há nada.",
+        "O amor assemelha-se uma escada",
+        "pela qual se eleva ao criador.",
+        "Sei que acima da morte está o amor.",
+        "Lacordaire proclamava em plena fama.",
+        "Chame fóra [?], já dizia, amor é drama.",
+        "Se contrai como a própria epidemia.",
+        "Túlio Cícero, de Roma, já dizia:",
+        "Não há nada difícil pra quem ama."
+      ],
+      "tema": "Amor - Pensamentos de Chile, Lacordaire, Cícero e outros sobre o amor como força elevadora"
+    },
+    {
+      "numero": 2,
+      "cantador": "Ivanildo Vilanova",
+      "versos": [
+        "A beleza, afirmava Ramón de Campoamor,",
+        "está nos olhos gentis de quem vê mais.",
+        "E Glaser [?] confirmou, é mais audaz",
+        "que a coragem do homem lutador.",
+        "Entender a beleza é ter valor,",
+        "disse Lôbke [?] com todo o gabarito.",
+        "Marcial também diz: 'Eu acredito.'",
+        "E Robert Hamerling gritava soberano:",
+        "'O amor é mais nobre, é mais humano",
+        "e o divino imortal é mais bonito.'"
+      ],
+      "tema": "Beleza - Reflexões de Ramón de Campoamor, Marcial, Robert Hamerling sobre beleza e amor"
+    },
+    {
+      "numero": 3,
+      "cantador": "Ivanildo Vilanova",
+      "versos": [
+        "José de Alencar, por casos vários,",
+        "escreveu: 'O amor é uma carreta.'",
+        "Casamento compara essa grilheta,",
+        "arrastando aos dois presidiários.",
+        "Chame for [?], também foi um dos contrários,",
+        "demonstrou argumento e direção.",
+        "Falou Heinrich [?]: 'Feliz é a união",
+        "por incrível no mundo que pareça,",
+        "onde o dono da casa é a cabeça",
+        "e a mulher representa o coração.'"
+      ],
+      "tema": "Casamento - Visões críticas e equilibradas de José de Alencar e Heinrich sobre matrimônio"
+    },
+    {
+      "numero": 4,
+      "cantador": "Ivanildo Vilanova",
+      "versos": [
+        "Afirmou Aristóteles, na ciência,",
+        "que o homem é a fera sociável.",
+        "Disse Sócrates que o homem inigualável,",
+        "só três coisas possui na existência.",
+        "A vergonha na cara e a prudência,",
+        "e o silêncio na língua é o primeiro.",
+        "Bernard Shaw escreveu: 'O homem é herdeiro",
+        "do real, parasita e do orgulho.'",
+        "Petrolina [?] falou: 'É um embrulho",
+        "que a parteira despacha pro coveiro.'"
+      ],
+      "tema": "Natureza Humana - Aristóteles, Sócrates, Bernard Shaw sobre a condição do homem"
+    },
+    {
+      "numero": 5,
+      "cantador": "Ivanildo Vilanova",
+      "versos": [
+        "Fontenelle alertou com seu aviso:",
+        "'A mulher sempre rouba toda calma.",
+        "O inferno ela é da nossa alma,",
+        "mas nos olhos parece o paraíso.",
+        "E da bolsa é autêntico prejuízo.'",
+        "Quando Victor Hugo disse em seguida:",
+        "'É a luz bem mais doce, mais querida.'",
+        "Fontenelle confirma esta verdade:",
+        "'Da mulher, o segredo da idade",
+        "é o único que guarda em sua vida.'"
+      ],
+      "tema": "Mulher - Paradoxos sobre a mulher segundo Fontenelle e Victor Hugo"
+    },
+    {
+      "numero": 6,
+      "cantador": "Ivanildo Vilanova",
+      "versos": [
+        "Disse Philip Geffoy [?], que se conhece",
+        "essa joia de frase pura e boa:",
+        "'Todo homem esquece o que perdoa,",
+        "e a mulher, perdoando, não esquece.'",
+        "E José Herculano Pires esclarece",
+        "que o seu pensamento radiante,",
+        "já que o ódio injuria o semelhante,",
+        "a ofensa é pior do que a ira.",
+        "A inveja calanda é quem conspira,",
+        "sendo assim é a mais repugnante."
+      ],
+      "tema": "Perdão e Inveja - Philip Geffoy e José Herculano Pires sobre perdão e vícios humanos"
+    },
+    {
+      "numero": 7,
+      "cantador": "Ivanildo Vilanova",
+      "versos": [
+        "Henrifield [?], nos seus conhecimentos,",
+        "proclamava por forma de consolo:",
+        "'Pelo menos existe sempre um tolo,",
+        "quase em todos os nossos casamentos.'",
+        "Disse Alphonse Daudet, um dos talentos",
+        "bem maiores que os sábios já conhecem,",
+        "ensinava: 'Os homens envelhecem",
+        "nos amores, trabalhos e disputas.",
+        "Mas os homens não são iguais às frutas,",
+        "pois as frutas somente amadurecem.'"
+      ],
+      "tema": "Sabedoria - Henrifield e Alphonse Daudet sobre tolice, envelhecimento e maturidade"
+    },
+    {
+      "numero": 8,
+      "cantador": "Ivanildo Vilanova",
+      "versos": [
+        "Uma frase bastante aprofundada,",
+        "essa foi de Gregório Nazianzeno:",
+        "'Da mulher, toda língua é um veneno,",
+        "não se cala nem mesmo decepada.'",
+        "É assim que George Herbert brada,",
+        "um conselho que a tudo sobrepuja.",
+        "Ele diz que a ignorância é suja,",
+        "seu alcance é cruel, cresce bastante.",
+        "Tem as asas da águia penetrante",
+        "e os olhos argutos da coruja."
+      ],
+      "tema": "Ignorância - Gregório Nazianzeno e George Herbert sobre a natureza destrutiva da ignorância"
+    },
+    {
+      "numero": 9,
+      "cantador": "Ivanildo Vilanova",
+      "versos": [
+        "O William Pitt concluía uma frase",
+        "que se recorda ainda:",
+        "'No momento que a lei justa se finda",
+        "tem início a terrível tirania.'",
+        "La Bruyère, famoso, resumia",
+        "que a falsa modéstia é vaidade.",
+        "Andrew Marx [?], com sua autoridade,",
+        "avisava diversos circunstantes.",
+        "No lugar onde todos são mandantes,",
+        "não existe sinal de liberdade."
+      ],
+      "tema": "Política e Liberdade - William Pitt, La Bruyère e Andrew Marx sobre tirania e poder"
+    },
+    {
+      "numero": 10,
+      "cantador": "Ivanildo Vilanova",
+      "versos": [
+        "De José de Alencar, sem ter rudeio,",
+        "a palavra é a arte da ciência.",
+        "Fino raio de toda inteligência,",
+        "imortal emoção que de Deus veio.",
+        "Ave amiga que leva no seu seio",
+        "a ideia do mestre e do vigário.",
+        "Magistrado, poeta, mandatário,",
+        "leva a tinta que exprime o pensamento.",
+        "Por o lance da flor do sentimento",
+        "e o buril do maior estatuário."
+      ],
+      "tema": "Palavra - José de Alencar sobre o poder transformador da palavra como arte e ciência"
+    },
+    {
+      "numero": 11,
+      "cantador": "Ivanildo Vilanova",
+      "versos": [
+        "É o livro melhor que a luz do olhar,",
+        "foi assim que escreveu Belmiro Braga.",
+        "Diz Marquês de Maricá assume a vaga",
+        "de qualquer companhia invulgar.",
+        "Henrick Quell [?] aconselha a meditar",
+        "com os livros melhores que tu tens.",
+        "Coelho Neto gritou: 'Meus parabéns!",
+        "Quem lê muito conhece céus e vales.",
+        "Diminui a metade dos seus males,",
+        "multiplica o cultivo dos seus bens.'"
+      ],
+      "tema": "Livros - Belmiro Braga, Marquês de Maricá, Coelho Neto sobre o valor da leitura"
+    },
+    {
+      "numero": 12,
+      "cantador": "Ivanildo Vilanova",
+      "versos": [
+        "O trabalho é um dom maravilhoso,",
+        "eis a frase de Carlos Torres Pastorino.",
+        "Já dizia Jesus, o Palestino:",
+        "'Vida eterna quem for laborioso.'",
+        "De Bernardo Soares, o homem preguiçoso",
+        "é escravo da ociosidade.",
+        "O trabalho é quem dá felicidade,",
+        "adverte Samuel Smiles a todo instante.",
+        "Diz Voltaire, trabalha o gigante",
+        "que espanta a cruel necessidade."
+      ],
+      "tema": "Trabalho - Carlos Torres Pastorino, Bernardo Soares (Fernando Pessoa), Samuel Smiles, Voltaire sobre o valor do trabalho"
+    }
+  ],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=vAdWNTHZReQ",
+    "spotify": null
+  },
+  "transcricao_path": null,
+  "audio_path": null,
+  "destaque": true,
+  "_metadata": {
+    "created_at": "2025-01-17",
+    "file_ref": "/cantorias/pensamentos-pensadores-ivanildo.json",
+    "source": "Projeto Vilanova",
+    "observacoes": [
+      "Transcrição com correções baseadas em pesquisa histórica",
+      "Alguns autores marcados com [?] não foram identificados com certeza",
+      "Taxa de precisão da transcrição original: ~68%",
+      "Identificados 19 autores verificáveis de 28 mencionados"
+    ]
+  }
+}
+

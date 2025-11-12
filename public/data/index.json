@@ -137,15 +137,24 @@
       "destaque": true,
       "youtube": "https://www.youtube.com/watch?v=2VeJzy-7PQE",
       "_ref": "/cantorias/viuva-namoradeira-ze-galdino-daniel-olimpio.json"
+    },
+    {
+      "id": "pensamentos-pensadores-ivanildo",
+      "slug": "pensamentos-pensadores-ivanildo-vilanova",
+      "titulo": "Pensamentos e Pensadores",
+      "estilo": "Décima (Mote Fixo)",
+      "destaque": true,
+      "youtube": "https://www.youtube.com/watch?v=vAdWNTHZReQ",
+      "_ref": "/cantorias/pensamentos-pensadores-ivanildo.json"
     }
   ],
   "metadata": {
     "ultima_atualizacao": "2025-01-17",
-    "total_repentes": 15,
-    "total_estrofes_catalogadas": 84,
-    "com_estrofes_completas": 9,
+    "total_repentes": 16,
+    "total_estrofes_catalogadas": 96,
+    "com_estrofes_completas": 10,
     "observacoes": [
-      "Estrofes completas disponíveis para 8 cantorias",
+      "Estrofes completas disponíveis para 10 cantorias",
       "Sextilha Lampião e Martelo Profissões aguardam estruturação de estrofes",
       "Esquemas de rima corrigidos conforme análise fonética (2025-10-14)",
       "Identificação de cantadores individuais em duplas (estimativa inicial)",
