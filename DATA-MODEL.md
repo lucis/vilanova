@@ -31,6 +31,8 @@ public/data/
 
 Lista leve com metadados básicos. Use este para listar cantorias sem carregar estrofes.
 
+**⚠️ IMPORTANTE - Ordenação:** A ordem dos itens no array `cantorias` é **cronológica** (primeira = mais antiga, última = mais recente). Para exibir as mais recentes primeiro, inverta a ordem do array com `.reverse()`.
+
 ```json
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
