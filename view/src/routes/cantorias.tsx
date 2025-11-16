@@ -34,20 +34,22 @@ function CantoriasPage() {
     }
     
     // Ordenação primária
-    if (sortBy === "alfabetica") {
+    if (sortBy === "recentes") {
+      // Inverte a ordem do array (último adicionado = mais recente)
+      filtered.reverse();
+    } else if (sortBy === "alfabetica") {
       filtered.sort((a, b) => a.titulo.localeCompare(b.titulo));
     } else if (sortBy === "estilo") {
       filtered.sort((a, b) => a.estilo.nome.localeCompare(b.estilo.nome));
     } else if (sortBy === "destaque") {
       filtered.sort((a, b) => (b.destaque ? 1 : 0) - (a.destaque ? 1 : 0));
+      // Ordenação secundária: colocar cantorias COM vídeo primeiro apenas no modo destaque
+      filtered.sort((a, b) => {
+        const aTemVideo = a.links.youtube ? 1 : 0;
+        const bTemVideo = b.links.youtube ? 1 : 0;
+        return bTemVideo - aTemVideo; // Com vídeo primeiro
+      });
     }
-    
-    // Ordenação secundária: sempre colocar cantorias COM vídeo primeiro
-    filtered.sort((a, b) => {
-      const aTemVideo = a.links.youtube ? 1 : 0;
-      const bTemVideo = b.links.youtube ? 1 : 0;
-      return bTemVideo - aTemVideo; // Com vídeo primeiro
-    });
     
     return filtered;
   }, [cantorias, filterEstilo, sortBy]);
