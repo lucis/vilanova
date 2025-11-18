@@ -146,15 +146,24 @@
       "destaque": true,
       "youtube": "https://www.youtube.com/watch?v=vAdWNTHZReQ",
       "_ref": "/cantorias/pensamentos-pensadores-ivanildo.json"
+    },
+    {
+      "id": "500-anos-brasil-ze-cardoso-sebastiao",
+      "slug": "500-anos-brasil-galope-beira-mar",
+      "titulo": "500 Anos de Brasil",
+      "estilo": "Galope à Beira Mar",
+      "destaque": true,
+      "youtube": "https://www.youtube.com/watch?v=9Z1bnqSWPOA",
+      "_ref": "/cantorias/500-anos-brasil-ze-cardoso-sebastiao.json"
     }
   ],
   "metadata": {
-    "ultima_atualizacao": "2025-01-17",
-    "total_repentes": 16,
-    "total_estrofes_catalogadas": 96,
-    "com_estrofes_completas": 10,
+    "ultima_atualizacao": "2025-01-18",
+    "total_repentes": 17,
+    "total_estrofes_catalogadas": 104,
+    "com_estrofes_completas": 11,
     "observacoes": [
-      "Estrofes completas disponíveis para 10 cantorias",
+      "Estrofes completas disponíveis para 11 cantorias",
       "Sextilha Lampião e Martelo Profissões aguardam estruturação de estrofes",
       "Esquemas de rima corrigidos conforme análise fonética (2025-10-14)",
       "Identificação de cantadores individuais em duplas (estimativa inicial)",

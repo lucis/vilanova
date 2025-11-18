@@ -58,7 +58,7 @@ function HomePage() {
               
               {/* Métricas visuais - DESTAQUE */}
               <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-8">
-                <MetricPill value={15} label="Cantorias" to="/cantorias" />
+                <MetricPill value={acervoData.metadata.total_repentes} label="Cantorias" to="/cantorias" />
                 <MetricPill value={totalCantadores} label="Cantadores" to="/cantadores" />
                 <MetricPill value={6} label="Estilos" to="/estilos" />
               </div>
@@ -318,10 +318,10 @@ function HomePage() {
           
           {/* Métricas principais */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-            <MetricCard value={15} label="Cantorias" icon="🎵" color="#C84B31" />
+            <MetricCard value={acervoData.metadata.total_repentes} label="Cantorias" icon="🎵" color="#C84B31" />
             <MetricCard value={totalCantadores} label="Cantadores" icon="🎸" color="#2E5266" />
             <MetricCard value={6} label="Estilos" icon="📏" color="#4A7C59" />
-            <MetricCard value={84} label="Estrofes" icon="📖" color="#D49B54" />
+            <MetricCard value={acervoData.metadata.total_estrofes_catalogadas} label="Estrofes" icon="📖" color="#D49B54" />
           </div>
           
           {/* Estilos mais frequentes */}
@@ -741,7 +741,7 @@ function HomePage() {
                   em dados estruturados.
                 </p>
                 <span className="inline-block text-xs bg-[#4A7C59] text-white px-3 py-1 rounded-full">
-                  ✅ JÁ FUNCIONA (15 cantorias · 84 estrofes catalogadas)
+                  ✅ JÁ FUNCIONA ({acervoData.metadata.total_repentes} cantorias · {acervoData.metadata.total_estrofes_catalogadas} estrofes catalogadas)
                 </span>
               </div>
         </div>
@@ -843,7 +843,7 @@ function HomePage() {
           {/* Estatísticas */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
             <Link to="/cantorias" className="text-center hover:scale-105 transition-transform">
-              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">15</div>
+              <div className="text-5xl md:text-6xl font-bold text-[#C84B31] mb-2">{acervoData.metadata.total_repentes}</div>
               <div className="text-sm md:text-base text-[#2E5266]/70">Cantorias</div>
             </Link>
             <Link to="/musicas" className="text-center hover:scale-105 transition-transform">

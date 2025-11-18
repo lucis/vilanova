@@ -730,3 +730,4 @@ Esta feature pode:
 **Estimativa:** 2-3 dias de desenvolvimento  
 **Prioridade:** Alta (feature de engajamento)
 
+

@@ -1,0 +1,186 @@
+{
+  "id": "500-anos-brasil-ze-cardoso-sebastiao",
+  "slug": "500-anos-brasil-galope-beira-mar",
+  "titulo": "500 Anos de Brasil",
+  "estilo": {
+    "nome": "Galope à Beira Mar",
+    "slug": "galope-beira-mar",
+    "versos_por_estrofe": 10,
+    "metrica": "decassílabos (10 sílabas)",
+    "esquema_rima": "AAAAABBCCM",
+    "mote_fixo": "Nos dez de galope na/da beira do mar"
+  },
+  "cantadores": [
+    {
+      "nome": "Zé Cardoso",
+      "slug": "ze-cardoso",
+      "dupla": "Zé Cardoso e Sebastião Silva"
+    },
+    {
+      "nome": "Sebastião Silva",
+      "slug": "sebastiao-silva",
+      "dupla": "Zé Cardoso e Sebastião Silva"
+    }
+  ],
+  "local": null,
+  "ano": null,
+  "duracao": "4:45",
+  "contexto": "Epopeia histórica narrada em galope à beira mar, percorrendo 500 anos de história do Brasil desde o descobrimento em 1500 até os dias atuais. Aborda a chegada de Cabral, a colonização portuguesa, o sistema de capitanias, os governadores-gerais, o período de domínio espanhol, e finaliza com uma reflexão sobre escravidão, progresso e cultura brasileira.",
+  "estrofes": [
+    {
+      "numero": 1,
+      "cantador": "Zé Cardoso",
+      "versos": [
+        "São quinhentos anos de descobrimento,",
+        "se deve a Cabral por tanta bravura.",
+        "Em busca das ilhas partiu à procura",
+        "de terra abundante com muito alimento.",
+        "Trocando de rota, por causa do vento,",
+        "achou Terra Nova, resolveu parar.",
+        "Em mil e quinhentos, pudemos lembrar,",
+        "dia vinte e dois do mês de abril.",
+        "Ganhou Portugal, achando o Brasil,",
+        "nos dez de galope na beira do mar."
+      ],
+      "tema": "Descobrimento do Brasil por Pedro Álvares Cabral em 22 de abril de 1500"
+    },
+    {
+      "numero": 2,
+      "cantador": "Sebastião Silva",
+      "versos": [
+        "Na frente do mar da cor de anil,",
+        "dia vinte e seis, rezaram uma missa.",
+        "Nela frei Henrique falou de justiça",
+        "pra o índio robusto de mente infantil.",
+        "Depois Pêro Vaz, de forma gentil",
+        "narrou uma carta pra poder mandar.",
+        "E Gaspar de Lemos teve que levar.",
+        "Partiu conduzindo no bolso papel,",
+        "levando a notícia para D. Manoel.",
+        "Eu digo em galope na beira do mar."
+      ],
+      "tema": "Primeira missa no Brasil (26/04) e a carta de Pero Vaz de Caminha ao rei D. Manuel"
+    },
+    {
+      "numero": 3,
+      "cantador": "Zé Cardoso",
+      "versos": [
+        "Nem sempre corria o leite e o mel",
+        "pra aqueles que vinham com essa intenção.",
+        "Foi muito difícil a penetração,",
+        "a floresta virgem, o índio cruel.",
+        "O maior tesouro para Dom Manel",
+        "era o pau-brasil, pegar arrobar.",
+        "Pra guarda costeira mandaram Gaspar",
+        "no ano de mil quinhentos e três.",
+        "E Cristóvão Jacques veio em dezesseis,",
+        "eu digo em galope na beira do mar."
+      ],
+      "tema": "Dificuldades da colonização, exploração do pau-brasil e expedições de Gaspar de Lemos (1503) e Cristóvão Jacques (1516)"
+    },
+    {
+      "numero": 4,
+      "cantador": "Sebastião Silva",
+      "versos": [
+        "Depois amandado do rei português,",
+        "surgiu o regime de capitanias.",
+        "As hereditárias dando garantias",
+        "para o governante ser do interês.",
+        "Duarte Coelho, na dele se fez",
+        "com gado e com cana, soube trabalhar.",
+        "Aí Pernambuco só teve a ganhar.",
+        "As demais caíram, cresceu São Vicente,",
+        "com Mártir Afonso, que fez igualmente,",
+        "eu digo, em galope na beira do mar."
+      ],
+      "tema": "Sistema de capitanias hereditárias, sucesso de Duarte Coelho em Pernambuco e Martim Afonso de Sousa em São Vicente"
+    },
+    {
+      "numero": 5,
+      "cantador": "Zé Cardoso",
+      "versos": [
+        "Pra colonizar, chegou muita gente.",
+        "Houve no regime mudança total,",
+        "com Tomé de Souza governando geral.",
+        "Manuel da Nóbrega foi conveniente,",
+        "catequizador do índio valente,",
+        "criou um bispado para melhorar.",
+        "E Caramuru veio auxiliar,",
+        "na árdua tarefa do governador.",
+        "Além de outras ilhas, fundou Salvador,",
+        "e eu digo, galope na beira do mar."
+      ],
+      "tema": "Primeiro governador-geral Tomé de Sousa, padre Manuel da Nóbrega, Caramuru e fundação de Salvador"
+    },
+    {
+      "numero": 6,
+      "cantador": "Sebastião Silva",
+      "versos": [
+        "Duarte da Costa foi o sucessor,",
+        "chegando ao Brasil, trazendo o que tinha.",
+        "José de Anchieta, Dom Pero Sardinha,",
+        "pra catequisarem no interior.",
+        "Depois Mem de Sá, o governador,",
+        "diante os franceses teve que lutar.",
+        "Estácio chegou pra colaborar,",
+        "mas se uma flechada ele recebeu,",
+        "tombando vencido depois que venceu,",
+        "eu digo, galope na beira do mar."
+      ],
+      "tema": "Segundo governador-geral Duarte da Costa, jesuítas Anchieta e Sardinha, Mem de Sá lutando contra franceses, e Estácio de Sá"
+    },
+    {
+      "numero": 7,
+      "cantador": "Zé Cardoso",
+      "versos": [
+        "Quando o homem de Sá desapareceu,",
+        "veio a divisão com um veredito,",
+        "norte ficou com Dom Luiz Brito,",
+        "Antônio Salema no sul exerceu.",
+        "Lourenço da Veiga depois recebeu,",
+        "perdeu o mandato saiu do lugar.",
+        "Foi quando a Espanha veio governar.",
+        "No ano de mil quinhentos e oitenta,",
+        "num total de anos, governou sessenta,",
+        "eu digo galope na beira do mar."
+      ],
+      "tema": "Divisão do Brasil em dois governos e período de domínio espanhol (1580-1640, União Ibérica)"
+    },
+    {
+      "numero": 8,
+      "cantador": "Sebastião Silva",
+      "versos": [
+        "Brasil tua história também representa",
+        "teus negros escravos comprados, vendidos.",
+        "O canto dos brancos cobrindo os gemidos",
+        "dos índios tombados na guerra sangrenta.",
+        "Mais tarde o progresso veio à marcha lenta",
+        "nas grandes metrópoles começou a mudar.",
+        "Pra frente Brasil, não podes parar,",
+        "revelas pra o mundo a tua cultura,",
+        "desperta gigante ninguém te segura,",
+        "nos dez de galope na beira do mar."
+      ],
+      "tema": "Reflexão sobre escravidão, sofrimento indígena, progresso e potencial cultural do Brasil"
+    }
+  ],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=9Z1bnqSWPOA",
+    "spotify": null
+  },
+  "transcricao_path": null,
+  "audio_path": null,
+  "destaque": true,
+  "_metadata": {
+    "created_at": "2025-01-18",
+    "file_ref": "/cantorias/500-anos-brasil-ze-cardoso-sebastiao.json",
+    "source": "Projeto Vilanova",
+    "observacoes": [
+      "Galope à beira mar histórico sobre 500 anos do Brasil",
+      "Aborda período desde descobrimento (1500) até época contemporânea",
+      "Menciona figuras históricas: Cabral, Tomé de Sousa, Mem de Sá, jesuítas, etc.",
+      "Última estrofe é uma reflexão poética sobre a história brasileira"
+    ]
+  }
+}
+
