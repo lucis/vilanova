@@ -15,6 +15,7 @@ import CantadoresRoute from "./routes/cantadores.tsx";
 import CantadorRoute from "./routes/cantador.tsx";
 import MusicasRoute from "./routes/musicas.tsx";
 import MusicaRoute from "./routes/musica.tsx";
+import DesRepenteRoute from "./routes/desrepente.tsx";
 import { Toaster } from "sonner";
 
 import "./styles.css";
@@ -34,6 +35,7 @@ const routeTree = rootRoute.addChildren([
   CantadorRoute(rootRoute),
   MusicasRoute(rootRoute),
   MusicaRoute(rootRoute),
+  DesRepenteRoute(rootRoute),
 ]);
 
 const queryClient = new QueryClient();
