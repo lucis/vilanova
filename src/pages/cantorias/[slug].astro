@@ -1,0 +1,31 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { CantoriaPage } from "@/components/pages/CantoriaPage";
+import { getAcervoData, getEstilosData } from "@/lib/acervo";
+import type { Cantoria } from "@/lib/types";
+
+export function getStaticPaths() {
+  const acervo = getAcervoData();
+  return acervo.repentes.map((c: Cantoria) => ({
+    params: { slug: c.slug },
+    props: { cantoria: c },
+  }));
+}
+
+const { cantoria } = Astro.props;
+const acervo = getAcervoData();
+const { estilos } = getEstilosData();
+const title = `${cantoria.titulo} — Vilanova`;
+const description =
+  cantoria.contexto?.slice(0, 160) ||
+  `Cantoria em ${cantoria.estilo.nome} com ${cantoria.cantadores.map((x) => x.nome).join(" e ")}.`;
+---
+
+<Layout title={title} description={description} ogType="article">
+  <CantoriaPage
+    cantoria={cantoria}
+    currentPath={Astro.url.pathname}
+    repentes={acervo.repentes as Cantoria[]}
+    estilosCatalogo={estilos}
+  />
+</Layout>

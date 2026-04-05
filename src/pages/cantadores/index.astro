@@ -1,0 +1,20 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { CantadoresPage } from "@/components/pages/CantadoresPage";
+import { getAcervoData, getEstilosData } from "@/lib/acervo";
+
+const acervo = getAcervoData();
+const { estilos } = getEstilosData();
+const title = "Cantadores — Vilanova";
+const description =
+  "Poetas e mestres do improviso nordestino catalogados no acervo Vilanova.";
+---
+
+<Layout title={title} description={description}>
+  <CantadoresPage
+    client:load
+    acervo={acervo}
+    currentPath={Astro.url.pathname}
+    estilosCatalogo={estilos}
+  />
+</Layout>

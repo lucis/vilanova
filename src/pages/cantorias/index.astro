@@ -1,0 +1,20 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { CantoriasPage } from "@/components/pages/CantoriasPage";
+import { getAcervoData, getEstilosData } from "@/lib/acervo";
+
+const acervo = getAcervoData();
+const { estilos } = getEstilosData();
+const title = "Acervo de cantorias — Vilanova";
+const description =
+  "Cantorias catalogadas, transcritas e estruturadas do repente nordestino.";
+---
+
+<Layout title={title} description={description}>
+  <CantoriasPage
+    client:load
+    acervo={acervo}
+    currentPath={Astro.url.pathname}
+    estilosCatalogo={estilos}
+  />
+</Layout>

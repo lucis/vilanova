@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { HomePage } from "@/components/pages/HomePage";
+import { getAcervoData, getEstilosData } from "@/lib/acervo";
+
+const acervo = getAcervoData();
+const { estilos } = getEstilosData();
+const title = "Vilanova — Preservação digital da cantoria nordestina";
+const description =
+  "Projeto open source de catalogação digital do repente nordestino. Organizamos o acervo disperso na internet e na memória oral. Homenagem ao poeta Ivanildo Vilanova.";
+---
+
+<Layout title={title} description={description}>
+  <HomePage acervo={acervo} totalEstilosCatalogo={estilos.length} />
+</Layout>

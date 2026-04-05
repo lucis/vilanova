@@ -1,0 +1,22 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { MusicasPage } from "@/components/pages/MusicasPage";
+import { getAcervoData, getEstilosData, getMusicasIndex } from "@/lib/acervo";
+import type { Cantoria } from "@/lib/types";
+
+const acervo = getAcervoData();
+const { estilos } = getEstilosData();
+const musicasIndex = getMusicasIndex();
+const title = "Músicas inspiradas na cantoria — Vilanova";
+const description =
+  "Canções autorais que celebram ou se inspiram na tradição da cantoria de viola nordestina.";
+---
+
+<Layout title={title} description={description}>
+  <MusicasPage
+    musicasIndex={musicasIndex}
+    currentPath={Astro.url.pathname}
+    repentes={acervo.repentes as Cantoria[]}
+    estilosCatalogo={estilos}
+  />
+</Layout>

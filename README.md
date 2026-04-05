@@ -6,7 +6,7 @@
 
 O nome é uma **homenagem em vida** ao poeta **Ivanildo Vilanova**, mestre da cantoria que participa da websérie documental ["Entre Cordas e Poesia"](https://www.youtube.com/watch?v=ULbBggbGpB8&list=PLngiJpynwciFIwyrG_EiOW-sKm1tRXSGU).
 
-🌐 **[Ver o site ao vivo](https://localhost-aa14baa7.deco.host)** | 💻 **[Repositório](http://github.com/lucis/vilanova)**
+💻 **[Repositório](https://github.com/lucis/vilanova)**
 
 ---
 
@@ -20,31 +20,43 @@ O nome é uma **homenagem em vida** ao poeta **Ivanildo Vilanova**, mestre da ca
 
 ---
 
-## 🚀 Sobre a Tecnologia
+## 🚀 Stack e deploy
 
-### Construído com Deco
+O site é gerado com **[Astro](https://astro.build)** em modo **estático** (SSG): cada rota vira HTML no build, o que favorece SEO e indexação.
 
-Este projeto é uma **aplicação Deco** ([decocms.com](https://decocms.com)) — uma plataforma moderna para desenvolvimento full-stack que facilita muito a criação de aplicações web.
+- **UI**: Astro + React (ilhas para busca e filtros) + Tailwind CSS v4
+- **Dados**: JSON em `public/data/` lidos em tempo de build via `src/lib/acervo.ts`
+- **Produção**: **[Cloudflare Workers](https://developers.cloudflare.com/workers/static-assets/)** com ficheiros estáticos (`wrangler deploy`)
 
-**Por que Deco?**
-- ⚡ **Deploy instantâneo**: Suba para produção com um comando
-- 🔧 **Tools e Workflows**: Sistema MCP para criar ferramentas reutilizáveis
-- 🤖 **Integração com IA**: OpenAI, Claude e outros modelos prontos para usar
-- 🗄️ **Database built-in**: SQLite com Drizzle ORM
-- 🎨 **React + TailwindCSS**: Frontend moderno e responsivo
-- ☁️ **Cloudflare Workers**: Infraestrutura global e performática
+### Desenvolvimento
 
-**Template Completo:**
-Este projeto usa o template React + Tailwind do Deco, que já vem com:
-- Sistema de autenticação
-- Tools para criar funcionalidades
-- Workflows para processos complexos
-- Database configurado
-- Frontend com TanStack Router
+```bash
+npm install
+npm run dev
+```
 
-Toda a lógica de transcrição, análise de estrutura e catalogação é feita através de **Deco Tools** que podem ser reutilizados e compostos.
+### Build e preview local
 
-📚 **[Ver documentação do Deco](https://docs.deco.page)**
+```bash
+npm run build
+npx wrangler dev
+```
+
+### Deploy (CLI)
+
+```bash
+npx wrangler login
+npm run deploy
+```
+
+### Deploy (Git — Workers Builds)
+
+No painel Cloudflare: **Compute → Workers & Pages → Create** → ligue o repositório e configure:
+
+- **Build command**: `npm run build`
+- **Deploy command**: `npx wrangler deploy`
+
+Ajuste `site` em `[astro.config.mjs](astro.config.mjs)` para o teu domínio canónico (Open Graph e sitemap).
 
 ---
 
@@ -69,7 +81,7 @@ public/data/
 - ✅ **Performance** - Carrega só o necessário
 - ✅ **Manutenção** - Um arquivo por cantoria
 
-📖 **[Ver documentação completa do data model](DATA-MODEL.md)**
+📖 **[Ver documentação completa do data model](docs/projeto/DATA-MODEL.md)**
 
 ### Como Adicionar uma Cantoria via IA Editor (Cursor/Windsurf)
 
@@ -87,6 +99,7 @@ Cantadores: Os Nonatos
 ```
 
 A IA irá:
+
 1. ✅ Criar arquivo em `public/data/cantorias/{id}.json`
 2. ✅ Atualizar `public/data/index.json`
 3. ✅ Atualizar metadados automaticamente
@@ -108,17 +121,20 @@ cd vilanova
 ### 2. Configure o Ambiente
 
 **Pré-requisitos:**
+
 - Node.js >=18.0.0
 - npm >=8.0.0
 - Deno >=2.0.0
 - Editor com IA (recomendamos: Cursor, VS Code com Copilot, ou Windsurf)
 
 **Instale as dependências:**
+
 ```bash
 npm install
 ```
 
 **Configure a aplicação:**
+
 ```bash
 deco login
 npm run configure
@@ -141,20 +157,24 @@ Temos várias issues abertas esperando contribuição:
 **Tipos de Issues:**
 
 **🎨 Design & UX:**
+
 - `design` — Melhorias visuais, identidade cultural
 - `ux` — Experiência do usuário, acessibilidade
 - **PRECISAMOS DE AJUDA!** Adoraríamos ter alguém pensando no design cultural do projeto
 
 **💻 Desenvolvimento:**
+
 - `good first issue` — Perfeitas para começar
 - `backend` — Tools, workflows, database
 - `frontend` — React, TailwindCSS, componentes
 
 **📝 Conteúdo:**
+
 - `content` — Adicionar cantorias, biografias, transcrições
 - `documentation` — Melhorar docs, tutoriais
 
 **🧠 IA & Análise:**
+
 - `ai` — Melhorar prompts, análise de estrutura
 - `transcription` — Transcrição e revisão
 
@@ -173,6 +193,7 @@ Temos várias issues abertas esperando contribuição:
 **Estamos precisando de ajuda com design!**
 
 Se você tem experiência com:
+
 - Design de interfaces culturais e memoráveis
 - Ilustrações que fogem de clichês
 - Tipografia e hierarquia visual
@@ -182,6 +203,7 @@ Se você tem experiência com:
 **Por favor, abra uma issue propondo melhorias!**
 
 Ideias que adoraríamos ver:
+
 - Ilustrações/SVGs minimalistas de violas e cantadores
 - Padrões decorativos (azulejos, renda, xilogravura)
 - Visualizações de dados (estrutura de versos, esquemas de rima)
@@ -201,8 +223,8 @@ Atualmente temos **4 cantorias transcritas**:
 - **Oitavas** - Os Nonatos (São Lourenço da Mata, PE)
 - **Martelo Alagoano** - Artista a identificar
 
-📁 **Ver transcrições:** [`/repentes/`](./repentes/)  
-📋 **Catálogo completo:** [`/repentes/cantorias.json`](./repentes/cantorias.json)
+📁 **Ver transcrições:** `[/repentes/](./repentes/)`  
+📋 **Catálogo completo:** `[/repentes/cantorias.json](./repentes/cantorias.json)`
 
 **Quer adicionar cantorias ao acervo?** [Veja como contribuir com conteúdo](#contribuindo-com-conteúdo)
 
@@ -212,27 +234,17 @@ Atualmente temos **4 cantorias transcritas**:
 
 ```
 vilanova/
-├── server/              # Backend (Cloudflare Workers + Deco)
-│   ├── main.ts         # Entry point
-│   ├── schema.ts       # Database schema (Drizzle ORM)
-│   ├── tools/          # Domain-organized tools
-│   └── workflows/      # Multi-step workflows
-├── view/               # Frontend (React + TailwindCSS)
-│   └── src/
-│       ├── routes/     # TanStack Router pages
-│       ├── components/ # UI components
-│       └── hooks/      # TanStack Query hooks
-├── repentes/           # Transcrições e dados
-│   ├── *.txt          # Transcrições individuais
-│   └── cantorias.json # Catálogo de cantorias
-├── entre-cordas-e-poesia/  # Websérie documental
-│   ├── episodio-*.txt      # Transcrições dos 11 episódios
-│   └── README.md           # Sobre a série
-└── plans/              # Documentação de planejamento
-    ├── 01-overview.md
-    ├── 04-landing-page-v2.md
-    ├── 06-entre-cordas.md
-    └── 07-site.md
+├── src/                 # Astro + React (páginas, componentes, acervo em build)
+├── public/data/         # JSON do acervo (cantorias, index, estilos)
+├── repentes/            # Transcrições .txt (e ficheiros de áudio se houver)
+├── entre-cordas-e-poesia/  # Websérie (transcrições .txt)
+├── musicas/             # Ficheiros de músicas catalogadas
+└── docs/                # Toda a documentação em Markdown
+    ├── README.md        # Índice
+    ├── plans/           # Planeamento e specs
+    ├── estilos/         # Guias por estilo de repente
+    ├── projeto/         # Data model, resumos, histórico
+    └── …
 ```
 
 ---
@@ -244,6 +256,7 @@ vilanova/
 **Estamos buscando pessoas para pensar o design cultural do Vilanova.**
 
 Se você tem experiência com design, **por favor abra uma issue** propondo:
+
 - Ilustrações/SVGs de violas, cantadores, elementos nordestinos
 - Sistema de ícones customizado
 - Padrões decorativos (azulejos, renda, xilogravura)
@@ -258,31 +271,37 @@ com a tradição, mas moderno e acessível. Fugir de clichês.
 ### 🎙️ Conteúdo
 
 **Adicionar Cantorias:**
-1. Edite [`/repentes/cantorias.json`](./repentes/cantorias.json)
+
+1. Edite `[/repentes/cantorias.json](./repentes/cantorias.json)`
 2. Adicione metadados (cantadores, estilo, local, links YouTube/Spotify)
 3. Se tiver transcrição, adicione arquivo `.txt` em `/repentes/`
 4. Abra um PR
 
 **Documentar Cantadores:**
+
 - Biografias, trajetórias, estilos favoritos
 - Fontes e referências bibliográficas
 - Fotos (com permissão)
 
 **Transcrever Repentes:**
+
 - Use a ferramenta de backoffice (em desenvolvimento)
 - Revise adaptações fonéticas importantes
 
 ### 💻 Código
 
 **Áreas que precisam de ajuda:**
+
 - Frontend (React + TailwindCSS + TanStack Router)
 - Backend (Deco Tools e Workflows)
 - Database (Drizzle ORM + SQLite)
 - Análise de IA (prompts, validação de estrutura)
 
 **Leia antes:**
-- [Regras de Desenvolvimento](.cursorrules-vilanova)
-- [Planos de Páginas](./plans/)
+
+- [Regras de Desenvolvimento](.cursorrules)
+- [Planos de Páginas](./docs/plans/)
+- [Índice da documentação](./docs/README.md)
 - [Documentação Deco](https://docs.deco.page)
 
 ### 📖 Documentação
@@ -299,14 +318,16 @@ com a tradição, mas moderno e acessível. Fugir de clichês.
 Este projeto é **IA-friendly**! O template Deco funciona muito bem com editores de IA.
 
 **Recomendamos:**
+
 - Cursor
 - Windsurf
 - VS Code + GitHub Copilot
 
 **Como usar:**
+
 1. Abra o projeto no seu editor com IA
-2. Leia os arquivos em `/.cursorrules-vilanova` e `/plans/`
-3. A IA entenderá nossa arquitetura (Deco + Mastra + TanStack)
+2. Leia `.cursorrules` e a pasta `docs/plans/` (e `docs/projeto/DATA-MODEL.md` se precisar de detalhe)
+3. A IA entenderá a arquitetura atual (Astro estático + JSON em `public/data/`)
 4. Peça à IA para seguir os padrões do projeto
 5. Use exemplos existentes como referência
 
@@ -327,29 +348,33 @@ Por enquanto, usamos **JSON files como banco de dados**:
 ## 🎯 Roadmap
 
 ### ✅ Fase 1: Fundação (Concluído)
-- [x] Estrutura básica do projeto
-- [x] Transcrição de 4 repentes
-- [x] Transcrição da websérie "Entre Cordas e Poesia"
-- [x] Design system e identidade visual
+
+- Estrutura básica do projeto
+- Transcrição de 4 repentes
+- Transcrição da websérie "Entre Cordas e Poesia"
+- Design system e identidade visual
 
 ### 🚧 Fase 2: Landing Page e Conteúdo (Atual)
-- [ ] Landing page completa com storytelling
-- [ ] Página de homenagem à websérie
-- [ ] Guia de estilos (3 estilos iniciais)
-- [ ] Galeria básica de cantadores
-- [ ] Página "Sobre" e "Contribuir"
+
+- Landing page completa com storytelling
+- Página de homenagem à websérie
+- Guia de estilos (3 estilos iniciais)
+- Galeria básica de cantadores
+- Página "Sobre" e "Contribuir"
 
 ### 📋 Fase 3: Acervo Interativo
-- [ ] Sistema de busca no acervo
-- [ ] Players de áudio sincronizados com transcrição
-- [ ] Visualização de análise estrutural
-- [ ] Perfis completos de cantadores
+
+- Sistema de busca no acervo
+- Players de áudio sincronizados com transcrição
+- Visualização de análise estrutural
+- Perfis completos de cantadores
 
 ### 🔮 Fase 4: Ferramentas Públicas
-- [ ] Editor de repentes com IA
-- [ ] Calendário de cantorias
-- [ ] Sistema de aprendizado gamificado
-- [ ] API pública para pesquisadores
+
+- Editor de repentes com IA
+- Calendário de cantorias
+- Sistema de aprendizado gamificado
+- API pública para pesquisadores
 
 ---
 
@@ -375,6 +400,7 @@ Ele participa da websérie ["Entre Cordas e Poesia"](https://www.youtube.com/wat
 Este projeto é **open source** sob a [Licença MIT](./LICENSE).
 
 Você é livre para:
+
 - ✅ Usar comercialmente
 - ✅ Modificar e distribuir
 - ✅ Uso privado
@@ -394,17 +420,20 @@ Você é livre para:
 ## 🔗 Links Úteis
 
 ### Projeto:
+
 - 🌐 **Site:** [localhost-aa14baa7.deco.host](https://localhost-aa14baa7.deco.host) (em desenvolvimento)
 - 💻 **GitHub:** [github.com/lucis/vilanova](http://github.com/lucis/vilanova)
 - 📋 **Issues:** [Veja como ajudar](http://github.com/lucis/vilanova/issues)
 - 💬 **Discussões:** [GitHub Discussions](http://github.com/lucis/vilanova/discussions)
 
 ### Conteúdo:
+
 - 📺 **Websérie:** [Entre Cordas e Poesia](https://www.youtube.com/watch?v=ULbBggbGpB8&list=PLngiJpynwciFIwyrG_EiOW-sKm1tRXSGU)
 - 🎵 **Ivanildo Vilanova:** [Dicionário MPB](https://dicionariompb.com.br/artista/ivanildo-vilanova/)
 - 📚 **Transcrições:** [/entre-cordas-e-poesia](./entre-cordas-e-poesia/)
 
 ### Tecnologia:
+
 - 🔧 **Deco Platform:** [decocms.com](https://decocms.com)
 - 📖 **Documentação:** [docs.deco.page](https://docs.deco.page)
 - 🚀 **Deploy:** Baseado em Cloudflare Workers
@@ -413,4 +442,4 @@ Você é livre para:
 
 **Feito com ❤️ para o Nordeste brasileiro**
 
-_"O repente é puro, é santo, é divino. É uma janela para a alma, uma janela para o mundo da sabedoria."_ — Raimundo Lira
+*"O repente é puro, é santo, é divino. É uma janela para a alma, uma janela para o mundo da sabedoria."* — Raimundo Lira

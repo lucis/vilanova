@@ -1,0 +1,19 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { EstilosPage } from "@/components/pages/EstilosPage";
+import { getAcervoData, getEstilosData } from "@/lib/acervo";
+
+const acervo = getAcervoData();
+const estilosData = getEstilosData();
+const title = "Guia de estilos de repente — Vilanova";
+const description =
+  "Modalidades poéticas do repente nordestino: estruturas, regras, história e exemplos.";
+---
+
+<Layout title={title} description={description}>
+  <EstilosPage
+    acervo={acervo}
+    estilosData={estilosData}
+    currentPath={Astro.url.pathname}
+  />
+</Layout>

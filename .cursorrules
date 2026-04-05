@@ -125,26 +125,12 @@ Em `public/data/index.json` → `metadata`:
 }
 ```
 
-### 4. Atualize acervoCompat.ts
+### 4. Build do site (Astro)
 
-**Arquivo:** `view/src/lib/acervoCompat.ts`
-
-Adicione o import e inclua no array `repentes`:
-
-```typescript
-import novaCantoria from "../../../public/data/cantorias/nova-cantoria.json";
-
-// No array repentes:
-repentes: [
-  // ... existentes
-  novaCantoria,
-],
-```
-
-### 5. Sincronize para dist/
+O acervo é lido em tempo de build a partir de `public/data/cantorias/*.json` (ver `src/lib/acervo.ts`). **Não** é necessário manter lista manual de imports: basta o ficheiro JSON novo e o índice atualizado.
 
 ```bash
-npm run data:sync
+npm run build
 ```
 
 ### ⚠️ IMPORTANTE: NÃO crie arquivos .txt
@@ -193,53 +179,43 @@ npm run data:sync
    - Esquema: AAAAAAAABC (mote fixo BC)
    - Usado em pelejas
 
-**Consulte:** `public/data/estilos.json` e `/estilos/*.md` para detalhes completos.
+**Consulte:** `public/data/estilos.json` e `docs/estilos/*.md` para detalhes completos.
 
 ---
 
-## 🎨 Padrões de Código
+## 🎨 Padrões de Código (Astro + React)
+
+### Stack
+
+- **Astro** (`output: static`) — rotas em `src/pages/`, layout em `src/layouts/Layout.astro`
+- **React** — ilhas com `client:load` quando há estado (ex.: filtros, busca)
+- **Dados em build** — `src/lib/acervo.ts` usa `fs` para ler `public/data/` (apenas no servidor/build)
+
+### Navegação
+
+```html
+<!-- Rotas internas: links normais (bom para SEO) -->
+<a href="/cantorias/slug-da-cantoria">...</a>
+```
 
 ### Imports
 
 ```typescript
-// ✅ CORRETO - Use acervoCompat
-import acervoData from "../lib/acervoCompat";
-
-// ❌ ERRADO - Não importe acervo.json diretamente
-import acervoData from "../../../public/data/acervo.json";
-```
-
-### Navegação
-
-```typescript
-// ✅ CORRETO - Use TanStack Router Link
-<Link to="/cantorias/$slug" params={{ slug: "cantoria-slug" }}>
-
-// ❌ ERRADO - Não use <a> para rotas internas
-<a href="/cantorias/cantoria-slug">
-```
-
-### Hooks RPC
-
-```typescript
-// ✅ CORRETO - Use TanStack Query hooks
-const { data } = useMyTool({ param: "value" });
-
-// ❌ ERRADO - Não chame client.TOOL() diretamente em componentes
-const data = await client.MY_TOOL({ param: "value" });
+// Alias @ → src/
+import { getAcervoData } from "@/lib/acervo";
 ```
 
 ---
 
 ## 🔍 Localização de Arquivos
 
-### Componentes React
+### Site (Astro)
 ```
-view/src/
-├── routes/           # Páginas (TanStack Router)
-├── components/       # Componentes reutilizáveis
-├── lib/              # Utilitários
-└── hooks/            # Custom hooks
+src/
+├── pages/            # Rotas (ficheiros .astro)
+├── layouts/          # Layout.astro (meta, OG, CSS global)
+├── components/       # React + partilhados
+└── lib/              # acervo.ts, types, cantadores, utils
 ```
 
 ### Dados
@@ -286,18 +262,19 @@ jq . public/data/index.json > /dev/null && echo "✅ Válido"
 # Contar cantorias
 jq '.cantorias | length' public/data/index.json
 
-# Sincronizar para dist
-npm run data:sync
+# Build estático
+npm run build
 ```
 
 ---
 
 ## 📚 Referências Importantes
 
-- **Data Model:** `DATA-MODEL.md`
-- **Estilos de Repente:** `/estilos/*.md`
+- **Data Model:** `docs/projeto/DATA-MODEL.md`
+- **Estilos de Repente:** `docs/estilos/*.md`
 - **Contribuição:** `README.md`
-- **Refatoração:** `SUMMARY-REFATORACAO.md`
+- **Refatoração:** `docs/projeto/SUMMARY-REFATORACAO.md`
+- **Índice da documentação:** `docs/README.md`
 
 ---
 
@@ -310,8 +287,7 @@ npm run data:sync
 3. **Crie** arquivo em `cantorias/{id}.json`
 4. **Adicione** entrada no `index.json`
 5. **Atualize** metadata (totals + data)
-6. **Crie** transcrição em `repentes/{id}.txt`
-7. **Confirme** que tudo foi adicionado
+6. **Confirme** com `npm run build` (opcional)
 
 ### Quando usuário pede "Corrija esta cantoria..."
 
@@ -327,7 +303,7 @@ npm run data:sync
 - Use `index.json` para listar/filtrar (leve)
 - Carregue arquivo individual só quando necessário
 - Não carregue todos os 13 arquivos de uma vez se não precisar
-- `acervoCompat.ts` já agrega tudo (use para retrocompatibilidade)
+- `src/lib/acervo.ts` agrega cantorias a partir da pasta `public/data/cantorias/`
 
 ---
 

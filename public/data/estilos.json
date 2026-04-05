@@ -57,6 +57,33 @@
       "cantorias_count": 1
     },
     {
+      "slug": "sextilha",
+      "nome": "Sextilha",
+      "resumo": "Seis versos setissílabos — o estilo mais popular e a base do improviso",
+      "definicao": "A Sextilha é o estilo mais popular e tradicional do repente nordestino. É uma estrofe de seis versos em métrica setissílaba (sete sílabas poéticas), com esquema de rima fixo — em geral ABCBDB, ou a variação AABCCB (sextilha de primeira).",
+      "historia": "A Sextilha tem raízes na tradição poética portuguesa (redondilhas e sextinas) e foi adaptada pelos cantadores nordestinos. É o formato mais usado em cantorias e pelejas e a base sobre a qual se aprende a improvisar.",
+      "estrutura": {
+        "metrica": "setissílabos (7 sílabas poéticas)",
+        "versos_por_estrofe": 6,
+        "esquema_rima": "ABCBDB (mais comum) ou AABCCB",
+        "tonicas": "Cadência acompanhável à viola, ritmo oral natural",
+        "obrigatoriedade": "Seis versos por estrofe; no ABCBDB os versos 2, 4 e 6 rimam entre si (rima fonética). No AABCCB, os dois primeiros versos rimam entre si, assim como o 4º e o 5º, e o 3º rima com o 6º."
+      },
+      "dificuldade": "Iniciante",
+      "nivel_numero": 1,
+      "exemplo": "Essa é a grota de Angico,\nfamosa por tradição,\nonde se deu o massacre\ndo bando de Lampião.\nFoi o começo do fim\ndo cangaço no sertão.",
+      "exemplo_autor": "Valdir Teles (Cantoria Lampião e a Gruta de Angicos)",
+      "temas_comuns": [
+        "Narrativas e histórias",
+        "Pelejas e desafios",
+        "Humor e provocação",
+        "Sertão e cotidiano",
+        "Temas leves no improviso"
+      ],
+      "curiosidade": "No repente, as rimas são fonéticas (som), não ortográficas: versos que terminam em sons parecidos rimam mesmo com grafias diferentes (por exemplo -ção, -ão, -tão).",
+      "cantorias_count": 2
+    },
+    {
       "slug": "martelo-alagoano",
       "nome": "Martelo Alagoano",
       "resumo": "10 versos decassílabos com mote repetido 3 vezes",
@@ -138,15 +165,16 @@
     }
   ],
   "metadata": {
-    "ultima_atualizacao": "2025-10-10",
-    "total_estilos": 5,
+    "ultima_atualizacao": "2026-04-05",
+    "total_estilos": 6,
     "por_dificuldade": {
+      "iniciante": 1,
       "intermediario": 1,
       "avancado": 3,
       "mestre": 1
     },
     "por_metrica": {
-      "setissilabos": 1,
+      "setissilabos": 2,
       "decassilabos": 3,
       "hendecassilabos": 1
     }

@@ -1,3 +1,5 @@
+# SpecStory (histórico local da extensão/CLI)
+.specstory/
 
 # Environment files
 .env

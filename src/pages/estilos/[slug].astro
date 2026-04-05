@@ -1,0 +1,29 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { EstiloPage } from "@/components/pages/EstiloPage";
+import { getAcervoData, getEstilosData } from "@/lib/acervo";
+import type { Estilo } from "@/lib/types";
+
+export function getStaticPaths() {
+  const { estilos } = getEstilosData();
+  return estilos.map((estilo: Estilo) => ({
+    params: { slug: estilo.slug },
+    props: { estilo },
+  }));
+}
+
+const { estilo } = Astro.props;
+const acervo = getAcervoData();
+const { estilos } = getEstilosData();
+const title = `${estilo.nome} — Guia de estilos — Vilanova`;
+const description = estilo.resumo.slice(0, 160);
+---
+
+<Layout title={title} description={description} ogType="article">
+  <EstiloPage
+    estilo={estilo}
+    acervo={acervo}
+    currentPath={Astro.url.pathname}
+    estilosList={estilos}
+  />
+</Layout>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vilanova.severinobiu.com.br/sitemap-index.xml

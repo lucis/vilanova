@@ -1,0 +1,34 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { MusicaPage } from "@/components/pages/MusicaPage";
+import {
+  getAcervoData,
+  getEstilosData,
+  getMusicasIndex,
+  loadMusicaById,
+} from "@/lib/acervo";
+import type { Cantoria } from "@/lib/types";
+
+export function getStaticPaths() {
+  const idx = getMusicasIndex();
+  return idx.musicas.map((m) => ({
+    params: { slug: m.slug },
+    props: { musica: loadMusicaById(m.id) },
+  }));
+}
+
+const { musica } = Astro.props;
+const acervo = getAcervoData();
+const { estilos } = getEstilosData();
+const title = `${musica.titulo} — Músicas — Vilanova`;
+const description = musica.contexto?.slice(0, 160) || title;
+---
+
+<Layout title={title} description={description} ogType="article">
+  <MusicaPage
+    musica={musica}
+    currentPath={Astro.url.pathname}
+    repentes={acervo.repentes as Cantoria[]}
+    estilosCatalogo={estilos}
+  />
+</Layout>

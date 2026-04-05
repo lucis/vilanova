@@ -32,15 +32,14 @@ public/data/
 
 ## ✅ SEMPRE FAÇA ISSO
 
-- ✅ Use imports relativos a `../lib/acervoCompat`
+- ✅ Use dados via `src/lib/acervo.ts` (build Astro)
 - ✅ Siga estrutura de estilos em `estilos.json`
 - ✅ Valide contagem de sílabas
 - ✅ Atualize metadata
 
 ## 📚 Consulte
 
-- `DATA-MODEL.md` - Estrutura completa
-- `public/data/README.md` - Guia de uso
+- `docs/projeto/DATA-MODEL.md` - Estrutura completa
+- `docs/public-data/README.md` - Guia de uso de `public/data/`
+- `docs/README.md` - Índice da pasta `docs/`
 - `.cursorrules` - Regras detalhadas
-
-**Documentação completa:** Ver arquivos *.md na raiz do projeto

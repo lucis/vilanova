@@ -1,0 +1,28 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { SearchPage } from "@/components/pages/SearchPage";
+import { getAcervoData, getEstilosData, getMusicasIndex } from "@/lib/acervo";
+
+const acervo = getAcervoData();
+const { estilos } = getEstilosData();
+const idx = getMusicasIndex();
+const musicasIndex = idx.musicas.map((m) => ({
+  slug: m.slug,
+  titulo: m.titulo,
+  artista: m.artista,
+  estilo_referencia: m.estilo_referencia,
+}));
+const title = "Busca no acervo — Vilanova";
+const description =
+  "Pesquise cantorias, cantadores, estilos, versos catalogados e músicas. Busca no navegador, sem servidor.";
+---
+
+<Layout title={title} description={description}>
+  <SearchPage
+    client:load
+    acervo={acervo}
+    estilosCatalogo={estilos}
+    musicasIndex={musicasIndex}
+    currentPath={Astro.url.pathname}
+  />
+</Layout>

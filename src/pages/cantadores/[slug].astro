@@ -1,0 +1,31 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { CantadorPage } from "@/components/pages/CantadorPage";
+import { getAcervoData, getEstilosData } from "@/lib/acervo";
+import { agregarCantadores } from "@/lib/cantadores";
+import type { Cantoria } from "@/lib/types";
+
+export function getStaticPaths() {
+  const acervo = getAcervoData();
+  const cantadores = agregarCantadores(acervo.repentes as Cantoria[]);
+  return cantadores.map((c) => ({
+    params: { slug: c.slug },
+    props: { cantador: c },
+  }));
+}
+
+const { cantador } = Astro.props;
+const acervo = getAcervoData();
+const { estilos } = getEstilosData();
+const title = `${cantador.nome} — Cantadores — Vilanova`;
+const description = `Perfil de ${cantador.nome}: ${cantador.stats.totalCantorias} cantorias no acervo Vilanova.`;
+---
+
+<Layout title={title} description={description} ogType="profile">
+  <CantadorPage
+    cantador={cantador}
+    acervo={acervo}
+    currentPath={Astro.url.pathname}
+    estilosCatalogo={estilos}
+  />
+</Layout>
